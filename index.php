@@ -1,48 +1,43 @@
-<!doctype html>
-<html>
-<head>
-	<title>Niko Is 1</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="grater.css">
-</head>
-<body>
-<!--
-	<div class="megaContainer">
-		<img src="prologueLarge.jpg">
-	</div>
--->
-	<div class="grater-container">
-		<div class="grater">
-			<h1>Prologue</h1>
-		</div>
-		<div class="grater">
-			<div>
-				<img src="book.png">
-				<h4>For Readers:</h4>
-				<p>The Best Blogs<br>All in One Place.</p>
-			</div>
-			<div>
-				<img src="pencil.png">
-				<h4>For Writers:</h4>
-				<p>The Best Way to Share<br>&amp; Sell your Prose.</p>
-			</div>
-		</div>
-		<div class="grater">
-			<p>Launching this Fall...<!--<br>Receive an Email when we launch.--></p>
-		</div>
-		<!--
-		<div class="email">
-			<input class="email" type="text" name="email" placeholder="someone@someplace.com">
-			<a href="" class="email button"></a>
-		</div>
-		-->
+<?php
+/**
+ * Requests collector.
+ *
+ *  This file collects requests if:
+ *	- no mod_rewrite is available or .htaccess files are not supported
+ *  - requires App.baseUrl to be uncommented in app/Config/core.php
+ *	- app/webroot is not set as a document root.
+ *
+ * PHP 5
+ *
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c), Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @since         CakePHP(tm) v 0.2.9
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
 
-	</div>
-	<div class="footer">
-		<div>
-			<p>All things &copy; Super Powered Pixels.</p>
-		</div>
-	</div>	
-</body>
-</html>
+/**
+ *  Get Cake's root directory
+ */
+define('APP_DIR', 'app');
+define('DS', DIRECTORY_SEPARATOR);
+define('ROOT', dirname(__FILE__));
+define('WEBROOT_DIR', 'webroot');
+define('WWW_ROOT', ROOT . DS . APP_DIR . DS . WEBROOT_DIR . DS);
+
+/**
+ * This only needs to be changed if the "cake" directory is located
+ * outside of the distributed structure.
+ * Full path to the directory containing "cake". Do not add trailing directory separator
+ */
+if (!defined('CAKE_CORE_INCLUDE_PATH')) {
+	define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'lib');
+}
+
+require APP_DIR . DS . WEBROOT_DIR . DS . 'index.php';
