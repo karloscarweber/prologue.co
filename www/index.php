@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Niko Is 1</title>
+	<title>Prologue</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="grater.css">

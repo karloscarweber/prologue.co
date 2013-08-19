@@ -1,0 +1,314 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+::-moz-selection { background: #03baff; color: #fff; text-shadow: none; }
+::selection { background: #03baff; color: #fff; text-shadow: none; }
+a {
+  -moz-transition:   color 0.3s ease-in-out 0s;
+  -o-transition:     color 0.3s ease-in-out 0s;
+  -webkit-transition:color 0.3s ease-in-out 0s;
+  -ms-transition:    color 0.3s ease-in-out 0s;
+  transition:        color 0.3s ease-in-out 0s;
+  color: #32b0df;
+  text-decoration: none;
+}
+a:hover   { color: #00ccff; }
+a:visited { color: #32b0df; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+p a {}
+p a:hover { color:#00ccff; }
+p a:visited { color: #32b0df; }
+p a:focus { outline: thin dotted; }
+p a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* ==|== primary styles =====================================================
+   Author: Karl Oscar Weber
+   ========================================================================== */
+body {
+  /*background:#6296c7;*/
+  background: #6296c7;
+}
+.container {display:block; position:relative; margin:0 auto; width:960px; }
+.wrapper   {display:block; position:relative; margin:0 auto; }
+
+
+/*Typography*/
+*  {color:#ffffff;font-family:Lato, sans-serif;font-weight:normal;}
+/*Headers*/
+h1 {
+  font-style:italic;
+  text-align:center;
+  font-size:7rem;
+  margin:5rem 0rem;
+  text-transform:uppercase;
+  line-height:6rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 660px) {
+  h1 {
+    margin:2rem 0rem;
+    line-height: 2rem;
+    font-size:3.5rem;
+  }
+}
+.grater-container, h1, .grater, .grater > div {
+  -moz-transition:   all 0.7s ease-in-out 0s;
+  -o-transition:     all 0.7s ease-in-out 0s;
+  -webkit-transition:all 0.7s ease-in-out 0s;
+  -ms-transition:    all 0.7s ease-in-out 0s;
+  transition:        all 0.7s ease-in-out 0s;
+
+}
+
+
+h2 {}
+h3 {}
+h4 {text-align: center;font-weight: 400;font-style: italic;font-size: 2rem;line-height: 1.5rem;margin:0.5rem;}
+h5 {}
+h6 {}
+/*paragraphs*/
+p {font-weight: 300;font-size: 1.25rem;text-align: center;margin: 0.5rem;}
+/*links*/
+a {}
+/*buttons*/
+.button {padding:5px;text-align:center;font-size:1.5rem;}
+
+/*Email Capture*/
+
+
+/* Homepage */
+.megaContainer{
+  display: block;
+  width: 100%;
+  position: relative;
+  background: #000;
+}
+.megaContainer img {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  background: #333;
+  color:#fff;
+  margin-top:100px;
+}
+
+.footer div {
+  width:100%;
+  max-width: 640px;
+  margin:0 auto;
+  padding:0.5rem;
+  box-sizing:border-box;
+}
+
+.footer div p {
+  margin:0.5rem;
+  padding:0px;
+  line-height: 1.5rem;
+  font-size:1rem;
+  font-weight:300;
+  font-style:italic;
+  color:#fff;
+  box-sizing:border-box;
+}
+
+/* imgs */
+.grater div img {
+  margin:10px auto;
+  display: block;
+  position: relative;
+}
+
+
+/*email capture*/
+div.email {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
+}
+input.email {
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  /*background: #000000;*/
+  background: transparent;
+  color: #ffffff;
+  width: 100%;
+  -moz-transition:   all 0.3s ease-in-out 0s;
+  -o-transition:     all 0.3s ease-in-out 0s;
+  -webkit-transition:all 0.3s ease-in-out 0s;
+  -ms-transition:    all 0.3s ease-in-out 0s;
+  transition:        all 0.3s ease-in-out 0s;
+}
+
+div.email:focus, div.email:active {
+  outline:none;
+  border-radius:10px;
+  background:#fff;
+  color:#000;
+  box-shadow: none;
+}
+a.email.button {
+  background: url(checkMark.png) center center no-repeat;
+  box-sizing: border-box;
+  border: 0px solid #ffffff;
+  
+  border-radius: 7px;
+  position: absolute;
+  right: 4px;
+  top:4px;
+  width: 50px;
+  height:50px;
+}
+a.email.button:hover {
+  background: #ffffff;
+  /*background: url(checkBlack.png) center center no-repeat #ffffff;*/
+  background: url(checkBlue.png) center center no-repeat #ffffff;
+
+}
+
+
+
+
+
+
+/*Login Page Styles*/
+input.username, input.password {
+display: block;
+margin:0 auto;
+border:2px solid white;
+border-radius: 8px;
+padding:3px;
+text-align: center;
+font-size: 18px;
+line-height: 24px;
+}
+input.username:focus, input.password:focus {
+outline:none;
+}
+h2 {
+  margin:10px auto;
+  text-align: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+.ir { border:0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.left    { float:left;}
+.right   { float:right;}
