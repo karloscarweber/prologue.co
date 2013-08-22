@@ -80,11 +80,28 @@ td { vertical-align: top; }
    Author: Karl Oscar Weber
    ========================================================================== */
 body {
-  /*background:#6296c7;*/
-  background: #6296c7;
+  /*background:#68a2d9;*/
+  background: #68a2d9;
 }
 .container {display:block; position:relative; margin:0 auto; width:960px; }
 .wrapper   {display:block; position:relative; margin:0 auto; }
+
+
+.whiteBorderBox {
+  display: block;
+  width:300px;
+  padding:15px;
+  margin:2rem auto;
+  box-sizing:border-box;
+  border:3px solid white;
+  border-radius:7px;
+}
+.whiteBorderBox p {
+  text-align: justify;
+  font-size:1rem;
+  margin:1rem auto;
+  width:80%;
+}
 
 
 /*Typography*/
@@ -123,6 +140,7 @@ h5 {}
 h6 {}
 /*paragraphs*/
 p {font-weight: 300;font-size: 1.25rem;text-align: center;margin: 0.5rem;}
+p.lead {font-weight: 300;font-size: 1.8rem;text-align: center;margin: 2rem 0rem;width: 100%;}
 /*links*/
 a {}
 /*buttons*/
@@ -235,15 +253,21 @@ a.email.button:hover {
 
 
 /*Login Page Styles*/
-input.username, input.password {
+input.username, input.password, .loginButton {
 display: block;
+background: none;
 margin:0 auto;
-border:2px solid white;
-border-radius: 8px;
-padding:3px;
+width:80%;
+border:3px solid white;
+border-radius: 7px;
+padding:12px;
 text-align: center;
-font-size: 18px;
+font-size: 1rem;
 line-height: 24px;
+color:#fff;
+box-sizing:border-box;
+margin-bottom:1.5rem;
+font-weight: 300
 }
 input.username:focus, input.password:focus {
 outline:none;
@@ -253,14 +277,18 @@ h2 {
   text-align: center;
 } 
 
-
-
-
-
-
-
-
-
+::-webkit-input-placeholder {
+  color:#ffffff;
+}
+:-moz-placeholder {
+  color:#ffffff; 
+}
+::-moz-placeholder {
+  color:#ffffff;
+}
+:-ms-input-placeholder {
+  color:#ffffff;
+}
 
 
 

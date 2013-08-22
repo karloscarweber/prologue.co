@@ -91,3 +91,63 @@ Stack Trace:
 #3 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-08-21 07:48:24 Error: [MissingViewException] View file "/Users/karlweber/Dropbox/projects/prologue/app/View/Pages/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/karlweber/Dropbox/projects/prologue/app/View/Pages/login.ctp',
+)
+Request URL: /pages/login
+Stack Trace:
+#0 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/View/View.php(468): View->_getViewFileName('login')
+#1 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Controller/Controller.php(952): View->render('login', NULL)
+#2 /Users/karlweber/Dropbox/projects/prologue/app/Controller/PagesController.php(73): Controller->render('login')
+#3 [internal function]: PagesController->display('login')
+#4 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/karlweber/Dropbox/projects/prologue/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-08-21 07:53:01 Error: [MissingViewException] View file "/Users/karlweber/Dropbox/projects/prologue/app/View/Pages/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/karlweber/Dropbox/projects/prologue/app/View/Pages/login.ctp',
+)
+Request URL: /pages/login
+Stack Trace:
+#0 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/View/View.php(468): View->_getViewFileName('login')
+#1 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Controller/Controller.php(952): View->render('login', NULL)
+#2 /Users/karlweber/Dropbox/projects/prologue/app/Controller/PagesController.php(73): Controller->render('login')
+#3 [internal function]: PagesController->display('login')
+#4 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/karlweber/Dropbox/projects/prologue/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-08-21 08:09:08 Error: [MissingViewException] View file "/Users/karlweber/Dropbox/projects/prologue/app/View/Pages/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/karlweber/Dropbox/projects/prologue/app/View/Pages/login.ctp',
+)
+Request URL: /pages/login
+Stack Trace:
+#0 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/View/View.php(468): View->_getViewFileName('login')
+#1 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Controller/Controller.php(952): View->render('login', NULL)
+#2 /Users/karlweber/Dropbox/projects/prologue/app/Controller/PagesController.php(73): Controller->render('login')
+#3 [internal function]: PagesController->display('login')
+#4 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/karlweber/Dropbox/projects/prologue/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-08-21 17:55:47 Error: [MissingViewException] View file "/Users/karlweber/Dropbox/projects/prologue/app/View/Pages/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/karlweber/Dropbox/projects/prologue/app/View/Pages/login.ctp',
+)
+Request URL: /pages/login
+Stack Trace:
+#0 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/View/View.php(468): View->_getViewFileName('login')
+#1 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Controller/Controller.php(952): View->render('login', NULL)
+#2 /Users/karlweber/Dropbox/projects/prologue/app/Controller/PagesController.php(73): Controller->render('login')
+#3 [internal function]: PagesController->display('login')
+#4 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/karlweber/Dropbox/projects/prologue/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/karlweber/Dropbox/projects/prologue/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
