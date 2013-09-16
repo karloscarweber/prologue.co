@@ -45,6 +45,21 @@ class PagesController extends AppController {
  */
 	public $uses = array();
 
+	
+	public function beforeFilter()
+	{
+		$this->Auth->allow();
+		//	Fix the user data problem
+		
+		$user = $this->Auth->user();
+		if(!empty($user)){
+			$this->loadModel('User');
+			$options = array('conditions'=>array('username'=>$user['users']['username']));
+			$this->p_user = $this->User->find('first', $options);
+		}
+	}
+
+
 /**
  * Displays a view
  *

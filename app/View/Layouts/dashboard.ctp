@@ -5,26 +5,24 @@
 	<title> PROLOGUE </title>
 	<?php
 		echo $this->Html->meta('icon');
+		echo $this->Html->css('normalize');
 		echo $this->Html->css('grater');
-		echo $this->Html->css('main');
-
+		echo $this->Html->css('dashboard');
 		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+		//echo $this->fetch('script');
+		echo $this->Html->script('jquery');
 	?>
 </head>
 <body>
-	<div id="header">
-		<?php 
-		echo $this->Session->flash();
-		?>
-	</div>
-	<div id="content">
+	<div class="clearfix" id="content">
 		<?php echo $this->Session->flash(); ?>
 		<?php echo $this->fetch('content'); ?>
 	</div>
-	<div id="footer">
-	</div>
 	<?php // echo $this->element('sql_dump'); ?>
+<script>
+$(document).ready(function(){
+
+});
+</script>
 </body>
 </html>

@@ -107,3 +107,23 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+
+
+
+/*
+	Set Stripe Variables
+*/
+CakePlugin::load('Stripe');
+//CakePlugin::load('Stripe', array('bootstrap' => false, 'routes' => false));
+Configure::write('Stripe.TestSecret', 'sk_test_z0EFAsHQT19YNAplol2UPLSN');
+Configure::write('Stripe.LiveSecret', 'fdfafd');
+Configure::write('Stripe.mode', 'Test');
+Configure::write('Stripe.currency', 'usd');
+Configure::write('Stripe.fields', array(
+    'stripe_id' => 'id',
+    'stripe_last4' => array('card' => 'last4'),
+    'stripe_address_zip_check' => array('card' => 'address_zip_check'),
+    'stripe_cvc_check' => array('card' => 'cvc_check'),
+    'stripe_amount' => 'amount'
+));

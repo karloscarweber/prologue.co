@@ -16,24 +16,24 @@ audio:not([controls]) { display: none; }
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; }
-::-moz-selection { background: #03baff; color: #fff; text-shadow: none; }
-::selection { background: #03baff; color: #fff; text-shadow: none; }
+::-moz-selection { background: #03baff; color: #555555; text-shadow: none; }
+::selection { background: #03baff; color: #555555; text-shadow: none; }
 a {
   -moz-transition:   color 0.3s ease-in-out 0s;
   -o-transition:     color 0.3s ease-in-out 0s;
   -webkit-transition:color 0.3s ease-in-out 0s;
   -ms-transition:    color 0.3s ease-in-out 0s;
   transition:        color 0.3s ease-in-out 0s;
-  color: #32b0df;
-  text-decoration: none;
+  color: #555555;
+  text-decoration: underline;
 }
-a:hover   { color: #00ccff; }
-a:visited { color: #32b0df; }
+a:hover   { color: #555555; }
+a:visited { color: #555555; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 p a {}
-p a:hover { color:#00ccff; }
-p a:visited { color: #32b0df; }
+p a:hover { color:#555555; }
+p a:visited { color: #555555; }
 p a:focus { outline: thin dotted; }
 p a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
@@ -80,8 +80,11 @@ td { vertical-align: top; }
    Author: Karl Oscar Weber
    ========================================================================== */
 body {
+  display: block;
+  clear:both;
   /*background:#68a2d9;*/
-  background: #68a2d9;
+  background: #ededed;
+
 }
 .container {display:block; position:relative; margin:0 auto; width:960px; }
 .wrapper   {display:block; position:relative; margin:0 auto; }
@@ -105,12 +108,12 @@ body {
 
 
 /*Typography*/
-*  {color:#ffffff;font-family:Lato, sans-serif;font-weight:normal;}
+*  {color:#555555;font-family:Lato, sans-serif;font-weight:normal;}
 /*Headers*/
 h1 {
   font-style:italic;
   text-align:center;
-  font-size:7rem;
+  font-size:5rem;
   margin:5rem 0rem;
   text-transform:uppercase;
   line-height:6rem;
@@ -129,20 +132,24 @@ h1 {
   -webkit-transition:all 0.7s ease-in-out 0s;
   -ms-transition:    all 0.7s ease-in-out 0s;
   transition:        all 0.7s ease-in-out 0s;
-
 }
 
-
-h2 {}
+h2 {margin:0.5rem 0;text-align: justify;}
 h3 {}
-h4 {text-align: center;font-weight: 400;font-style: italic;font-size: 2rem;line-height: 1.5rem;margin:0.5rem;}
+h4 {text-align: justify;font-weight: 400;font-style: italic;font-size: 2rem;line-height: 1.5rem;margin:0.5rem;}
 h5 {}
 h6 {}
 /*paragraphs*/
-p {font-weight: 300;font-size: 1.25rem;text-align: center;margin: 0.5rem;}
-p.lead {font-weight: 300;font-size: 1.8rem;text-align: center;margin: 2rem 0rem;width: 100%;}
+p {font-weight: 300;font-size: 1.25rem;text-align: justify;margin: 1rem 0;}
+p.lead {font-weight: 300;font-size: 1.8rem;text-align: justify;margin: 2rem 0rem;width: 100%;}
+
+ol {font-weight: 300;font-size: 1.25rem;text-align: justify;margin:1rem 0;padding:0 0 0 1.6rem;}
+ol li {font-weight: 400;}
+
+
 /*links*/
-a {}
+a {color:#555555;text-decoration: underline;font-weight: 300;}
+a:hover {text-decoration: none;}
 /*buttons*/
 .button {padding:5px;text-align:center;font-size:1.5rem;}
 
@@ -167,7 +174,7 @@ a {}
 .footer {
   width: 100%;
   background: #333;
-  color:#fff;
+  color:#555555;
   margin-top:100px;
 }
 
@@ -186,7 +193,7 @@ a {}
   font-size:1rem;
   font-weight:300;
   font-style:italic;
-  color:#fff;
+  color:#555555;
   box-sizing:border-box;
 }
 
@@ -207,12 +214,12 @@ div.email {
 }
 input.email {
   box-sizing: border-box;
-  border: 2px solid #ffffff;
+  border: 2px solid #555555;
   padding: 18px;
   border-radius: 10px;
   /*background: #000000;*/
   background: transparent;
-  color: #ffffff;
+  color: #555555;
   width: 100%;
   -moz-transition:   all 0.3s ease-in-out 0s;
   -o-transition:     all 0.3s ease-in-out 0s;
@@ -224,15 +231,15 @@ input.email {
 div.email:focus, div.email:active {
   outline:none;
   border-radius:10px;
-  background:#fff;
+  background:#555555;
   color:#000;
   box-shadow: none;
 }
+
 a.email.button {
   background: url(checkMark.png) center center no-repeat;
   box-sizing: border-box;
-  border: 0px solid #ffffff;
-  
+  border: 0px solid #555555;
   border-radius: 7px;
   position: absolute;
   right: 4px;
@@ -241,70 +248,120 @@ a.email.button {
   height:50px;
 }
 a.email.button:hover {
-  background: #ffffff;
-  /*background: url(checkBlack.png) center center no-repeat #ffffff;*/
-  background: url(checkBlue.png) center center no-repeat #ffffff;
-
+  background: #555555;
+  /*background: url(checkBlack.png) center center no-repeat #555555;*/
+  background: url(checkBlue.png) center center no-repeat #555555;
 }
 
 
 
-
-
-
 /*Login Page Styles*/
-input.username, input.password, .loginButton {
+input.username, input.password, input.email{
 display: block;
-background: none;
 margin:0 auto;
 width:80%;
+/*
 border:3px solid white;
+color:#555555;
+background: none;
+*/
+border:0px solid #68a2d9;
+color:#68a2d9;
+background: white;
 border-radius: 7px;
 padding:12px;
 text-align: center;
 font-size: 1rem;
 line-height: 24px;
-color:#fff;
 box-sizing:border-box;
 margin-bottom:1.5rem;
 font-weight: 300
 }
-input.username:focus, input.password:focus {
+
+input.username:focus, input.password:focus, input.email:focus {
 outline:none;
 }
-h2 {
-  margin:10px auto;
-  text-align: center;
-} 
+
+.loginButton {
+display: block;
+margin:0 auto;
+width:80%;
+border:1px solid white;
+color:#555555;
+background: #68a2d9;
+border-radius: 7px;
+padding:12px;
+text-align: center;
+font-size: 1rem;
+line-height: 24px;
+box-sizing:border-box;
+margin-bottom:1.5rem;
+font-weight: 300
+}
+.loginButton:active {
+  color:#68a2d9;
+  background: #555555;
+}
+
 
 ::-webkit-input-placeholder {
-  color:#ffffff;
+  color:#68a2d9;
 }
 :-moz-placeholder {
-  color:#ffffff; 
+  color:#68a2d9; 
 }
 ::-moz-placeholder {
-  color:#ffffff;
+  color:#68a2d9;
 }
 :-ms-input-placeholder {
-  color:#ffffff;
+  color:#68a2d9;
 }
 
+/*Flash Message*/
+#flashMessage {
 
+}
+.elastic-container {
+  display: block;
+  max-width: 640px;
+  width:80%;
+  margin:0 auto;
+}
 
+.login {
+  float:right;
+  display:inline-block;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*buttons*/
+.button {
+  display:inline-block;
+  border-radius: 5px;
+  padding: 6px 9px;
+  border-color: #404040;
+  border-width: 1px;
+  border-style: solid;
+  background:transparent; 
+  -moz-transition: border-color, opacity, background-color 0.3s ease-in-out 0s;
+  -o-transition: border-color, opacity, background-color 0.3s ease-in-out 0s;
+  -webkit-transition: border-color, opacity, background-color 0.3s ease-in-out 0s;
+  -ms-transition: border-color, opacity, background-color 0.3s ease-in-out 0s;
+  transition: border-color, opacity, background-color 0.3s ease-in-out 0s;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:focus, .button:hover {
+  /*outline:none;
+  border:1px solid #000000;*/
+  opacity: .83;
+}
+.button:active {
+  background-color: #68a2d9;
+  color:#ededed;
+  border-color:#ededed;
+  outline:none;
+  border:1px solid #ededed;
+}
 
 
 
@@ -340,3 +397,14 @@ h2 {
 .clearfix { *zoom: 1; }
 .left    { float:left;}
 .right   { float:right;}
+
+
+
+
+/*All the dashboard stuff*/
+
+.dashboard-container{
+  width:100%;
+  padding:0px;
+  margin:0px;
+}

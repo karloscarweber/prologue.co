@@ -32,4 +32,42 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	/*
+		Components
+	*/
+	var $components = array('Stripe.Stripe', 'Auth', 'Session');
+	/*
+		Plugins
+	*/
+	
+
+
+
+	/*
+		Totally Lifted From Fifty Studio.
+		yes, one line of code.
+	*/
+	public function goBack()
+	{
+		$this->redirect($this->referer());
+	}
+
+	var $p_user = array();
+	/**/
+	
+	public function beforeFilter()
+	{
+		// $this->Auth->allow();
+		//	Fix the user data problem
+		
+		$user = $this->Auth->user();
+		//debug($this->p_user);
+		if(!empty($user)){
+			$this->loadModel('User');
+			$options = array('conditions'=>array('username'=>$user['users']['username']));
+			$this->p_user = $this->User->find('first', $options);
+		}
+	}
+
 }
