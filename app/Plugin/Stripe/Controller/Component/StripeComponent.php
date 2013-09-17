@@ -163,6 +163,93 @@ class StripeComponent extends Component {
 		return $this->_formatResult($charge);
 	}
 
+
+
+
+
+/**
+ * The Create method creates a new Customer using Stripe_Charge::create and attempts a
+ * transaction.
+ *
+ * @param array	$data Must contain 'email' optionally contain card, but 
+ * only the stripe card token at this point
+ * @return array $charge if success, string $error if failure.
+ * @throws CakeException
+ * @throws CakeException
+ * @throws CakeException
+ */
+	public function create($data) {
+		// set the Stripe API key
+		$key = Configure::read('Stripe.' . $this->mode . 'Secret');
+		if (!$key) {
+			throw new CakeException('Stripe API key is not set.');
+		}
+
+		// set the (optional) email field to null if not set in $data
+		if (!isset($data['email'])) {
+			$data['email'] = null;
+		}
+
+		// set the (optional) description field to null if not set in $data
+		if (!isset($data['description'])) {
+			$data['description'] = null;
+		}
+
+		// set the (optional) card field to null if not set in $data
+		if (!isset($data['card'])) {
+			$data['card'] = null;
+		}
+
+		// set the (optional) stripeToken field to null if not set in $data
+		if (!isset($data['stripeToken'])) {
+			$data['stripeToken'] = null;
+		}
+
+		Stripe::setApiKey($key);
+		$error = null;
+		try {
+			$customer = Stripe_Customer::create(array(
+				'card' => $data['card'],
+				'email' => $data['stripeToken'],
+				'description' => $data['description']
+			));
+
+		} catch(Stripe_CardError $e) {
+			$body = $e->getJsonBody();
+			$err = $body['error'];
+			CakeLog::error('Stripe: ' . $err['type'] . ': ' . $err['code'] . ': ' . $err['message'], 'stripe');
+			$error = $err['message'];
+
+		} catch (Stripe_InvalidRequestError $e) {
+			$body = $e->getJsonBody();
+			$err = $body['error'];
+			CakeLog::error('Stripe: ' . $err['type'] . ': ' . $err['message'], 'stripe');
+			$error = $err['message'];
+
+		} catch (Stripe_AuthenticationError $e) {
+			CakeLog::error('Stripe: API key rejected!', 'stripe');
+			$error = 'Payment processor API key error.';
+
+		} catch (Stripe_Error $e) {
+			CakeLog::error('Stripe: Stripe_Error - Stripe could be down.', 'stripe');
+			$error = 'Payment processor error, try again later.';
+
+		} catch (Exception $e) {
+			CakeLog::error('Stripe: Unknown error.', 'stripe');
+			$error = 'There was an error, try again later.';
+		}
+
+		if ($error !== null) {
+			// an error is always a string
+			return (string)$error;
+		}
+
+		CakeLog::info('Stripe: customer id ' . $customer->id, 'stripe');
+		
+		return json_decode($customer,true);
+	}
+
+
 /**
  * Returns an array of fields we want from Stripe's charge object
  *

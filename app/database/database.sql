@@ -32,11 +32,11 @@ features
 /* Table structure for `` */
 CREATE TABLE `features` (
   `id` int(11) unsigned NOT NULL auto_increment,
-  `name` text default NULL,  
+  `name` varchar(255) default NULL,
+  `url` varchar(255) default NULL,
   `description` text default NULL,
-  `description` text default NULL,  
+  `short_description` text default NULL,
   `created` datetime default NULL,
   `modified` datetime default NULL,
-  PRIMARY KEY  (`id`),
-  KEY `email` (`email`)
+  PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;

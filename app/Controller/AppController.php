@@ -65,7 +65,7 @@ class AppController extends Controller {
 		//debug($this->p_user);
 		if(!empty($user)){
 			$this->loadModel('User');
-			$options = array('conditions'=>array('username'=>$user['users']['username']));
+			$options = array('conditions'=>array('username'=>$user['User']['username']));
 			$this->p_user = $this->User->find('first', $options);
 		}
 	}

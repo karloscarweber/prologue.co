@@ -106,6 +106,10 @@ p.lead {
 	width: 100%;
 }
 
+.stripe-button-el {
+	display: block !important;
+	margin:1rem auto;
+}
 
 /*email capture*/
 div.email {
@@ -220,13 +224,10 @@ font-weight: 300
 }
 
 
-
-
 /*Colors*/
 .prologueBlue {
 	color:#68a2d9;
 }
-
 
 /*Votes*/
 .votes {
