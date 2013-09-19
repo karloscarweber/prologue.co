@@ -115,15 +115,28 @@ h1 {
   text-align:center;
   font-size:5rem;
   margin:5rem 0rem;
-  text-transform:uppercase;
+  text-transform:capitalize;
   line-height:6rem;
   font-weight: 400;
+  font-family: georgia, serif;
+}
+h1.logo {
+  font-family: georgia, serif;
+  font-weight: 300;
+  text-transform: capitalize;
+  color:#68a2d9;
+  margin: 2rem auto;
+  /*text-shadow: 1px 1px 0px #555555;*/
+  letter-spacing: -2px; 
 }
 @media only screen and (max-width: 660px) {
   h1 {
     margin:2rem 0rem;
-    line-height: 2rem;
-    font-size:3.5rem;
+    line-height: 3rem;
+    font-size:3rem;
+  }
+  h1.logo {
+    font-size:4rem;
   }
 }
 .grater-container, h1, .grater, .grater > div {
@@ -133,15 +146,43 @@ h1 {
   -ms-transition:    all 0.7s ease-in-out 0s;
   transition:        all 0.7s ease-in-out 0s;
 }
-
-h2 {margin:0.5rem 0;text-align: justify;}
+/*
+  Margin top and bottom 2rem
+  text align=
+*/
+h2 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin:2rem 0;
+  text-align: justify;
+}
 h3 {}
-h4 {text-align: justify;font-weight: 400;font-style: italic;font-size: 2rem;line-height: 1.5rem;margin:0.5rem;}
+h4 {
+  text-align: justify;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin:0.5rem;
+}
 h5 {}
 h6 {}
 /*paragraphs*/
-p {font-weight: 300;font-size: 1.25rem;text-align: justify;margin: 1rem 0;}
-p.lead {font-weight: 300;font-size: 1.8rem;text-align: justify;margin: 2rem 0rem;width: 100%;}
+p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: justify;
+  margin: 2rem 0;
+  }
+p.lead {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.5rem;  
+  text-align: justify;
+  margin: 2rem 0rem;
+  width: 100%;
+}
 
 ol {font-weight: 300;font-size: 1.25rem;text-align: justify;margin:1rem 0;padding:0 0 0 1.6rem;}
 ol li {font-weight: 400;}

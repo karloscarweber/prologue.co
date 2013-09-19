@@ -1,4 +1,7 @@
 <div class="grater-container">
+	<h1 class="logo">Prologue</h1>
+</div>
+<div class="grater-container">
 	<a href="/users/login" class="button login">Login</a>
 </div>
 <div class="grater-container" style="margin-top:100px;">
