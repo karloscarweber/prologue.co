@@ -8,7 +8,6 @@
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('grater');
 		echo $this->Html->css('main');
-
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -27,5 +26,18 @@
 	<div id="footer">
 	</div>
 	<?php // echo $this->element('sql_dump'); ?>
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '523c8b1a613f5d47b5000060');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>	
 </body>
 </html>
