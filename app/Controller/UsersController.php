@@ -37,6 +37,7 @@ class UsersController extends AppController {
 		if($this->request->data) {
 
 			if($this->Auth->login($this->request->data)){
+
 				$this->redirect(array('controller' => 'users', 'action' => 'dashboard'));
 			} else {
 				$this->Session->setFlash('Sorry but your login attempt failed.');

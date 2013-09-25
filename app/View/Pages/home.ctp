@@ -7,14 +7,13 @@
 	<br>
 	<div class="grater">
 		<h3>I Build User owned products and services, &amp; you decide what they are.</h3>
-
 		<p class="lead">I've got a lot of really good ideas. Things I want made and wish to use. I'm sure you'll agree. I'm just not sure what I should build. So I've decided to let you decide for me.  </p>
 	</div>
 		<div class="grater">
 			<div>
 			<p>I'll post my best ideas on prologue with details, designs, and the number of votes it will take to green light the project. It will be up to you to decide what I build. Think you have a better idea? Send me an email with Your Idea, I'll design it and put it up for voting.</p>
 			</div>
-			<div><img src="/img/snap.png"></div>
+			<div><img src="/img/snap2.png"></div>
 		</div>
 	<div class="grater">
 		<p>When the product is complete you'll have access to it with your current Prologue login. You can even start voting for which features are built next. </p>
@@ -29,10 +28,8 @@
 
 		<p>Everything I make will be Free, with some perks for Plus members, so don't worry about being excluded from any features. You only need to sign up for Plus once to access premium features in all the apps I build.</p>
 
-		<h3>Climber</h3>
 		<h3>The First App I'm working on:</h3>
-	</div>
-	<div class="grater">
+
 		<p class="lead"><span class="prologueBlue">Climber</span> is an app that helps you keep track of how much time You've invested in something from the very beginning. Remember that Myth that it takes 10,000 hours of Practice to become an Expert? Well <span class="prologueBlue">Climber</span> makes it easy to record your time and post it publicly for everyone to see.</p>
 	</div>
 </div>
