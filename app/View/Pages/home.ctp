@@ -10,15 +10,13 @@
 
 	<p class="lead">Sometimes we build products for other people as well. If you would like use to work on your next project, just <a href="#contact">ask</a></p>
 
-	<img src="/img/iphone+ipad.svg" style="box-shadow:none;">
+	<img src="/img/iPhone+iPad.svg" style="box-shadow:none;">
 
-	<p>The iPhone changed the way we work and communicate.</p>
+	<!-- <p>The iPhone changed the way we work and communicate.</p> -->
 
-	<h3 style="text-align:center">Responsive Websites</h3>
+<!-- 	<h3 style="text-align:center">Responsive Websites</h3>
 
-	<img src="/img/browsers+iphone.svg" style="box-shadow:none;">
-
-	<p>I'll post my best ideas on prologue with details, designs, and the number of votes it will take to green light the project. It will be up to you to decide what I build. Think you have a better idea? Send me an email with Your Idea, I'll design it and put it up for voting.</p>
+	<img src="/img/browsers+iphone.svg" style="box-shadow:none;"> -->
 
 	<h2 id="contact">Want to Get in touch?</h2>
 	<p class="lead">Sometimes we take on outside projects when were not busy with our own apps. Tell us about your project.</p>
