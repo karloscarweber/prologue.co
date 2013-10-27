@@ -17,7 +17,8 @@
 				</tr>
 				<?php foreach($features as $feature){
 					//debug($feature);
-					echo "<tr><td>".$feature['Feature']['name']."</td>";
+					// echo "<tr><td>".$feature['Feature']['name']."</td>";
+					echo "<tr><td>".$this->Html->link($feature['Feature']['name'], array('controller' => 'admins/features', 'action' => 'edit', $feature['Feature']['id']))."</td>";
 					echo "<td><span class=\"prologueBlue\">".$feature['Feature']['votestotal']."</span> / ".$feature['Feature']['votestotal']."</td>";
 				} ?>
 			</table>

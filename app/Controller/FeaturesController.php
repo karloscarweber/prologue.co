@@ -10,22 +10,58 @@ class FeaturesController extends AppController {
 
 	public function beforeFilter()
 	{
-		$this->layout = 'dashboard';
-
-		$user = $this->Auth->user();
-		if(!empty($user)){
-			$this->loadModel('User');
-			$options = array('conditions'=>array('username'=>$user['User']['username']));
-			$this->p_user = $this->User->find('first', $options);
-			$this->set('user', $this->p_user);
-		} else {
-			$this->set('user', null);
-		}
 	}
 
 	public function index()
 	{
+		$this->layout = 'dashboard';
 		$features = $this->Feature->find('all');
 		$this->set('features', $features);
 	}
+
+
+	public function admin_index()
+	{	
+		$this->layout = 'dashboardsingles';		
+		$this->loadModel('Vote');
+		$features = $this->Feature->find('all');
+		$new = array();
+		foreach($features as $feature){
+			$feature['Feature']['votestotal'] = $this->Vote->find('count', array('conditions' => array('feature_id' => $feature['Feature']['id'])));
+			$new[] = $feature;
+		}
+		$this->set('features', $new);
+		$this->scrollStats();
+	}	
+
+	public function admin_edit($id = null)
+	{
+		$this->layout = 'dashboardsingles';		
+		if(!empty($this->data)){
+			if($this->Feature->save($this->data)){
+				$this->Session->setFlash('Feature Saved Successfully');
+				$this->redirect('/admin/features/');
+			}
+		}
+		if($id){
+			$feature = $this->Feature->findById($id);
+			if(!empty($feature)){
+				$this->data = $feature;
+				debug($feature);
+			}
+		}
+	}
+
+	public function admin_add($id = null)
+	{
+		$this->layout = 'dashboardsingles';		
+		if(!empty($this->data)){
+			if($this->Feature->save($this->data)){
+				$this->Session->setFlash('Feature Saved Successfully');
+				$this->redirect('/admin/features/');
+			}
+		}
+        $this->render('admin_edit');
+	}
+
 }

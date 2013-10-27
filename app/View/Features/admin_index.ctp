@@ -1,0 +1,35 @@
+<div class="grater-container">
+	<div class="grater">
+		<h3><span class="prologueBlue"></span> Features</h3>
+		<?= $this->element('adminnav'); ?>
+	</div>
+	<div class="grater">
+		<p><a href="/admin/features/add" class="button">Add Feature</a></p>
+	</div>
+		<div class="grater">
+			<p class="lead">We have <span class="prologueBlue"><?= $active_users ?></span> Active Users, and <span class="prologueBlue"><?= $total_users ?></span> Total Users. Users have received <span class="prologueBlue"><?= $total_votes ?></span> Total Votes and have used <span class="prologueBlue"><?= $used_votes ?></span> Votes</p>
+			<br>
+			<table>
+				<tr>
+					<th>Feature</th>
+					<th>Number of Votes</th>
+				</tr>
+				<?php foreach($features as $feature){
+					//debug($feature);
+					// echo "<tr><td>".$feature['Feature']['name']."</td>";
+					echo "<tr><td>".$this->Html->link($feature['Feature']['name'], array('controller' => 'features', 'action' => 'edit', $feature['Feature']['id']))."</td>";
+					echo "<td><span class=\"prologueBlue\">".$feature['Feature']['votestotal']."</span> / ".$feature['Feature']['votesneeded']."</td>";
+				} ?>
+			</table>
+		</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

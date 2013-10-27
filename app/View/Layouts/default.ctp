@@ -11,21 +11,26 @@
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+		echo $this->Html->script('jquery');
+		echo $this->Html->script('main');
 	?>
 </head>
-<body>
-	<div id="header">
-		<?php 
-		echo $this->Session->flash();
-		?>
-	</div>
+<body><?php echo $this->Session->flash(); ?>
 	<div id="content">
 		<?php echo $this->Session->flash(); ?>
 		<?php echo $this->fetch('content'); ?>
 	</div>
-	<div id="footer">
+
+	<div id="footer" class="clearfix">
+
+		<div class="elastic-container">
+		<p class="copyright">All Content Copyright <span class="prologueBlue">Prologue.co</span>.<!-- support questions can be sent to support@prologue.co --></a></p>
+		</div>
+
+
 	</div>
-	<?php // echo $this->element('sql_dump'); ?>
+
+<?php // echo $this->element('sql_dump'); ?>
 <script type="text/javascript">
   var _gauges = _gauges || [];
   (function() {

@@ -11,7 +11,6 @@ class AdminsController extends AppController {
 	{
 		$this->Auth->allow('login');
 
-
 		// Pass settings in
 		$this->Auth->authenticate = array(
 		    'Basic' => array('userModel' => 'Admin'),
@@ -27,23 +26,7 @@ class AdminsController extends AppController {
 		$this->scrollStats();
 	}
 
-	public function scrollStats()
-	{
-		$this->loadModel('User');
-		$this->loadModel('Vote');
-		$this->loadModel('Feature');
 
-		/*Users*/
-		$one_month = date('Y-m-d', strtotime('-7 days'));
-		$this->set('total_users', $this->User->find('count'));
-		$this->set('active_users', $this->User->find('count', array('conditions' => array('modified >' => $one_month))));
-
-		/*Votes*/
-		$one_month = date('Y-m-d', strtotime('-30 days'));
-		$this->set('total_votes', $this->Vote->find('count'));
-		$this->set('used_votes', $this->Vote->find('count', array('conditions' => array('used >' => 1))));		
-
-	}
 
 	public function users()
 	{

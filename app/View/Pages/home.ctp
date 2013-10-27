@@ -1,53 +1,63 @@
-<div class="grater-container highBrow">
-	<h1 class="logo">Prologue</h1>
-	<h1>What Will I Build next?</h1>
-	<a href="/users/login" class="button login">Login</a>
-	<br>
-	<br>
-	<br>
-	<div class="grater">
-		<h3>I Build User owned products and services, &amp; you decide what they are.</h3>
-		<p class="lead">I've got a lot of really good ideas. Things I want made and wish to use. I'm sure you'll agree. I'm just not sure what I should build. So I've decided to let you decide for me.  </p>
-	</div>
-		<div class="grater">
-			<div>
-			<p>I'll post my best ideas on prologue with details, designs, and the number of votes it will take to green light the project. It will be up to you to decide what I build. Think you have a better idea? Send me an email with Your Idea, I'll design it and put it up for voting.</p>
-			</div>
-			<div><img src="/img/snap2.png"></div>
-		</div>
-	<div class="grater">
-		<p>When the product is complete you'll have access to it with your current Prologue login. You can even start voting for which features are built next. </p>
-
-		<h3>What's the Catch?</h3>
-
-		<p>Prologue is Freemium, not Free. You can help support Prologue by Signing up for a Plus account. Plus Accounts are only <strong>$1.99</strong> billed monthly. With a Plus account you gain access to all Premium Features, and 2 Extra Votes a month. </p>
-
-		<p>To Review, here are the steps:</p>
-
-		<ol><li>I'll design Apps and Features.</li><li>Vote on what to build next. </li><li>Once the minimum number of votes are reached I'll it.</li><li>Repeat</li></ol>
-
-		<p>Everything I make will be Free, with some perks for Plus members, so don't worry about being excluded from any features. You only need to sign up for Plus once to access premium features in all the apps I build.</p>
-
-		<h3>The First App I'm working on:</h3>
-
-		<p class="lead"><span class="prologueBlue">Climber</span> is an app that helps you keep track of how much time You've invested in something from the very beginning. Remember that Myth that it takes 10,000 hours of Practice to become an Expert? Well <span class="prologueBlue">Climber</span> makes it easy to record your time and post it publicly for everyone to see.</p>
-	</div>
+<div id="header" class="clearfix">
+	<img class="logo" src="/img/prologue-logo-300.svg">
+	<img class="logo-white" src="/img/prologue-logo-300-white.svg">
+	<p class="lead">We Design &amp; Develop Beautiful Apps</p>
+	<a class="downarrow" href="#"><img src="/img/downarrow.svg"></a>
 </div>
-<br>
-<br>
-<br>
-<div class="elastic-container">
-<p class="copyright">Copyright &copy; <a href="me@karloscarweber.com">Karl Oscar Weber</a></p>
-<br><br></div>
-<!--
 <div class="grater-container">
-	<div class="whiteBorderBox centered">
-		<p class="lead">Login to Prologue</p>
-		<?= $this->form->create('users', array('action' => 'login', 'div' => false )); ?>
-			<?= $this->form->input('username', array('placeholder'=>'username', 'class'=>'username', 'label'=> false, 'div'=>false))  ?>
-			<?= $this->form->input('password', array('placeholder'=>'password', 'class'=>'password', 'label'=> false, 'div'=>false))  ?>
-			<?php $options = array('label' => 'Login','class' => 'loginButton','div' => false);?>
+
+	<h3>Prologue is tiny studio focusing on only one thing: Digital Products. We believe that the right piece of technology for the right person can make the world of difference; That's Why we've been hand crafting our little apps since 2011.</h3>
+
+	<p class="lead">Sometimes we build products for other people as well. If you would like use to work on your next project, just <a href="#contact">ask</a></p>
+
+	<img src="/img/iphone+ipad.svg" style="box-shadow:none;">
+
+	<p>The iPhone changed the way we work and communicate.</p>
+
+	<h3 style="text-align:center">Responsive Websites</h3>
+
+	<img src="/img/browsers+iphone.svg" style="box-shadow:none;">
+
+	<p>I'll post my best ideas on prologue with details, designs, and the number of votes it will take to green light the project. It will be up to you to decide what I build. Think you have a better idea? Send me an email with Your Idea, I'll design it and put it up for voting.</p>
+
+	<h2 id="contact">Want to Get in touch?</h2>
+	<p class="lead">Sometimes we take on outside projects when were not busy with our own apps. Tell us about your project.</p>
+
+	<div style="width:300px;margin:0 auto;" class="contactFormContainer">
+	<?= $this->Form->create('Contact', array('default' => false, 'action' => 'request','class'=>'contactForm', 'div' => false)); ?>
+	
+		<?= $this->Form->input('name', array('label' => false, 'placeholder' => 'Name', 'div' => false)) ?>
+		<?= $this->Form->input('email', array('label' => false, 'placeholder' => 'Email', 'div' => false)) ?>
+		<?= $this->Form->input('message', array('type' => 'textarea', 'label' => false, 'div' => false)) ?>
+		<?php $options = array('label' => 'Send', 'style' => 'margin:2rem auto 0rem;display:block;', 'class' => 'button', 'div' => false, 'id' => 'submitButton'); ?>
 		<?= $this->form->end($options); ?>
-		<p>Don't have an account? <?= $this->Html->link('Signup in 10 seconds', array('controller'=>'users', 'action'=>'signup')) ?>.</p>
 	</div>
-</div>-->
+	<div class="thanks">
+		<h2>Thanks for your interest. We'll be in touch soon.</h2>
+	</div>
+	<br><br><br><br>
+		<p class="lead">Stay Informed about new apps and other News by signing up for our email newsletter.</p>
+	<div class="grater newsletter">
+		<div>
+			<form action="http://prologue.us7.list-manage.com/subscribe/post?u=566b6a939ab109f0181960a6e&amp;id=bce84181ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				
+			<div class="mc-field-group">
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			</div>
+		</div>
+		<div>
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+			
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" ></div>
+			</form>
+			</div>
+			<!--End mc_embed_signup-->
+		</div>
+	</div>
+
+
+</div><!-- End of Grater-container -->

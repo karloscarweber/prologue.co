@@ -64,10 +64,46 @@ class AppController extends Controller {
 		$user = $this->Auth->user();
 		//debug($this->p_user);
 		if(!empty($user)){
-			$this->loadModel('User');
-			$options = array('conditions'=>array('username'=>$user['User']['username']));
-			$this->p_user = $this->User->find('first', $options);
+			if(isset($user['Admin'])){
+				$this->loadModel('User');
+				$options = array('conditions'=>array('username'=>$user['Admin']['username']));
+				$this->p_user = $this->User->find('first', $options);
+			} else {
+				$this->loadModel('User');
+				$options = array('conditions'=>array('username'=>$user['User']['username']));
+				$this->p_user = $this->User->find('first', $options);
+			}
+
 		}
 	}
+
+
+	public function scrollStats()
+	{
+		$this->loadModel('User');
+		$this->loadModel('Vote');
+		$this->loadModel('Feature');
+
+		/*Users*/
+		$one_month = date('Y-m-d', strtotime('-7 days'));
+		$this->set('total_users', $this->User->find('count'));
+		$this->set('active_users', $this->User->find('count', array('conditions' => array('modified >' => $one_month))));
+
+		/*Votes*/
+		$one_month = date('Y-m-d', strtotime('-30 days'));
+		$this->set('total_votes', $this->Vote->find('count'));
+		$this->set('used_votes', $this->Vote->find('count', array('conditions' => array('used >' => 1))));		
+
+	}
+
+	public function admin_check()
+	{
+		$user = $this->Auth->user();
+		if($user['User']['username'] != 'karl'){
+			$this->Session->setFlash();
+			$this->redirect('/404');
+		}
+	}
+
 
 }

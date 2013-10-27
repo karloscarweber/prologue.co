@@ -26,7 +26,7 @@ class UsersController extends AppController {
 	}
 
 	public function login() {
-
+		$this->layout = 'dashboardsingles';
 		// if($this->Auth->user($this->request->data)){
 		// 	$this->redirect(array('controller'=>'users','action'=>'dashboard'));
 		// }
@@ -49,6 +49,7 @@ class UsersController extends AppController {
 
 	public function signup() {
 		// Check for login
+		$this->layout = 'default';
 
 		if($this->request->data) {
 
@@ -126,49 +127,90 @@ class UsersController extends AppController {
 
 	public function account()
 	{
+		// Debugging
 		//debug($this->p_user);
+
+		// Layout and settings
+		$this->layout = 'ajax';
 		$created = $this->p_user['User']['created'];
-
-		//$time = date($created);
+		$isplus = false;
+		if($this->p_user['User']['plan'] == 'plus'){$isplus = true;}
+		$this->set('isplus',$isplus);
 		$time = strtotime($created);
-		//debug($time);
+		$this->set('supporting', $time);
+		// Expose User
+		$this->set('user', $this->p_user);
 
+
+		// Votes
 		$this->loadModel('Vote');
 		$options = array('conditions'=>array('user_id'=> $this->p_user['User']['id']));
 		$votes = $this->Vote->find('count', $options);
 		$this->set('votes', $votes);
 
+
+		// Used Votes
 		$options = array('conditions'=>array('user_id'=> $this->p_user['User']['id'], 'used !=' => 'NULL'));
 		$used = $this->Vote->find('count', $options);
 		$this->set('used', $used);
 
 
-		$this->set('user', $this->p_user);
-		$this->set('supporting',$time);
-		//debug($user);
+		// Obtain Stripe Customer information.
+		$id = $this->p_user['User']['stripe_id'];
+		$result = $this->Stripe->customerRetrieve($id);
+
+		// No Card
+		$nocard = false;
+		if(!empty($result)){
+			if($result->cards->count == 0){
+				$nocard = true;
+			}
+		}
+		$this->set('nocard', $nocard);
+		// debug($result);
 	}
+
 
 	public function dashboard()
 	{
-
 		$this->loadModel('Vote');
 		$options = array('conditions'=>array('user_id'=>$this->p_user['User']['id']));
 		$votes = $this->Vote->find('count', $options);
 		$this->set('votes', $votes);
-		
 
 		$this->loadModel('Feature');
 		$features = $this->Feature->find('all');
 		$this->set('features', $features);
 	}
 
+
+
 	/*
 		Credit Card stuff
 	*/
+	public function savenewcard()
+	{
+		$this->layout = 'ajax';
+		$data =  $this->request->input();
+		//$token = 'tok_2hbMbOmBgEw4Gl';
+
+		// Obtain Stripe Customer information.
+		$id = $this->p_user['User']['stripe_id'];
+		$cu = $this->Stripe->customerRetrieve($id);
+		$cu->card = $data;
+		
+		if($cu->save()){
+			echo "success";
+		} else {
+			echo "Your Card Was Declined";
+		}
+		die;
+	}
 
 	// The Subscribe view for Plus
 	public function subscribe()
 	{
+
 	}
 
 	// Saves the User token.
@@ -203,4 +245,34 @@ class UsersController extends AppController {
 			$this->redirect('dashboard');
 		}
 	}
+
+	/*
+		Admin Stuff
+	*/
+
+	public function admin_login() {
+
+		$this->layout = 'dashboardsingles';
+
+		if($this->request->data) {
+
+			if($this->Auth->login($this->request->data)){
+
+				$this->admin_check();
+				$this->redirect(array('controller' => 'users', 'action' => 'index'));
+			} else {
+
+				$this->Session->setFlash('Sorry but your login attempt failed.');
+				$this->goBack();
+			}
+		}
+
+	}
+
+	public function admin_index()
+	{
+		$this->layout = 'dashboardsingles';
+		$this->admin_check();
+	}
+
 }

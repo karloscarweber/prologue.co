@@ -50,7 +50,6 @@ class PagesController extends AppController {
 	{
 		$this->Auth->allow();
 		//	Fix the user data problem
-		
 	}
 
 
