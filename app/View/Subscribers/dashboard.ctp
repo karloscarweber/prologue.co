@@ -1,7 +1,14 @@
 <div class="grater-container">
 	<p>
 	<!--<a href="/users/logout" class="button logout">Logout</a>-->
-	<a href="/users/account" class="button badge"><?=  $user['User']['username'] ?>&nbsp;:&nbsp;<span class="prologueBlue">Admin</span></a>
+	<?php
+		if($user['User']['plan'] != 'free'){
+			echo '<a href="/users/account" class="button badge">'.$user['User']['username'].'&nbsp;<span class="prologueBlue">Plus</span></a>';
+
+		} else {
+			echo '<a href="/users/account" class="button">'.$user['User']['username'].'</a><a class="button" style="margin-left:15px;" href="/users/subscribe">Subscribe to <span class="prologueBlue">Plus</span></a>';
+		}
+	?>
 	</p>
 </div>
 <div class="grater-container">
@@ -18,4 +25,7 @@
 			<p><?= $this->Html->link('View', array('controller' => 'pages', 'action' => 'display', $feature['Feature']['url']), array('class'=>'button')); ?></p>
 		</div>
 	<?php } ?>
+</div>
+<div class="grater-container">
+	<p>Suggest a new feature or project by email: <a href="mailto:me@karloscarweber.com">me@karloscarweber.com</a>.</p>
 </div>

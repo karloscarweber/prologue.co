@@ -1,17 +1,17 @@
 <?php
 App::uses('AppController', 'Controller');
 
-class UsersController extends AppController {
+class SubscribersController extends AppController {
 
-	public $name = 'Users';
+	public $name = 'Subscribers';
 
-	var $components = array('Auth');
+	var $components = array('Auth', 'Stripe.Stripe');
 	var $p_user = array();
 
 	public function beforeFilter()
 	{
 		$this->layout = 'dashboard';
-		$this->Auth->allow('signup','login');
+		$this->Auth->allow('new_charge');
 
 		$user = $this->Auth->user();
 		//debug($user);
@@ -22,8 +22,61 @@ class UsersController extends AppController {
 		}
 
 		$this->set('user', $this->p_user);
-
 	}
+
+	public function index() {
+
+		// list all these bros
+	}
+
+
+	public function new_charge(){
+
+		$this->layout = 'ajax';
+
+		// stuff we need
+		// email
+		// the app they are charging from
+		// a stripe token
+		if($this->data){
+
+			$stripeToken  = $this->data['stripeToken'];
+			$stripeEmail  = $this->data['stripeEmail'];
+			$stripeAmount = $this->data['stripeAmount'];
+			$prologueApp = $this->data['prologueApp'];
+			$redirect = $this->data['redirect'];
+
+			$data = array(
+				'amount' => $stripeAmount,
+				'stripeToken' => $stripeToken,
+				'description' => $stripeEmail.', '.$prologueApp
+			);
+
+			// debug($data);
+			// die;
+
+			$result = $this->Stripe->charge($data);
+
+			if(is_array($result)){
+				$success = true;
+				$this->redirect($redirect);
+			} else {
+				$success = false;
+				debug($result);
+				//$this->redirect('http://superpoweredpixels.com/charge_failure');
+				$this->set('url', $redirect);
+			}
+
+			// debug($this->data);
+			// die;
+		} else {
+			echo 'sorry but you shouldn\'t be here right now';
+			echo "<br><br>";
+			echo 'Go back to <a href="/">Prologue</a>';
+			die;
+		}
+	}
+
 
 	public function login() {
 		$this->layout = 'dashboardsingles';
@@ -35,12 +88,6 @@ class UsersController extends AppController {
 		//$this->request->data
 		//debug($this->request->data);
 		if($this->request->data) {
-
-			$username = $this->request->data['User']['username'];
-
-			if($username != "karl"){
-				die;
-			}
 
 			if($this->Auth->login($this->request->data)){
 
@@ -62,10 +109,6 @@ class UsersController extends AppController {
 			$email = $this->request->data['User']['email'];
 			$username = $this->request->data['User']['username'];
 			$password = $this->request->data['User']['password'];
-
-			if($username != "karl"){
-				die;
-			}
 
 			$conditions = array('OR' => array('email' => $email, 'username'=>$username));
 			$user = $this->User->find('first', array('conditions' =>$conditions));
@@ -195,66 +238,39 @@ class UsersController extends AppController {
 
 
 
-	/*
-		Credit Card stuff
-	*/
-	public function savenewcard()
-	{
-		$this->layout = 'ajax';
-		$data =  $this->request->input();
-		//$token = 'tok_2hbMbOmBgEw4Gl';
 
-		// Obtain Stripe Customer information.
-		$id = $this->p_user['User']['stripe_id'];
-		$cu = $this->Stripe->customerRetrieve($id);
-		$cu->card = $data;
-		
-		if($cu->save()){
-			echo "success";
-		} else {
-			echo "Your Card Was Declined";
-		}
-		die;
-	}
-
-	// The Subscribe view for Plus
-	public function subscribe()
-	{
-
-	}
-
-	// Saves the User token.
-	public function savetoken()
-	{
+	// // Saves the User token.
+	// public function savetoken()
+	// {
 		 
-		$id = $this->p_user['User']['id'];
-		//die;
-		if($this->data){
-			$this->User->id = $id;
-			$token = $this->data['stripeToken'];
-			$this->User->saveField('stripetoken', $token);
+	// 	$id = $this->p_user['User']['id'];
+	// 	//die;
+	// 	if($this->data){
 
+	// 		$this->User->id = $id;
+	// 		$token = $this->data['stripeToken'];
+	// 		$this->User->saveField('stripetoken', $token);
 
-			// Lets sign this brother up.
-			$data = array(
-				'amount'=>'1.99', 
-				'stripeToken' => $token,
-				'description' => $this->p_user['User']['email']
-			);
-			$result = $this->Stripe->charge($data);
+	// 		// Lets sign this brother up.
+	// 		$data = array(
+	// 			'amount'=>'1.99', 
+	// 			'stripeToken' => $token,
+	// 			'description' => $this->p_user['User']['email']
+	// 		);
+	// 		$result = $this->Stripe->charge($data);
 
-			//if success
-			if(is_array($result)){
-				$this->User->saveField('stripe_id', $result['stripe_id']);
-				$this->User->saveField('plan', 'plus');
-			//if failure
-			} else {
-				$this->Session->setFlash($result);
-			}
-			// Now redirect
-			$this->redirect('dashboard');
-		}
-	}
+	// 		//if success
+	// 		if(is_array($result)){
+	// 			$this->User->saveField('stripe_id', $result['stripe_id']);
+	// 			$this->User->saveField('plan', 'plus');
+	// 		//if failure
+	// 		} else {
+	// 			$this->Session->setFlash($result);
+	// 		}
+	// 		// Now redirect
+	// 		$this->redirect('dashboard');
+	// 	}
+	// }
 
 	/*
 		Admin Stuff
