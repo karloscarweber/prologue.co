@@ -10,9 +10,8 @@
     data-name="Super Powered Pixels"
     data-description="One Month ($1.99)">
   </script>
-  <input type="hidden" name="stripeAmount" value="1.99"/>
-  <input type="hidden" name="prologueApp" value="Super Powered Pixels"/>
-  <input type="hidden" name="redirect" value="http://superpoweredpixels.com/about/#supportheblog"/>
+<input type="hidden" name="stripeAmount" value="1.99"/>
+<input type="hidden" name="prologueApp" value="Super Powered Pixels"/>
+<input type="hidden" name="redirect" value="http://superpoweredpixels.com/about/#supportheblog"/>
 </form>
-
 </div>
