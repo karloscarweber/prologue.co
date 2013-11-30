@@ -36,7 +36,7 @@ class AppController extends Controller {
 	/*
 		Components
 	*/
-	var $components = array( 'Auth', 'Session');
+	var $components = array('Stripe.Stripe', 'Auth', 'Session');
 	//var $components = array('Auth', 'Session');
 	/*
 		Plugins
