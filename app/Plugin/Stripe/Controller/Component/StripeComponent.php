@@ -69,7 +69,6 @@ class StripeComponent extends Component {
 		App::import('Vendor', 'Stripe.Stripe', array(
 			'file' => 'Stripe' . DS . 'lib' . DS . 'Stripe.php')
 		);
-		// include_once('Plugin'. DS . 'Stripe' . DS . 'Vendor' . DS . 'Stripe' . DS . 'lib' . DS . 'Stripe.php');
 		if (!class_exists('Stripe')) {
 			throw new CakeException('Stripe API Libaray is missing or could not be loaded.');
 		}
