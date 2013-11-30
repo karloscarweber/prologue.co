@@ -117,8 +117,8 @@ CakeLog::config('error', array(
 CakePlugin::load('Stripe');
 //CakePlugin::load('Stripe', array('bootstrap' => false, 'routes' => false));
 Configure::write('Stripe.TestSecret', 'sk_test_z0EFAsHQT19YNAplol2UPLSN');
-Configure::write('Stripe.LiveSecret', 'fdfafd');
-Configure::write('Stripe.mode', 'Test');
+Configure::write('Stripe.LiveSecret', 'sk_live_z2c36lwMFAIShAhlELH38eVn');
+Configure::write('Stripe.mode', 'Live');
 Configure::write('Stripe.currency', 'usd');
 Configure::write('Stripe.fields', array(
     'stripe_id' => 'id',

@@ -66,9 +66,18 @@ class StripeComponent extends Component {
 		$this->Controller = $controller;
 
 		// load the stripe vendor class IF it hasn't been autoloaded (composer)
+		// App::import('Vendor', 'Stripe.Stripe', array(
+		// 	'file' => 'Stripe' . DS . 'lib' . DS . 'Stripe.php')
+		// );
+
+
+		// load the stripe vendor class IF it hasn't been autoloaded (composer)
 		App::import('Vendor', 'Stripe.Stripe', array(
-			'file' => 'Stripe' . DS . 'lib' . DS . 'Stripe.php')
+			'file' => 'Stripe/lib/Stripe.php')
 		);
+
+		//'Stripe/lib/Stripe.php'
+
 		if (!class_exists('Stripe')) {
 			throw new CakeException('Stripe API Libaray is missing or could not be loaded.');
 		}

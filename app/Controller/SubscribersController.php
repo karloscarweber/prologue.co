@@ -5,7 +5,13 @@ class SubscribersController extends AppController {
 
 	public $name = 'Subscribers';
 
-	var $components = array('Auth');
+	//var $components = array('Auth');
+
+	public $components = array(
+	    'Stripe.Stripe',
+	    'Auth'
+	);
+
 	var $p_user = array();
 
 	public function beforeFilter()
