@@ -6,20 +6,9 @@
 </div>
 <div class="grater-container">
 
-	<h3>Prologue is tiny studio focusing on only one thing: Digital Products. We believe that the right piece of technology for the right person can make the world of difference; That's Why we've been hand crafting our little apps since 2011.</h3>
+	<h3>Prologue is a Tiny studio focusing on only one thing: Digital Products.</h3>
 
-	<p class="lead">Sometimes we build products for other people as well. If you would like use to work on your next project, just <a href="#contact">ask</a></p>
-
-	<img src="/img/iPhone+iPad.svg" style="box-shadow:none;">
-
-	<!-- <p>The iPhone changed the way we work and communicate.</p> -->
-
-<!-- 	<h3 style="text-align:center">Responsive Websites</h3>
-
-	<img src="/img/browsers+iphone.svg" style="box-shadow:none;"> -->
-
-	<h2 id="contact">Want to Get in touch?</h2>
-	<p class="lead">Sometimes we take on outside projects when were not busy with our own apps. Tell us about your project.</p>
+	<p class="lead">We believe that the right piece of technology for the right person can make the world of difference; That's Why we've been hand crafting our little apps since 2011. Sometimes we take on outside projects. Tell us about your project.</p>
 
 	<div style="width:300px;margin:0 auto;" class="contactFormContainer">
 	<?= $this->Form->create('Contact', array('default' => false, 'action' => 'request','class'=>'contactForm', 'div' => false)); ?>

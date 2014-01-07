@@ -433,8 +433,8 @@ p {
   line-height: 1.75rem; }
 
 p.lead {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   width: 100%; }
 
 ol {
@@ -477,7 +477,7 @@ a:hover {
   background: #333;
   color: #555555;
   margin-top: 100px;
-  height: 400px;
+  height: 50px;
   /*  div {
       width:100%;
       max-width: 640px;
@@ -486,8 +486,8 @@ a:hover {
       box-sizing:border-box;
     }*/ }
   #footer p {
-    margin-top: 55%;
-    padding: 0px;
+    margin:10px;
+    padding: 10px;
     line-height: 1.5rem;
     font-size: 1rem;
     font-weight: 300;

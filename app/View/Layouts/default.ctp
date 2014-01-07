@@ -23,7 +23,7 @@
 		<?php echo $this->fetch('content'); ?>
 	</div>
 
-	<div id="footer" class="clearfix">
+	<div id="footer">
 
 		<div class="elastic-container">
 		<p class="copyright">All Content Copyright <span class="prologueBlue">Prologue.co</span>.<!-- support questions can be sent to support@prologue.co --></a></p>
