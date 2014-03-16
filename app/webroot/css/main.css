@@ -602,7 +602,10 @@ header {
 
   .elastic-row.new-york-city a, .elastic-row.new-york-city h1 {
     color: #ffffff;
-    font-size: 40px; } }
+    font-size: 40px; }
+
+  .lead {
+    font-size: 24px !important; } }
 .clearfix:before, .clearfix:after {
   content: "";
   display: table; }
