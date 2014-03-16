@@ -1,50 +1,68 @@
-<div id="header" class="clearfix">
-	<img class="logo" src="/img/prologue-logo-300.svg">
-	<img class="logo-white" src="/img/prologue-logo-300-white.svg">
-	<p class="lead">We Design &amp; Develop Beautiful Apps</p>
-	<a class="downarrow" href="#"><img src="/img/downarrow.svg"></a>
+<section class="elastic-row new-york-city">
+<div class="elastic-container clearfix">
+
+	<h1 style="text-align:center;width:100%;font-family:Cabin;font-weight:500;">We Make Digital Things</h1>
+
 </div>
-<div class="grater-container">
+</section>
 
-	<h3>Prologue is a Tiny studio focusing on only one thing: Digital Products.</h3>
+<section class="elastic-row white-row">
+<div class="elastic-container">
 
-	<p class="lead">We believe that the right piece of technology for the right person can make the world of difference; That's Why we've been hand crafting our little apps since 2011. Sometimes we take on outside projects. Tell us about your project.</p>
+	<p class="lead">Who want's to be in front of a computer all day? <br><span class="color-blue">Nobody.</span> <br>That’s why we write quick &amp; powerful software that is easy to use, So that you can spend more time doing what's really important, instead of fiddling around with a glowing box.</p>
 
-	<div style="width:300px;margin:0 auto;" class="contactFormContainer">
-	<?= $this->Form->create('Contact', array('default' => false, 'action' => 'request','class'=>'contactForm', 'div' => false)); ?>
-	
-		<?= $this->Form->input('name', array('label' => false, 'placeholder' => 'Name', 'div' => false)) ?>
-		<?= $this->Form->input('email', array('label' => false, 'placeholder' => 'Email', 'div' => false)) ?>
-		<?= $this->Form->input('message', array('type' => 'textarea', 'label' => false, 'div' => false)) ?>
-		<?php $options = array('label' => 'Send', 'style' => 'margin:2rem auto 0rem;display:block;', 'class' => 'button', 'div' => false, 'id' => 'submitButton'); ?>
-		<?= $this->form->end($options); ?>
+	<a href="#" class="button color-blue">Get in Touch</a>
+
+</div>
+</section>
+
+<section class="elastic-row">
+<div class="elastic-container">
+
+	<h2 class="centered">What We Build.</h2>
+
+	<div class="elastic-three">
+	<div>
+		<h3 class="centered color-blue">Apps</h3>
+		<p>We’ve all got ideas, We bring those ideas to life. From the look and feel, to the programming guts, we can build anything that lives on your iPhone or iPad.</p>
 	</div>
-	<div class="thanks">
-		<h2>Thanks for your interest. We'll be in touch soon.</h2>
+	<div>
+		<h3 class="centered color-blue">Websites</h3>
+		<p>The web is an amazing invention. Let us put it to work for you. We can build anything from a little site with your logo and phone number, to a large online store, and everything in between. You can even edit every page. Every Website we build is responsive: it changes to fit the screen that it’s displayed on.</p>
 	</div>
-	<br><br><br><br>
-		<p class="lead">Stay Informed about new apps and other News by signing up for our email newsletter.</p>
-	<div class="grater newsletter">
-		<div>
-			<form action="http://prologue.us7.list-manage.com/subscribe/post?u=566b6a939ab109f0181960a6e&amp;id=bce84181ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				
-			<div class="mc-field-group">
-				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-			</div>
-		</div>
-		<div>
-			<!-- Begin MailChimp Signup Form -->
-			<div id="mc_embed_signup">
-			
-				<div id="mce-responses" class="clear">
-					<div class="response" id="mce-error-response" style="display:none"></div>
-					<div class="response" id="mce-success-response" style="display:none"></div>
-				</div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" ></div>
-			</form>
-			</div>
-			<!--End mc_embed_signup-->
-		</div>
+	<div>
+		<h3 class="centered color-blue">Blogs</h3>
+		<p>A successful blog is about understanding what your readers need. We will work with to design a blog that not only looks good, but has a quality of magic. The most beautiful letters are dead without inspired writing, let us help you to develop a content strategy that fits your needs.</p>
+	</div>
 	</div>
 
+</div>
+</section>
 
-</div><!-- End of Grater-container -->
+<section class="elastic-row white-row">
+<div class="elastic-container">
+	<h2>Apps We've Built.</h2>
+</div>
+</section>
+
+<section class="elastic-row iphone-row">
+<div class="elastic-container">
+
+
+
+	<h2 class="iphone-coming-soon-text">Coming Soon.</h2>
+
+</div>
+</section>
+
+<section class="elasic-row contact-row">
+<div class="elastic-container">
+
+	<h2>Contact</h2>
+
+	<div class="single">
+		<p>We respond to Email:<br> <a href="#" class="button color-white">hello@prologue.co</a><br> We are also on <a href="https://twitter.com/prologueco">Twitter</a> &amp; <a href="https://github.com/prologueco">Github</a>.<br> Read our <a href="http://blog.prologue.co">Blog</a>.</p>
+	</div>
+
+</div>
+</section>

@@ -3,11 +3,12 @@ function resize(){
 	var viewportWidth  = $(window).width()
 	, viewportHeight = $(window).height()
 
-	$('#header').css('height',viewportHeight+'px')
-	$('#header').css('width',viewportWidth+'px')
+	$('.elastic-row.new-york-city').css('height',(viewportHeight * 0.8) + 'px')
+	// $('.elastic-row.new-york-city > .elastic-container').css('width',(viewportWidth * 0.75) + 'px')
 
-	var logoHeight = viewportHeight / 3;
-	$('.logo, .logo-white').css('margin-top',logoHeight+'px')
+	var logoHeight = viewportHeight * 0.3;
+	$('.elastic-row.new-york-city > .elastic-container > h1').css('margin-top',logoHeight+'px');
+	// .css('font-size', (viewportWidth / 15 ) + 'px');
 
 }
 

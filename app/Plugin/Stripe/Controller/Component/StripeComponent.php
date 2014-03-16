@@ -73,7 +73,7 @@ class StripeComponent extends Component {
 
 		// load the stripe vendor class IF it hasn't been autoloaded (composer)
 		App::import('Vendor', 'Stripe.Stripe', array(
-			'file' => 'Stripe/lib/Stripe.php')
+			'file' => '/Stripe/lib/Stripe.php')
 		);
 
 		//'Stripe/lib/Stripe.php'
