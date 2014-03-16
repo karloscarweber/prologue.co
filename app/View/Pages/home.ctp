@@ -11,7 +11,7 @@
 
 	<p class="lead">Who want's to be in front of a computer all day? <br><span class="color-blue">Nobody.</span> <br>That’s why we write quick &amp; powerful software that is easy to use, So that you can spend more time doing what's really important, instead of fiddling around with a glowing box.</p>
 
-	<a href="#" class="button color-blue">Get in Touch</a>
+	<!-- <a href="#" class="button color-blue">Get in Touch</a> -->
 
 </div>
 </section>
@@ -60,8 +60,10 @@
 
 	<h2>Contact</h2>
 
+	<p><small>we're still working on a couple things. Please excuse our dust.</small></p>
+
 	<div class="single">
-		<p>We respond to Email:<br> <a href="#" class="button color-white">hello@prologue.co</a><br> We are also on <a href="https://twitter.com/prologueco">Twitter</a> &amp; <a href="https://github.com/prologueco">Github</a>.<br> Read our <a href="http://blog.prologue.co">Blog</a>.</p>
+		<p>We respond to Email:<br> <a href="mailto:me@karloscarweber.com" class="button color-white">me@karloscarweber.com</a><br> We are also on <a href="https://twitter.com/prologueco">Twitter</a> &amp; <a href="https://github.com/prologueco">Github</a>.<!-- <br> Read our <a href="http://blog.prologue.co">Blog</a>. --></p>
 	</div>
 
 </div>
