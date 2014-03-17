@@ -448,12 +448,12 @@ a:hover {
   transition: border-color, opacity, background-color 0.05s ease-in-out 0s;
   text-decoration: none;
   cursor: pointer;
-  font-smoothing: antialiased; }
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
 
 .button:focus, .button:hover, input.button:focus, input.button:hover {
   /*outline:none;
-  border:1px solid #000000;*/
-  opacity: .83; }
+  border:1px solid #000000;*/ }
 
 .button:active, input.button:active {
   background-color: #007eff;
@@ -461,12 +461,34 @@ a:hover {
   border-color: #007eff;
   outline: none;
   border: 3px solid #007eff;
-  font-smoothing: antialiased; }
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
+.button.color-white {
+  background-color: #007eff;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
+.button.color-white:focus, .button.color-white:hover, input.button.color-white:focus, input.button.color-white:hover {
+  background-color: #ffffff;
+  color: #007eff !important;
+  border: 3px solid #ffffff;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
+.button.color-white:active {
+  background-color: #007eff;
+  color: #ffffff !important;
+  border: 3px solid #007eff;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
 
 /*Colors & effects*/
 .copyright {
   font-size: 1rem;
-  opacity: 0.85;
+  opacity: 1;
   text-align: center;
   vertical-align: middle; }
 
@@ -525,14 +547,8 @@ table td {
   .input.text input {
     width: 100%; } }
 /* scaffold */
-.elastic-row {
-  box-sizing: border-box;
-  padding-right: 40px;
-  padding-left: 40px;
-  margin-bottom: 50px; }
-
-.elastic-row + .elastic-row {
-  margin-top: 100px; }
+.elastic-row, footer {
+  box-sizing: border-box; }
 
 /*header*/
 header {
@@ -583,22 +599,17 @@ header {
     position: relative;
     z-index: 1000; }
 
-.elastic-row.iphone-row {
-  background: url("../img/iphone.png") repeat-x center bottom;
-  min-height: 332px; }
-  .elastic-row.iphone-row h2.iphone-coming-soon-text {
-    width: 152px;
-    text-align: center;
-    padding-top: 130px;
-    margin: 0 auto;
-    line-height: 40px; }
-
 @media only screen and (max-width: 900px) {
   .elastic-row.new-york-city > .elastic-container {
-    max-width: 460px !important; } }
-@media only screen and (max-width: 560px) {
-  .elastic-row.new-york-city > .elastic-container {
-    width: 100%; }
+    max-width: 460px !important; }
+
+  .elastic-row.new-york-city a, .elastic-row.new-york-city h1 {
+    color: #ffffff;
+    font-size: 60px; } }
+@media only screen and (max-width: 640px) {
+  .elastic-row.new-york-city {
+    background: url("../img/cover-mobile.jpg") no-repeat center top fixed !important;
+    background-size: cover; }
 
   .elastic-row.new-york-city a, .elastic-row.new-york-city h1 {
     color: #ffffff;
@@ -606,9 +617,35 @@ header {
 
   .lead {
     font-size: 24px !important; } }
-.clearfix:before, .clearfix:after {
+@media only screen and (max-width: 560px) {
+  .elastic-row.new-york-city > .elastic-container {
+    width: 100%; } }
+.elastic-row.iphone-row {
+  background: url("../img/iphone.png") repeat-x center bottom;
+  min-height: 432px; }
+  .elastic-row.iphone-row h2.iphone-coming-soon-text {
+    width: 152px;
+    text-align: center;
+    padding-top: 206px;
+    margin: 0 auto;
+    line-height: 40px; }
+
+.elastic-row.contact-row, footer {
+  background: #007eff; }
+  .elastic-row.contact-row *, footer * {
+    color: #ffffff !important;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-align: center; }
+  .elastic-row.contact-row .button.color-white, footer .button.color-white {
+    margin: 0 auto; }
+
+footer {
+  background: #007eff; }
+
+.clearfix:before, footer:before, .clearfix:after, footer:after {
   content: "";
   display: table; }
 
-.clearfix:after {
+.clearfix:after, footer:after {
   clear: both; }

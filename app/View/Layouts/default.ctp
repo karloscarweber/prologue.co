@@ -16,6 +16,7 @@
 		echo $this->Html->script('jquery');
 		echo $this->Html->script('main');
 	?>
+	<meta name="google-site-verification" content="y5YPDUDxg3tCXmXpG65oTJK2Yye9KZqYddoHsN49n9s" />
 </head>
 <body><?php echo $this->Session->flash(); ?>
 	<header>
