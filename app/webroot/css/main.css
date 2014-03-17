@@ -353,7 +353,7 @@ body {
   font-weight: normal; }
 
 p, .button, blockquote, h1, h2, h3, h4, h5, label {
-  margin-bottom: 50px; }
+  margin-top: 2rem; }
 
 /*Headers*/
 /*
@@ -404,9 +404,13 @@ p.lead, h2 {
     font-weight: 700; }
 
 @media only screen and (max-width: 660px) {
-  p.lead, h2 {
+  h2 {
     font-size: 32px;
-    line-height: 32px; } }
+    line-height: 32px; }
+
+  p.lead {
+    font-size: 24px !important;
+    line-height: 32px !important; } }
 ol {
   font-size: 1.25rem;
   padding: 0 0 0 1.6rem; }
@@ -613,16 +617,13 @@ header {
 
   .elastic-row.new-york-city a, .elastic-row.new-york-city h1 {
     color: #ffffff;
-    font-size: 40px; }
-
-  .lead {
-    font-size: 24px !important; } }
+    font-size: 40px; } }
 @media only screen and (max-width: 560px) {
   .elastic-row.new-york-city > .elastic-container {
     width: 100%; } }
 .elastic-row.iphone-row {
   background: url("../img/iphone.png") repeat-x center bottom;
-  min-height: 432px; }
+  min-height: 460px; }
   .elastic-row.iphone-row h2.iphone-coming-soon-text {
     width: 152px;
     text-align: center;
@@ -643,9 +644,9 @@ header {
 footer {
   background: #007eff; }
 
-.clearfix:before, footer:before, .clearfix:after, footer:after {
+.clearfix:before, .elastic-row:before, footer:before, .clearfix:after, .elastic-row:after, footer:after {
   content: "";
   display: table; }
 
-.clearfix:after, footer:after {
+.clearfix:after, .elastic-row:after, footer:after {
   clear: both; }

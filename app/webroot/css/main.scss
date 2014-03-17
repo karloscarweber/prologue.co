@@ -33,7 +33,7 @@ body {
 }
 
 p, .button, blockquote, h1, h2, h3, h4, h5, label {
-  margin-bottom:$margin-bottom;
+  margin-top:2rem;
 }
 
 
@@ -98,9 +98,13 @@ p.lead, h2 {
 }
 
 @media only screen and (max-width: 660px) {
-  p.lead, h2 {
+  h2 {
     font-size: 32px;
     line-height: 32px;
+  }
+  p.lead {
+    font-size:24px !important;
+    line-height:32px !important;
   }
 }
 
@@ -267,6 +271,7 @@ table td {
 /* scaffold */
 .elastic-row, footer {
   box-sizing:border-box;
+  @extend .clearfix;
   // margin-top:$margin-bottom;
 }
 .elastic-row + .elastic-row {
@@ -355,9 +360,7 @@ header {
       font-size:40px;
     }
   }
-  .lead {
-    font-size:24px !important;
-  }
+
 }
 @media only screen and (max-width: 560px) {
   .elastic-row.new-york-city > .elastic-container {
@@ -369,7 +372,7 @@ header {
 
 .elastic-row.iphone-row {
   background:url('../img/iphone.png') repeat-x center bottom;
-  min-height:432px;
+  min-height:460px;
   h2.iphone-coming-soon-text {
     width: 152px;
     text-align: center;
