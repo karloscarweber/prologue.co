@@ -397,6 +397,81 @@ header {
   }
 }
 
+.elastic-row.work-row {
+  background:url('../img/work-background.jpg') no-repeat center top fixed;
+  background-size:cover;
+  a, h1 {
+    color:#ffffff;
+    font-size:80px;
+    text-align: center;
+    width: 100%;
+    font-family: Cabin;
+    font-weight: 500;
+    position: relative;
+    z-index: 1000;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .elastic-row.work-row > .elastic-container {
+    max-width:460px !important;
+  }
+  .elastic-row.work-row {
+    a, h1 {
+      color:#ffffff;
+      font-size:60px;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .elastic-row.work-row {
+    background:url('../img/work-background.jpg') no-repeat center top fixed !important;
+    background-size:cover;
+  }
+  .elastic-row.work-row {
+    a, h1 {
+      color:#ffffff;
+      font-size:40px;
+    }
+  }
+
+}
+@media only screen and (max-width: 560px) {
+  .elastic-row.work-row > .elastic-container {
+    width:100%;
+  }
+}
+
+.elastic-row.grasa-row {
+  background:#f2f2f2;
+
+  .grasa-picture-row {
+    width: 100%;
+
+    & > div {
+      width:50%;
+      height:360px;
+      float:left;
+      border-bottom:2px solid #e5e5e5;
+    }
+    .iphone {
+      background:url('../img/grasa-application-iphone.png') no-repeat bottom right;
+    }
+    .webapp {
+      background:url('../img/grasa-application-web.png') no-repeat bottom left;
+    }
+
+    @media all and (max-width:860px) {
+      & > div {
+        width:100%;
+      }
+    }
+
+  }
+}
+
+
+
+
 footer {
   @extend .clearfix;
  background:$color-blue; 

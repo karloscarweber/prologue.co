@@ -6,13 +6,12 @@ function resize(){
 
 	if(viewportWidth > 640){
 		$('.elastic-row.new-york-city').css('height',(viewportHeight * 0.8) + 'px');
-
 	} else {
 		$('.elastic-row.new-york-city').css('height', viewportHeight + 'px');
 	}
-
 	$('.elastic-row.new-york-city > .elastic-container  h1').css('margin-top',logoHeight+'px');
 	$('.elastic-row.contact-row').css('height', (viewportHeight - 120) + 'px');
+
 	if(viewportHeight > 640){
 		$('.elastic-row.contact-row > .elastic-container .single').css('margin-top',(logoHeight / 2 )+'px');
 		$('.elastic-row.contact-row').css('height', (viewportHeight - 120) + 'px');
@@ -20,8 +19,6 @@ function resize(){
 		$('.elastic-row.contact-row > .elastic-container .single').css('margin-top',+'200px');
 		$('.elastic-row.contact-row').css('height', 'auto');
 	}
-
-
 }
 
 $(function(){
@@ -31,7 +28,6 @@ $(function(){
 		resize();
 	});
 	resize();
-
 
 	$('#submitButton').on('click', function(){
 

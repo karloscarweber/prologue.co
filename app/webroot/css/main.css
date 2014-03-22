@@ -272,6 +272,7 @@ div.grater:after {
     float: left !important; }
 
   .elastic-three > div:last-child {
+    clear: both;
     width: 100%;
     float: none !important;
     margin-left: auto;
@@ -587,7 +588,7 @@ header {
 @media only screen and (max-width: 560px) {
   header {
     position: relative;
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
     height: 0px; } }
 /*special rows*/
 .elastic-row.new-york-city {
@@ -640,6 +641,54 @@ header {
     text-align: center; }
   .elastic-row.contact-row .button.color-white, footer .button.color-white {
     margin: 0 auto; }
+
+.elastic-row.work-row {
+  background: url("../img/work-background.jpg") no-repeat center top fixed;
+  background-size: cover; }
+  .elastic-row.work-row a, .elastic-row.work-row h1 {
+    color: #ffffff;
+    font-size: 80px;
+    text-align: center;
+    width: 100%;
+    font-family: Cabin;
+    font-weight: 500;
+    position: relative;
+    z-index: 1000; }
+
+@media only screen and (max-width: 900px) {
+  .elastic-row.work-row > .elastic-container {
+    max-width: 460px !important; }
+
+  .elastic-row.work-row a, .elastic-row.work-row h1 {
+    color: #ffffff;
+    font-size: 60px; } }
+@media only screen and (max-width: 640px) {
+  .elastic-row.work-row {
+    background: url("../img/work-background.jpg") no-repeat center top fixed !important;
+    background-size: cover; }
+
+  .elastic-row.work-row a, .elastic-row.work-row h1 {
+    color: #ffffff;
+    font-size: 40px; } }
+@media only screen and (max-width: 560px) {
+  .elastic-row.work-row > .elastic-container {
+    width: 100%; } }
+.elastic-row.grasa-row {
+  background: #f2f2f2; }
+  .elastic-row.grasa-row .grasa-picture-row {
+    width: 100%; }
+    .elastic-row.grasa-row .grasa-picture-row > div {
+      width: 50%;
+      height: 360px;
+      float: left;
+      border-bottom: 2px solid #e5e5e5; }
+    .elastic-row.grasa-row .grasa-picture-row .iphone {
+      background: url("../img/grasa-application-iphone.png") no-repeat bottom right; }
+    .elastic-row.grasa-row .grasa-picture-row .webapp {
+      background: url("../img/grasa-application-web.png") no-repeat bottom left; }
+    @media all and (max-width: 860px) {
+      .elastic-row.grasa-row .grasa-picture-row > div {
+        width: 100%; } }
 
 footer {
   background: #007eff; }

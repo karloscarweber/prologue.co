@@ -32,7 +32,7 @@
 		<h2>Contact</h2>
 		
 		<div class="single">
-			<p class="lead">We're you ready to get started on You're next project.</p>
+			<p class="lead">We are ready to get started on Your next project.</p>
 			<p>We respond to Email:<br> <a href="mailto:hello@prologue.co" class="button color-white">hello@prologue.co</a> We are also on <a href="https://twitter.com/whatspast">Twitter</a>.<!-- <br> Read our <a href="http://blog.prologue.co">Blog</a>. --></p>
 		</div>
 	</div>
