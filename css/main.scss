@@ -155,8 +155,7 @@ h2	{
 
 
 /* small size */
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 660px) {
 	.logo {
 		position: absolute;
 		top:50px;
@@ -168,19 +167,22 @@ h2	{
 		background: none;
 		min-height: 0px;
 		margin-bottom:20px;
+		min-width:280px;
 
-		.iphone-text {
+		.iphone-text {  
 			padding:90px 0px 20px 0px;
 			margin:0px;
 			width:100%;
 			box-sizing: border-box;
 			position: relative;
-
-
 		}
 
 		#mc_embed_signup {
 			margin-top:40px;
+		}
+
+		#mce-EMAIL {
+			max-width: 225px;
 		}
 	}
 
