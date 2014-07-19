@@ -1,0 +1,180 @@
+/* elastic.css */
+/* messy prerelease version */
+/* Elasti-container */
+/*
+	max width for a single column:520px;
+	max width: 1080px;
+	gutter:40px;
+*/
+.elastic-container {
+	max-width:1080px;
+	width:100%;
+	margin:0 auto;
+}
+.elastic-container > div.single {
+	margin:0 auto 0em;
+	width:100%;
+	max-width:520px;
+	padding: 0px 20px;
+	box-sizing:border-box;
+}
+.elastic-container > div.full {
+	width:100%;
+	padding: 0px 20px;
+	box-sizing:border-box;
+	margin:0 auto 0em;
+}
+.elastic {
+	zoom:1;
+}
+.elastic > div {
+	/*min-width:320px;*/
+	width:50%;
+	box-sizing:border-box;
+	padding:0px 20px;
+	margin:0 0 0em;
+	float:left;
+}
+div.double-narrow {
+	margin:0 auto 0em;
+	width:100%;
+	max-width:520px;
+	padding: 0px 20px;
+	box-sizing:border-box;
+}
+div.double-narrow:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+div.double-narrow > div {
+	/*min-width:320px;*/
+	width:50%;
+	box-sizing:border-box;
+	padding:0px;
+	margin:0 0 0em;
+	float:left;
+}
+
+
+/*.elastic-three > div:nth-child(2n+2) {
+	float:right;
+}*/
+
+.elastic:before, .elastic:after {content:"";display: table}
+.elastic:after{clear:both;}
+@media all and (max-width:660px){
+	.elastic {
+		margin-bottom:0em;
+	}
+	.elastic > div {
+		width:100%;
+		float:left;
+		padding: 0px 20px !important;
+		margin:0 0 1em;
+	}
+}
+
+
+
+
+
+
+
+/* Three Column Grid for sure! */
+/*
+	min-widths:280;
+	minimum container width:840px;
+	padding-left & right 20px;
+	width:33.3%;
+*/
+.elastic-three {
+	zoom:1;
+}
+.elastic-three > div {
+	/*min-width:280px;*/
+	max-width:520px;
+	width:33.3%;
+	box-sizing:border-box;
+	padding:0px 20px;
+	margin:0 0 0em;
+	float:left;
+}
+.elastic-three > div:nth-child(3n+3) {
+	float:right;
+}
+.elastic-three:before, .elastic-three:after {content:"";display: table}
+.elastic-three:after{clear:both;}
+@media all and (max-width:860px){
+	.elastic-three {
+		margin-bottom:1em;
+	}
+	.elastic-three > div {
+		width:50%;
+		float:left !important;
+	}
+}
+@media all and (max-width:660px){
+	.elastic-three {
+		margin-bottom:0em;
+	}
+	.elastic-three > div {
+		float:none !important;
+		width:100%;
+		float:none;
+		padding: 0px 20px !important;
+		margin:0 auto 1em;
+	}
+}
+
+
+
+
+/* Four Column Grid for sure! */
+/*
+	min-widths:280;
+	minimum container width:840px;
+	padding-left & right 20px;
+	width:33.3%;
+*/
+.elastic-four {
+	zoom:1;
+}
+.elastic-four > div {
+	/*min-width:230px;*/
+	max-width:520px;
+	width:25%;
+	box-sizing:border-box;
+	padding:0px 20px;
+	margin:0 0 0em;
+	float:left;
+}
+.elastic-four > div:nth-child(4n+4) {
+	float:right;
+}
+.elastic-four:before, .elastic-four:after {content:"";display: table}
+.elastic-four:after{clear:both;}
+@media all and (max-width:940px){
+	.elastic-four {
+		margin-bottom:1em;
+	}
+	.elastic-four > div {
+		width:50%;
+		float:left;
+	}
+	.elastic-four > div:nth-child(2n+2) {
+		float:right;
+	}
+}
+@media all and (max-width:660px){
+	.elastic-four {
+		margin-bottom:0em;
+	}
+	.elastic-four > div {
+		float:none !important;
+		width:100%;
+		float:none;
+		padding: 0px 20px !important;
+		margin:0 auto 1em;
+	}
+}

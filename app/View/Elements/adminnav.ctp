@@ -1,1 +1,0 @@
-<p><a href="/admin/users" class="button">Users</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/admin/features" class="button">Features</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/admin/logout" class="button logout">Logout</a></p>
