@@ -399,14 +399,14 @@ div.double-narrow > div {
     float: none;
     padding: 0px 20px !important;
     margin: 0 auto 1em; } }
-.clearfix:before, .rgrid-container:before, .clearfix:after, .rgrid-container:after {
+.clearfix:before, .rgrid-container:before, .app-block:before, .clearfix:after, .rgrid-container:after, .app-block:after {
   content: "";
   display: table; }
 
-.clearfix:after, .rgrid-container:after {
+.clearfix:after, .rgrid-container:after, .app-block:after {
   clear: both; }
 
-.clearfix, .rgrid-container {
+.clearfix, .rgrid-container, .app-block {
   *zoom: 1; }
 
 .rgrid-container {
@@ -618,3 +618,199 @@ h2 {
       margin-top: 40px; }
     .iphone #mce-EMAIL {
       max-width: 225px; } }
+/* Adjust Body & Elastic stuff*/
+body {
+  padding-top: 25px; }
+
+.elastic-container {
+  max-width: 920px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.elastic {
+  max-width: 920px;
+  margin: 0 auto; }
+
+p, pre {
+  margin: 0 0 1em 0; }
+
+/* Header Styles */
+header {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  font-family: 'Montserrat';
+  font-weight: 300; }
+  header p, header p a {
+    margin: 0px 10px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    float: left;
+    color: #1078d8;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 18px; }
+  header a.logo {
+    margin: -15px auto 10px -75px;
+    left: 50%; }
+  header p:last-child {
+    float: right; }
+
+/* Cover Section */
+.swiftbookcover {
+  background: white; }
+  .swiftbookcover h1 {
+    font-size: 40px;
+    font-family: 'Lato';
+    font-weight: 100;
+    text-align: center;
+    color: #1078d8; }
+    .swiftbookcover h1 em {
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: 100; }
+  .swiftbookcover .bookcover {
+    margin: 10px auto;
+    max-width: 380px;
+    width: 90%;
+    display: block; }
+
+.button, .button-input, .button.gumroad-button, .gumroad-button.button-input {
+  display: block !important;
+  margin: 50px auto !important;
+  max-width: 380px !important;
+  width: 80% !important;
+  height: 51px !important;
+  text-align: center !important;
+  background: #1078d8 !important;
+  line-height: 51px !important;
+  font-size: 22px !important;
+  font-family: 'Lato' !important;
+  font-weight: 400 !important;
+  border-radius: 5px !important;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 0px !important; }
+  .button > span, .button-input > span, .button.gumroad-button > span, .gumroad-button.button-input > span {
+    display: none !important !important; }
+
+.marketing-text h2 {
+  font-size: 40px;
+  font-family: 'Lato';
+  font-weight: 600;
+  line-height: 50px;
+  color: #1078d8; }
+.marketing-text p {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #222222;
+  text-align: justify; }
+
+.blue-row {
+  max-width: 100%;
+  width: 100%;
+  background: #1078d8; }
+  .blue-row .marketing-text {
+    max-width: 920px; }
+    .blue-row .marketing-text h2 {
+      color: white; }
+    .blue-row .marketing-text p {
+      color: white; }
+
+.app-block {
+  margin: 25px 0px;
+  border: 4px dashed transparent;
+  border-radius: 30px;
+  padding: 10px; }
+  .app-block:hover {
+    border: 4px dashed white; }
+  .app-block img {
+    float: left; }
+  .app-block p {
+    margin: 0px 0px 0px 125px;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Lato'; }
+  .app-block.mystery {
+    border: 4px solid white; }
+    .app-block.mystery p {
+      margin: 25px 10px;
+      text-align: center; }
+
+.iphone-mockup img {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 30px auto; }
+
+.button-input {
+  background: #FAFAFA;
+  border: 2px solid #4A4A4A;
+  color: #4a4a4a; }
+  .button-input::-webkit-input-placeholder {
+    color: black !important;
+    opacity: 0.5 !important;
+    font-family: 'Lato' !important;
+    font-weight: 400 !important; }
+  .button-input:-ms-input-placeholder {
+    color: black !important;
+    opacity: 0.5 !important;
+    font-family: 'Lato' !important;
+    font-weight: 400 !important; }
+  .button-input::-moz-placeholder {
+    color: black !important;
+    opacity: 0.5 !important;
+    font-family: 'Lato' !important;
+    font-weight: 400 !important; }
+  .button-input:-moz-placeholder {
+    color: black !important;
+    opacity: 0.5 !important;
+    font-family: 'Lato' !important;
+    font-weight: 400 !important; }
+  .button-input:focus {
+    outline: 0; }
+
+@media screen and (max-width: 660px) {
+  header p, header p a {
+    display: none; }
+
+  .button, .button-input, .button.gumroad-button, .gumroad-button.button-input {
+    font-size: 18px !important; }
+
+  .swiftbookcover h1 {
+    font-size: 30px; }
+
+  .marketing-text h2 {
+    font-size: 30px;
+    line-height: 30px; }
+  .marketing-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px; }
+
+  .app-block {
+    margin: 25px 0px;
+    padding: 0px;
+    border: 0px dashed white; }
+    .app-block:hover {
+      border: 0px dashed white; }
+    .app-block img {
+      float: none;
+      display: block;
+      margin: 0px auto 10px; }
+    .app-block p {
+      margin: 0px;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center; }
+    .app-block.mystery p {
+      margin: 20px 10px; }
+    .app-block.mystery:hover {
+      border: 4px dashed white; }
+
+  .iphone-mockup {
+    display: none; } }
