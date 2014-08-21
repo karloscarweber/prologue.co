@@ -21,8 +21,6 @@ body {
 
 p, pre {
 	margin: 0 0 1em 0;
-
-
 }
 
 /* Header Styles */
@@ -113,6 +111,15 @@ header {
 		color:$swiftbook-blue;
 	}
 
+	h3	{
+		font-size: 32px;
+		font-family: 'Lato';
+		line-height: 40px;
+		font-weight:600;
+		color:$swiftbook-blue;
+		text-align: justify;
+	}
+
 	p {
 		font-family:'Lato';
 		font-weight: 400;
@@ -134,14 +141,26 @@ header {
 	.marketing-text {
 		max-width:920px;
 
-		h2 {
-			color:white;
-		}
-
-		p {
+		h2, h3, p {
 			color:white;
 		}
 	}
+}
+
+.narrowdivs > div {
+
+	img {
+		display: block;
+		margin:0px auto;
+	}
+
+	p {
+		text-align:center;
+		margin: 20px 0px;
+	}
+
+	margin-bottom:20px;
+
 }
 
 .app-block {
@@ -174,6 +193,70 @@ header {
 		p {
 			margin:25px 10px;
 			text-align:center;
+		}
+	}
+}
+
+.pricebox {
+	border-radius: 30px;
+	border: 4px solid white;
+	background: $swiftbook-blue;
+	color:white;
+	padding:15px;
+	margin:20px;
+	box-sizing:border-box;
+	position: relative;
+
+	.circleprice {
+		display: block;
+		position: absolute;
+		border-radius:500px;
+		background: $swiftbook-blue;
+		width:80px;
+		height: 80px;
+		top:-40px;
+		right:-40px;
+		text-align: center;
+		line-height: 80px;
+		font-size: 26px;
+		color:white;
+		font-family:'Lato';
+		box-shadow: inset 0 0px 0px 5px white;
+		border:5px solid $swiftbook-blue;
+	}
+
+	h2 {
+		font-family:'Lato';
+		font-size:26px;
+		line-height:32px;
+		font-weight: 400;
+		text-align: left;
+		margin-top:0px;
+		color:white;
+	}
+
+	ul {
+		padding:0 0 0 20px;
+		font-size:18px;
+		line-height: 24px;
+		font-family: 'Lato';
+		font-weight: 400;
+	}
+
+	.button {
+		margin: 0px 0px !important;
+		background-color:white !important;
+		width: 100% !important;
+		color: $swiftbook-blue !important;
+		border: 4px solid white !important;
+		box-sizing: border-box !important;
+		height: 50px !important;
+		line-height: 42px !important;
+		text-align:center !important;
+
+		&:active {
+			color:white !important;
+			background: $swiftbook-blue !important;
 		}
 	}
 }
@@ -257,7 +340,8 @@ header {
 			font-size: 30px;
 			line-height: 30px;
 		}
-		p {
+
+		p, h3 {
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 26px;
