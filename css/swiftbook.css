@@ -623,9 +623,7 @@ body {
   padding-top: 25px; }
 
 .elastic-container {
-  max-width: 920px;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  max-width: 920px; }
 
 .elastic {
   max-width: 920px;
@@ -737,9 +735,8 @@ header {
   margin: 25px 0px;
   border: 4px dashed transparent;
   border-radius: 30px;
-  padding: 10px; }
-  .app-block:hover {
-    border: 4px dashed white; }
+  padding: 10px;
+  background: #1078d8; }
   .app-block img {
     float: left; }
   .app-block p {

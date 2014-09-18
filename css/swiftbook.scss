@@ -10,8 +10,8 @@ body {
 
 .elastic-container {
 	max-width: 920px;
-	padding-top:50px;
-	padding-bottom:50px;
+	// padding-top:50px;
+	// padding-bottom:50px;
 }
 
 .elastic {
@@ -169,10 +169,11 @@ header {
 	border:4px dashed transparent;
 	border-radius: 30px;
 	padding:10px;
+	background: $swiftbook-blue;
 
-	&:hover {
-		border:4px dashed white;
-	}
+	// &:hover {
+	// 	border:4px dashed white;
+	// }
 
 	img {
 		float:left;
