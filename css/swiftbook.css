@@ -637,7 +637,7 @@ header {
   display: block;
   width: 100%;
   position: relative;
-  height: 50px;
+  height: 100px;
   font-family: 'Montserrat';
   font-weight: 300; }
   header p, header p a {
@@ -669,8 +669,8 @@ header {
       font-weight: 100; }
   .swiftbookcover .bookcover {
     margin: 10px auto;
-    max-width: 380px;
-    width: 90%;
+    max-width: 775px;
+    width: 100%;
     display: block; }
 
 .button, .button-input, .button.gumroad-button, .gumroad-button.button-input {
@@ -782,7 +782,7 @@ header {
     font-size: 26px;
     line-height: 32px;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
     margin-top: 0px;
     color: white; }
   .pricebox ul {
@@ -878,3 +878,13 @@ header {
 
   .iphone-mockup {
     display: none; } }
+#mc_embed_signup {
+  margin-top: 0px !important; }
+
+.email {
+  margin: 0px auto 10px !important; }
+
+#mc_embed_signup label {
+  text-align: center; }
+#mc_embed_signup input.button, #mc_embed_signup input.button-input {
+  margin: 20px auto !important; }

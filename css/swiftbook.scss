@@ -28,7 +28,7 @@ header {
 	display: block;
 	width: 100%;
 	position: relative;
-	height: 50px;
+	height: 100px;
 
 	font-family:'Montserrat';
 	font-weight:300;
@@ -72,8 +72,8 @@ header {
 
 	.bookcover {
 		margin:10px auto;
-		max-width:380px;
-		width:90%;
+		max-width:775px;
+		width:100%;
 		display: block;
 	}
 
@@ -231,7 +231,7 @@ header {
 		font-size:26px;
 		line-height:32px;
 		font-weight: 400;
-		text-align: left;
+		text-align: center;
 		margin-top:0px;
 		color:white;
 	}
@@ -388,4 +388,21 @@ header {
 		display: none;
 	}
 
+}
+
+#mc_embed_signup {
+	margin-top: 0px !important;
+}
+.email {
+	margin: 0px auto 10px !important;
+}
+
+#mc_embed_signup {
+	label {
+		text-align: center;
+	}
+
+	input.button {
+		margin: 20px auto !important;
+	}
 }
