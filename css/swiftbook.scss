@@ -1,7 +1,14 @@
 @import "main";
 
+* {
+	font-family: 'Noto Sans';
+}
+
 $swiftbook-blue: #1078D8;
+$swiftbook-yellow: #FDFF77;
 $swiftbook-black: #222222;
+$swiftbook-red: #FD6A7C;
+$swiftbook-green: #50E24A;
 
 /* Adjust Body & Elastic stuff*/
 body {
@@ -60,26 +67,26 @@ header {
 	h1 {
 		font-size:40px;
 		font-family:'Lato';
-		font-weight:100;
+		font-weight:200;
 		text-align: center;
 		color:$swiftbook-blue;
 		em {
 			text-decoration: underline;
 			font-style: italic;
-			font-weight: 100;
+			font-weight: 200;
 		}
 	}
 
 	.bookcover {
 		margin:10px auto;
-		max-width:775px;
+		max-width:480px;
 		width:100%;
 		display: block;
 	}
 
 }
 
-.button, .button.gumroad-button {
+.button.gumroad-button {
 	display: block !important;
 	margin: 50px auto !important;
 	max-width: 380px !important;
@@ -101,11 +108,37 @@ header {
 	}
 }
 
+.button {
+	display: block;
+	margin: 25px auto;
+	max-width: 100%;
+	width:90%;
+	height: 40px;
+	text-align: center;
+	background: $swiftbook-blue;
+	line-height: 40px;
+	font-size: 22px;
+	font-family:'Noto Sans';
+	font-weight: 600;
+	border-radius:5px;
+	color:white;
+	text-decoration: none;
+	padding:0px;
+
+
+	& > span {
+		display: none;
+	}
+}
+
+
 .marketing-text {
+	padding:0px 20px;
+	box-sizing: border-box;
 
 	h2 {
 		font-size: 40px;
-		font-family: 'Lato';
+		font-family: 'Noto Sans';
 		font-weight: 600;
 		line-height: 50px;
 		color:$swiftbook-blue;
@@ -113,7 +146,7 @@ header {
 
 	h3	{
 		font-size: 32px;
-		font-family: 'Lato';
+		font-family: 'Noto Sans';
 		line-height: 40px;
 		font-weight:600;
 		color:$swiftbook-blue;
@@ -121,7 +154,7 @@ header {
 	}
 
 	p {
-		font-family:'Lato';
+		font-family:'Noto Sans';
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 26px;
@@ -131,21 +164,132 @@ header {
 
 }
 
-.blue-row {
-	max-width: 100%;
-	width: 100%;
-	background: $swiftbook-blue;
-	// padding-top:25px;
-	// padding-bottom:25px;
+
+.colored-row {
+	padding-top:25px;
+	padding-bottom:25px;
+	max-width:100%;
 
 	.marketing-text {
 		max-width:920px;
+		h2 {
+			font-weight: 200;
+		}
+		h3 {
+			font-weight: 600;
+		}
+	}
 
-		h2, h3, p {
+}
+
+.blue-row {
+
+	@extend .colored-row;
+	background: $swiftbook-blue;
+
+	.marketing-text {
+		h2, h3 {
 			color:white;
 		}
 	}
+
+	.button {
+		border: 5px solid white;
+		background: transparent;
+	}
+
 }
+
+.yellow-row {
+	@extend .colored-row;
+	background: $swiftbook-yellow;
+}
+
+.red-row {
+	@extend .colored-row;
+	background: $swiftbook-red;
+
+
+	.marketing-text {
+		h2 {
+			color: $swiftbook-black;
+		}
+
+		h3 {
+			color:#222222;
+			font-size: 26px;
+			text-align:center;
+			font-weight: 600;
+		}
+	}
+
+}
+
+.green-row {
+	@extend .colored-row;
+	background: $swiftbook-green;
+
+	.marketing-text {
+		h2 {
+			color: $swiftbook-black;
+		}
+
+		h3 {
+			color:#222222;
+			font-size: 30px;
+			text-align:left;
+			font-weight: 600;
+			margin:0px
+		}
+
+		img {
+			max-width: 480px;
+			width:95%;
+			margin: 0px auto 0px;
+			display: block;
+		}
+
+		.button.gumroad-button {
+			border: 3px solid white !important;
+			background:transparent !important;
+			color:white !important;
+			margin: 10px auto 25px !important;
+			line-height:40px !important;
+			height:40px !important;
+			width:95% !important;
+			max-width:480px !important;
+		}
+
+	}
+
+}
+
+
+.method-row {
+	@extend .colored-row;
+
+	.marketing-text {
+		h2 {
+			color: $prologue-blue;
+		}
+
+		h3 {
+			color:#222222;
+			font-size: 26px;
+			text-align:center;
+			font-weight: 600;
+		}
+
+		img {
+			max-width: 162px;
+			margin: 50px auto 0px;
+			display: block;
+			width:95%;
+		}
+
+	}
+}
+
 
 .narrowdivs > div {
 
@@ -159,6 +303,12 @@ header {
 		margin: 20px 0px;
 	}
 
+	div {
+		img {
+			max-width:78px;width:100%;
+		}
+	}
+
 	margin-bottom:20px;
 
 }
@@ -169,7 +319,9 @@ header {
 	border:4px dashed transparent;
 	border-radius: 30px;
 	padding:10px;
+	box-sizing:border-box;
 	background: $swiftbook-blue;
+
 
 	// &:hover {
 	// 	border:4px dashed white;
@@ -199,7 +351,7 @@ header {
 }
 
 .pricebox {
-	border-radius: 30px;
+	border-radius: 20px;
 	border: 4px solid white;
 	background: $swiftbook-blue;
 	color:white;
@@ -261,6 +413,38 @@ header {
 		}
 	}
 }
+
+.profiles {
+	img {
+		display: block;
+		position:relative;
+		max-width: 128px;
+		margin:10px auto;
+		border:0px solid $prologue-blue;
+		border-radius:100px;
+	}
+
+	p {
+		text-align:Left;
+		margin:10px auto;
+		-webkit-font-smoothing:antialiased;
+
+		strong {
+			text-align: center;
+		}
+
+		a {
+			color:$prologue-blue;
+			text-decoration: underline;
+		}
+	}
+}
+
+hr {
+	border:2px solid #333333;
+	margin:35px 10px;
+}
+
 
 .iphone-mockup {
 
@@ -351,7 +535,6 @@ header {
 
 	.app-block {
 		margin:25px 0px;
-		padding:0px;
 		border:0px dashed white;
 
 		&:hover {
