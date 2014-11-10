@@ -499,15 +499,17 @@ hr {
 
 
 
-
-
 // Media Queries and stuff
 @media screen and (max-width: 660px) {
 
-	header {
-		p, p a {
-			display: none;
-		}
+	// header {
+	// 	p, p a {
+	// 		display: none;
+	// 	}
+	// }
+
+	.logo {
+		display: none;
 	}
 
 	.button, .button.gumroad-button {

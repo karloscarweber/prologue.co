@@ -987,7 +987,7 @@ hr {
     outline: 0; }
 
 @media screen and (max-width: 660px) {
-  header p, header p a {
+  .logo {
     display: none; }
 
   .button, .button-input, .button.gumroad-button, .gumroad-button.button-input {
