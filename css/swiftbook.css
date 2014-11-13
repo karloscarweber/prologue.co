@@ -399,14 +399,14 @@ div.double-narrow > div {
     float: none;
     padding: 0px 20px !important;
     margin: 0 auto 1em; } }
-.clearfix:before, .rgrid-container:before, .app-block:before, .clearfix:after, .rgrid-container:after, .app-block:after {
+.clearfix:before, .rgrid-container:before, .app-block:before, .mobile-visible:before, .clearfix:after, .rgrid-container:after, .app-block:after, .mobile-visible:after {
   content: "";
   display: table; }
 
-.clearfix:after, .rgrid-container:after, .app-block:after {
+.clearfix:after, .rgrid-container:after, .app-block:after, .mobile-visible:after {
   clear: both; }
 
-.clearfix, .rgrid-container, .app-block {
+.clearfix, .rgrid-container, .app-block, .mobile-visible {
   *zoom: 1; }
 
 .rgrid-container {
@@ -713,6 +713,18 @@ header {
     width: 100%;
     display: block; }
 
+.betaspan {
+  color: #50e24a; }
+
+.futuredatespan {
+  opacity: 0.65; }
+
+.triforce {
+  margin: 10px auto;
+  max-width: 200px;
+  width: 100%;
+  display: block; }
+
 .button.gumroad-button, .gumroad-button.button-input {
   display: block !important;
   margin: 50px auto !important;
@@ -775,27 +787,29 @@ header {
     color: #222222;
     text-align: justify; }
 
-.colored-row, .blue-row, .yellow-row, .red-row, .green-row, .method-row {
+.colored-row, .blue-row, .yosemite-row, .yellow-row, .red-row, .green-row, .method-row {
   padding-top: 25px;
   padding-bottom: 25px;
   max-width: 100%; }
-  .colored-row .marketing-text, .blue-row .marketing-text, .yellow-row .marketing-text, .red-row .marketing-text, .green-row .marketing-text, .method-row .marketing-text {
+  .colored-row .marketing-text, .blue-row .marketing-text, .yosemite-row .marketing-text, .yellow-row .marketing-text, .red-row .marketing-text, .green-row .marketing-text, .method-row .marketing-text {
     max-width: 920px; }
-    .colored-row .marketing-text h2, .blue-row .marketing-text h2, .yellow-row .marketing-text h2, .red-row .marketing-text h2, .green-row .marketing-text h2, .method-row .marketing-text h2 {
+    .colored-row .marketing-text h2, .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .yellow-row .marketing-text h2, .red-row .marketing-text h2, .green-row .marketing-text h2, .method-row .marketing-text h2 {
       font-weight: 200; }
-    .colored-row .marketing-text h3, .blue-row .marketing-text h3, .yellow-row .marketing-text h3, .red-row .marketing-text h3, .green-row .marketing-text h3, .method-row .marketing-text h3 {
+    .colored-row .marketing-text h3, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .yellow-row .marketing-text h3, .red-row .marketing-text h3, .green-row .marketing-text h3, .method-row .marketing-text h3 {
       font-weight: 600; }
 
-.blue-row {
+.blue-row, .yosemite-row {
   background: #1078d8; }
-  .blue-row .marketing-text h2, .blue-row .marketing-text h3 {
+  .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3 {
     color: white; }
-  .blue-row .button, .blue-row .button-input {
+  .blue-row .button, .yosemite-row .button, .blue-row .button-input, .yosemite-row .button-input {
     border: 5px solid white;
     background: transparent; }
 
 .yellow-row {
   background: #fdff77; }
+  .yellow-row h2 {
+    color: #50e24a; }
 
 .red-row {
   background: #fd6a7c; }
@@ -831,6 +845,18 @@ header {
     height: 40px !important;
     width: 95% !important;
     max-width: 480px !important; }
+
+.yosemite-row {
+  background: #1078d8;
+  background-image: url("../img/justDesktopPhone.png"), url("../img/justDesktopCode.png"), url("../img/phoneBackground.jpg");
+  background-position: center bottom, left bottom, center top;
+  background-repeat: no-repeat;
+  background-size: auto, auto, cover;
+  min-height: 562px; }
+  .yosemite-row .marketing-text h2, .yosemite-row .marketing-text h3 {
+    color: #222222; }
+  .yosemite-row .mobileCodeBox, .yosemite-row .mobilePhoneBox {
+    min-height: 400px; }
 
 .method-row .marketing-text h2 {
   color: #4990e2; }
@@ -986,6 +1012,9 @@ hr {
   .button-input:focus {
     outline: 0; }
 
+.mobile-visible {
+  display: none; }
+
 @media screen and (max-width: 660px) {
   .logo {
     display: none; }
@@ -1003,6 +1032,10 @@ hr {
     font-size: 18px;
     font-weight: 400;
     line-height: 26px; }
+
+  .yosemite-row {
+    background-size: 800px 450px, cover;
+    min-height: 450px; }
 
   .app-block {
     margin: 25px 0px;

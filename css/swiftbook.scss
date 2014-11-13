@@ -9,6 +9,7 @@ $swiftbook-yellow: #FDFF77;
 $swiftbook-black: #222222;
 $swiftbook-red: #FD6A7C;
 $swiftbook-green: #50E24A;
+$link-green: #417109;
 
 /* Adjust Body & Elastic stuff*/
 body {
@@ -84,6 +85,20 @@ header {
 		display: block;
 	}
 
+}
+
+.betaspan {
+	color:$swiftbook-green;
+}
+.futuredatespan {
+	opacity: 0.65;
+}
+
+.triforce {
+	margin:10px auto;
+	max-width:200px;
+	width:100%;
+	display: block;
 }
 
 .button.gumroad-button {
@@ -203,6 +218,10 @@ header {
 .yellow-row {
 	@extend .colored-row;
 	background: $swiftbook-yellow;
+
+	h2 {
+		color: $swiftbook-green;
+	}
 }
 
 .red-row {
@@ -260,6 +279,32 @@ header {
 			max-width:480px !important;
 		}
 
+	}
+
+}
+
+
+.yosemite-row {
+	@extend .blue-row;
+	background: $swiftbook-blue;
+	// background-image: url('../img/code2Phone.png'), url('../img/phoneBackground.jpg');
+	// background-position: bottom center, center top;
+	// background-repeat: no-repeat;
+	// background-size: auto, cover;
+	background-image: url('../img/justDesktopPhone.png'), url('../img/justDesktopCode.png'), url('../img/phoneBackground.jpg');
+	background-position: center bottom, left bottom, center top;;
+	background-repeat: no-repeat;
+	background-size: auto, auto, cover;
+	min-height:562px;
+
+	.marketing-text {
+		h2, h3 {
+			color:$swiftbook-black;
+		}
+	}
+
+	.mobileCodeBox, .mobilePhoneBox {
+		min-height: 400px;	
 	}
 
 }
@@ -498,9 +543,27 @@ hr {
 }
 
 
+// .desktop-visible {
+// 	display: block;
+// }
+
+.mobile-visible {
+	display: none;
+	@extend .clearfix;
+}
+
 
 // Media Queries and stuff
 @media screen and (max-width: 660px) {
+
+	// .desktop-visible {
+	// 	display: none;
+	// }
+
+	// .mobile-visible {
+	// 	display: block;
+
+	// }
 
 	// header {
 	// 	p, p a {
@@ -534,6 +597,39 @@ hr {
 			line-height: 26px;
 		}
 	}
+
+	.yosemite-row {
+
+		background-size: 800px 450px, cover;
+		min-height:450px;
+
+		// background:none;
+
+		// h2 {
+		// 	display: block;
+		// }
+
+		// .mobileCodeBox {
+		// 	background-image: url('../img/codeMobile.png'), url('../img/phoneBackgroundMobile.jpg');
+		// 	background-position: bottom center, center top;
+		// 	background-repeat: no-repeat;
+		// 	background-size: 320px 400px, cover;
+		// 	min-height:400px;
+		// }
+
+		// .mobilePhoneBox {
+		// 	background-image: url('../img/phoneMobile.png'), url('../img/phoneBackgroundMobile.jpg');
+		// 	background-position: bottom center, center top;
+		// 	background-repeat: no-repeat;
+		// 	background-size: 320px 400px, cover;
+		// 	min-height:400px;
+		// }
+
+
+
+	}
+
+
 
 	.app-block {
 		margin:25px 0px;
