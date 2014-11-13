@@ -1034,8 +1034,9 @@ hr {
     line-height: 26px; }
 
   .yosemite-row {
-    background-size: 800px 450px, 800px 450px, cover;
-    min-height: 450px; }
+    background-size: 500px 281px, 500px 281px, cover;
+    background-position: center bottom, -25px bottom, center top;
+    min-height: 300px; }
 
   .app-block {
     margin: 25px 0px;
