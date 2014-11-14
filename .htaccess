@@ -1,4 +1,3 @@
 RewriteEngine On
-Redirect /swiftbook http://www.prologue.co/swiftfoundations
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
