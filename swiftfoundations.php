@@ -13,22 +13,12 @@
 	-->
 
 	<meta name="description" content=""> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
-
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Montserrat' rel='stylesheet' type='text/css'>
-	<!-- <link rel="stylesheet" href="/css/main.css" type="text/css" /> -->
-	<link rel="stylesheet" href="/css/swiftbook.css" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic|Cabin' rel='stylesheet' type='text/css'>
+	<?php include('./includes/head.php') ?>
 
 </head>
 <body>
 
-	<header>
-		<p>A prologue Production</p>
-		<!-- <a class="logo" href="http://www.prologue.co">Prologue </a> -->
-		<p><a href="http://kow.fm" target="_blank">Blog</a></p>
-	</header>
+	<?php include('./includes/header.php') ?>
 
 	<div class="elastic-container">
 		<div class="swiftbookcover">
@@ -125,19 +115,18 @@
 					<p><strong>Chapter 2: Programming (Swift) Basics <span class="betaspan">(Beta)</span></strong></p>
 					<p>Learn the basics of programming with Swift. Variables, Constants, Conditionals and Operators. A very good chapter</p>
 
-					<p><strong>Chapter 3: Stand To Make <span class="futuredatespan">(Nov 14th)</span></strong></p>
+					<p><strong>Chapter 3: Stand To Make <span class="futuredatespan">(Nov 17th)</span></strong></p>
 					<p>Start building your first app, Stand To Make. It's an iOS version of the popular web app <a href="http://standtomake.com" target="_blank">Stand to Make</a>.</p>
 
 				</div>
 				<div>
-
-					<p><strong>Chapter 4: Controls <span class="futuredatespan">(Nov 17th)</span></strong></p>
+					<p><strong>Chapter 4: Controls <span class="futuredatespan">(Nov 19th)</span></strong></p>
 					<p>Add controls and logic to your app. Learn to make apps that respond to User Interaction. </p>
 
-					<p><strong>Chapter 5: TableViews <span class="futuredatespan">(Nov 19th)</span></strong></p>
+					<p><strong>Chapter 5: TableViews <span class="futuredatespan">(Nov 21st)</span></strong></p>
 					<p>Learn about TableViews and how to layout information in them. We'll be using a tableView as a control.</p>
 
-					<p><strong>Chapter 6: Releasing to the app store <span class="futuredatespan">(Nov 21st)</span></strong></p>
+					<p><strong>Chapter 6: Releasing to the app store <span class="futuredatespan">(Nov 24th)</span></strong></p>
 					<p>Get your app ready to release to the app store. You'll have everything you need, including launch Images, App Icons, and App Descriptions.</p>
 				</div>
 			</div>
@@ -189,38 +178,8 @@
 		</div>
 
 	</div>
-	<div class="single copyright">
-		
-		<p>A Prologue Production</p>
-		<p>Say <a href="mailto:hello@prologue.co">hello@prologue.co</a></p>
 
-	</div>
-<script type='text/javascript' src='https://plasso.co/embed/v2/embed.js'></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript">
-$(function(){
-	setTimeout(function(){
-		$('.gumroad-button').find('span').remove();
-	}, 200);
+	<?php include('./includes/footer.php') ?>
 
-	setTimeout(function(){
-		$('.gumroad-button').find('span').remove();
-	}, 1000);
-
-});
-</script>
-<script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '53e7e0e5e32bb44ef20086e4');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
 </body>
 </html>

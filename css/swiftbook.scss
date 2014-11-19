@@ -4,7 +4,8 @@
 	font-family: 'Noto Sans';
 }
 
-$swiftbook-blue: #1078D8;
+// $swiftbook-blue: #1078D8;
+$swiftbook-blue: #4990E2;
 $swiftbook-yellow: #FDFF77;
 $swiftbook-black: #222222;
 $swiftbook-red: #FD6A7C;
@@ -13,13 +14,11 @@ $link-green: #417109;
 
 /* Adjust Body & Elastic stuff*/
 body {
-	padding-top:25px;
+	padding-top:0px;
 }
 
 .elastic-container {
 	max-width: 920px;
-	// padding-top:50px;
-	// padding-bottom:50px;
 }
 
 .elastic {
@@ -36,20 +35,25 @@ header {
 	display: block;
 	width: 100%;
 	position: relative;
-	height: 100px;
+	height: 30px;
 
 	font-family:'Montserrat';
 	font-weight:300;
 
-	p, p a {
+	text-align: right;
+	text-transform: uppercase; 
+
+	p, p a, .site-nav-item {
 		margin:0px 10px;
-		font-family:'Montserrat';
+		// font-family:'Montserrat';
 		font-weight:300;
 		float:left;
 		color:$swiftbook-blue;
 		-webkit-font-smoothing:subpixel-antialiased;
 		font-size: 18px;
+		line-height: 32px;
 	}
+
 	a.logo {
 		margin:-15px auto 10px -75px;
 		left:50%;
@@ -58,7 +62,6 @@ header {
 	p:last-child {
 		float:right;
 	}
-
 }
 
 /* Cover Section */
@@ -84,7 +87,6 @@ header {
 		width:100%;
 		display: block;
 	}
-
 }
 
 .betaspan {
@@ -140,12 +142,10 @@ header {
 	text-decoration: none;
 	padding:0px;
 
-
 	& > span {
 		display: none;
 	}
 }
-
 
 .marketing-text {
 	padding:0px 20px;
@@ -176,9 +176,7 @@ header {
 		color:$swiftbook-black;
 		text-align: justify;
 	}
-
 }
-
 
 .colored-row {
 	padding-top:25px;
@@ -194,7 +192,6 @@ header {
 			font-weight: 600;
 		}
 	}
-
 }
 
 .blue-row {
@@ -212,7 +209,6 @@ header {
 		border: 5px solid white;
 		background: transparent;
 	}
-
 }
 
 .yellow-row {
@@ -228,7 +224,6 @@ header {
 	@extend .colored-row;
 	background: $swiftbook-red;
 
-
 	.marketing-text {
 		h2 {
 			color: $swiftbook-black;
@@ -241,7 +236,6 @@ header {
 			font-weight: 600;
 		}
 	}
-
 }
 
 .green-row {
@@ -278,11 +272,8 @@ header {
 			width:95% !important;
 			max-width:480px !important;
 		}
-
 	}
-
 }
-
 
 .yosemite-row {
 	@extend .blue-row;
@@ -292,7 +283,7 @@ header {
 	// background-repeat: no-repeat;
 	// background-size: auto, cover;
 	background-image: url('../img/justDesktopPhone.png'), url('../img/justDesktopCode.png'), url('../img/phoneBackground.jpg');
-	background-position: center bottom, left bottom, center top;;
+	background-position: center bottom, left bottom, center top;
 	background-repeat: no-repeat;
 	background-size: auto, auto, cover;
 	min-height:562px;
@@ -304,11 +295,9 @@ header {
 	}
 
 	.mobileCodeBox, .mobilePhoneBox {
-		min-height: 400px;	
+		min-height: 400px;
 	}
-
 }
-
 
 .method-row {
 	@extend .colored-row;
@@ -331,10 +320,8 @@ header {
 			display: block;
 			width:95%;
 		}
-
 	}
 }
-
 
 .narrowdivs > div {
 
@@ -355,7 +342,6 @@ header {
 	}
 
 	margin-bottom:20px;
-
 }
 
 .app-block {
@@ -366,7 +352,6 @@ header {
 	padding:10px;
 	box-sizing:border-box;
 	background: $swiftbook-blue;
-
 
 	// &:hover {
 	// 	border:4px dashed white;
@@ -489,7 +474,6 @@ hr {
 	border:2px solid #333333;
 	margin:35px 10px;
 }
-
 
 .iphone-mockup {
 
@@ -670,7 +654,6 @@ hr {
 	.iphone-mockup {
 		display: none;
 	}
-
 }
 
 #mc_embed_signup {
@@ -687,5 +670,174 @@ hr {
 
 	input.button {
 		margin: 20px auto !important;
+	}
+}
+
+.site-header {
+    padding: 0px 0 0;
+    overflow: auto;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.site-title-wrapper {
+    display: table;
+    margin: 0 auto;
+    float: left;
+}
+
+.site-title {
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+
+    // a {
+    //     float: left;
+    //     background: $primary;
+    //     color: $background;
+    //     padding: 5px 10px 6px;
+
+    //     &:hover { background: $secondary; }
+    // }
+}
+.site-logo {
+    display: block;
+    img { margin: 0px auto -7px; width: 120px; }
+}
+
+.site-nav {
+    display:block;
+    list-style: none;
+    margin: 10px 0 10px;
+    height: 32px;
+    line-height: 32px;
+    padding:0px;
+}
+
+.site-nav-menu-button {
+    background-image: url('/bluex.svg'), url('/bluemenu.svg');
+    background-size: 30px 25px, 30px 25px;
+    background-position: -30px 0px, 0px 0px;
+    background-repeat: no-repeat;
+    width:30px;
+    height:25px;
+    display: block;
+    float:right;
+    margin:5px 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display:none;
+    &.active {
+        background-position: 0px 0px, 30px 0px;
+    }
+}
+
+.site-nav-item {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 10px;
+    text-align: right;
+    float:right !important;
+    color:$prologue-blue !important;
+    text-decoration: none;
+
+    a {
+	    color:$prologue-blue !important;
+	    text-decoration: none;    	
+    }
+    a:hover { 
+        color: #424242;
+        text-decoration: underline;
+    }
+}
+
+.elastic {
+
+	div {
+
+		img {
+			width:100%;
+			max-width:300px;
+			margin: 10px auto;
+			display: block;
+		}
+	}
+}
+
+.single.marketing-text {
+	img {
+		width:100%;
+		max-width: 300px;
+		margin: 10px auto;
+		display: block;
+	}
+}
+
+.banner {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:40px;
+	text-align: center;
+	display: block;
+	background: $prologue-blue;
+	color: white !important;
+	font-family: Lato;
+	text-decoration:none;
+	font-size:16px;
+	padding:0px;
+	box-sizing: border-box;
+	line-height: 40px;
+	border-radius: 20px;
+	z-index:1000;
+	border-radius:0px;
+	z-index:1000;
+	font-family:'Noto Sans';
+}
+
+@media only screen and (min-width: 601px) {
+    .site-nav {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .site-nav {
+        padding-top:0px;
+        clear:both;
+        display: none;
+        text-align: center;
+    }
+
+    .site-nav-item {
+        display: block !important;
+        margin: 15px 0 !important;
+        text-align: center !important;
+        width:100% !important;
+    }
+
+    .site-nav-menu-button {
+        display:block !important;
+    }
+
+	.banner {
+		position: fixed;
+		width:100%;
+		height: 40px;
+		line-height: 40px;
+		top: 0px;
+		left:0px;
+		border-radius:0px;
+		padding:0px;
+		z-index:1000;
+		font-family:'Noto Sans';
+		font-size:16px;
 	}
 }

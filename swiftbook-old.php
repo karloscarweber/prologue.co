@@ -13,22 +13,12 @@
 	-->
 
 	<meta name="description" content=""> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
-
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Montserrat' rel='stylesheet' type='text/css'>
-	<!-- <link rel="stylesheet" href="/css/main.css" type="text/css" /> -->
-	<link rel="stylesheet" href="/css/swiftbook.css" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic|Cabin' rel='stylesheet' type='text/css'>
+	<?php include('./includes/head.php') ?>
 
 </head>
 <body>
 
-	<header>
-		<p>A prologue Production</p>
-		<a class="logo" href="http://www.prologue.co">Prologue </a>
-		<p><a href="http://kow.fm" target="_blank">Blog</a></p>
-	</header>
+	<?php include('./includes/header.php') ?>
 
 	<div class="elastic-container">
 
@@ -383,38 +373,8 @@
 		</div>
 
 	</div>-->
-	<div class="single copyright">
-		
-		<p>A Prologue Production</p>
-		<p>Say <a href="mailto:hello@prologue.co">hello@prologue.co</a></p>
 
-	</div>
-<script type='text/javascript' src='https://plasso.co/embed/v2/embed.js'></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript">
-$(function(){
-	setTimeout(function(){
-		$('.gumroad-button').find('span').remove();
-	}, 200);
-
-	setTimeout(function(){
-		$('.gumroad-button').find('span').remove();
-	}, 1000);
-
-});
-</script>
-<script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '53e7e0e5e32bb44ef20086e4');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
+	<?php include('./includes/footer.php') ?>
+	
 </body>
 </html>

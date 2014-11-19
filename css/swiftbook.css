@@ -660,7 +660,7 @@ h2 {
 
 /* Adjust Body & Elastic stuff*/
 body {
-  padding-top: 25px; }
+  padding-top: 0px; }
 
 .elastic-container {
   max-width: 920px; }
@@ -677,17 +677,19 @@ header {
   display: block;
   width: 100%;
   position: relative;
-  height: 100px;
+  height: 30px;
   font-family: 'Montserrat';
-  font-weight: 300; }
-  header p, header p a {
+  font-weight: 300;
+  text-align: right;
+  text-transform: uppercase; }
+  header p, header p a, header .site-nav-item {
     margin: 0px 10px;
-    font-family: 'Montserrat';
     font-weight: 300;
     float: left;
-    color: #1078d8;
+    color: #4990e2;
     -webkit-font-smoothing: subpixel-antialiased;
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 32px; }
   header a.logo {
     margin: -15px auto 10px -75px;
     left: 50%; }
@@ -702,7 +704,7 @@ header {
     font-family: 'Lato';
     font-weight: 200;
     text-align: center;
-    color: #1078d8; }
+    color: #4990e2; }
     .swiftbookcover h1 em {
       text-decoration: underline;
       font-style: italic;
@@ -732,7 +734,7 @@ header {
   width: 80% !important;
   height: 51px !important;
   text-align: center !important;
-  background: #1078d8 !important;
+  background: #4990e2 !important;
   line-height: 51px !important;
   font-size: 22px !important;
   font-family: 'Lato' !important;
@@ -751,7 +753,7 @@ header {
   width: 90%;
   height: 40px;
   text-align: center;
-  background: #1078d8;
+  background: #4990e2;
   line-height: 40px;
   font-size: 22px;
   font-family: 'Noto Sans';
@@ -771,13 +773,13 @@ header {
     font-family: 'Noto Sans';
     font-weight: 600;
     line-height: 50px;
-    color: #1078d8; }
+    color: #4990e2; }
   .marketing-text h3 {
     font-size: 32px;
     font-family: 'Noto Sans';
     line-height: 40px;
     font-weight: 600;
-    color: #1078d8;
+    color: #4990e2;
     text-align: justify; }
   .marketing-text p {
     font-family: 'Noto Sans';
@@ -799,7 +801,7 @@ header {
       font-weight: 600; }
 
 .blue-row, .yosemite-row {
-  background: #1078d8; }
+  background: #4990e2; }
   .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3 {
     color: white; }
   .blue-row .button, .yosemite-row .button, .blue-row .button-input, .yosemite-row .button-input {
@@ -847,7 +849,7 @@ header {
     max-width: 480px !important; }
 
 .yosemite-row {
-  background: #1078d8;
+  background: #4990e2;
   background-image: url("../img/justDesktopPhone.png"), url("../img/justDesktopCode.png"), url("../img/phoneBackground.jpg");
   background-position: center bottom, left bottom, center top;
   background-repeat: no-repeat;
@@ -889,7 +891,7 @@ header {
   border-radius: 30px;
   padding: 10px;
   box-sizing: border-box;
-  background: #1078d8; }
+  background: #4990e2; }
   .app-block img {
     float: left; }
   .app-block p {
@@ -908,7 +910,7 @@ header {
 .pricebox {
   border-radius: 20px;
   border: 4px solid white;
-  background: #1078d8;
+  background: #4990e2;
   color: white;
   padding: 15px;
   margin: 20px;
@@ -918,7 +920,7 @@ header {
     display: block;
     position: absolute;
     border-radius: 500px;
-    background: #1078d8;
+    background: #4990e2;
     width: 80px;
     height: 80px;
     top: -40px;
@@ -929,7 +931,7 @@ header {
     color: white;
     font-family: 'Lato';
     box-shadow: inset 0 0px 0px 5px white;
-    border: 5px solid #1078d8; }
+    border: 5px solid #4990e2; }
   .pricebox h2 {
     font-family: 'Lato';
     font-size: 26px;
@@ -948,7 +950,7 @@ header {
     margin: 0px 0px !important;
     background-color: white !important;
     width: 100% !important;
-    color: #1078d8 !important;
+    color: #4990e2 !important;
     border: 4px solid white !important;
     box-sizing: border-box !important;
     height: 50px !important;
@@ -956,7 +958,7 @@ header {
     text-align: center !important; }
     .pricebox .button:active, .pricebox .button-input:active {
       color: white !important;
-      background: #1078d8 !important; }
+      background: #4990e2 !important; }
 
 .profiles img {
   display: block;
@@ -1069,3 +1071,135 @@ hr {
   text-align: center; }
 #mc_embed_signup input.button, #mc_embed_signup input.button-input {
   margin: 20px auto !important; }
+
+.site-header {
+  padding: 0px 0 0;
+  overflow: auto;
+  text-align: right;
+  text-transform: uppercase; }
+
+.site-title-wrapper {
+  display: table;
+  margin: 0 auto;
+  float: left; }
+
+.site-title {
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase; }
+
+.site-logo {
+  display: block; }
+  .site-logo img {
+    margin: 0px auto -7px;
+    width: 120px; }
+
+.site-nav {
+  display: block;
+  list-style: none;
+  margin: 10px 0 10px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px; }
+
+.site-nav-menu-button {
+  background-image: url("/bluex.svg"), url("/bluemenu.svg");
+  background-size: 30px 25px, 30px 25px;
+  background-position: -30px 0px, 0px 0px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 25px;
+  display: block;
+  float: right;
+  margin: 5px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: none; }
+  .site-nav-menu-button.active {
+    background-position: 0px 0px, 30px 0px; }
+
+.site-nav-item {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 10px;
+  text-align: right;
+  float: right !important;
+  color: #4990e2 !important;
+  text-decoration: none; }
+  .site-nav-item a {
+    color: #4990e2 !important;
+    text-decoration: none; }
+  .site-nav-item a:hover {
+    color: #424242;
+    text-decoration: underline; }
+
+.elastic div img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block; }
+
+.single.marketing-text img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block; }
+
+.banner {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  display: block;
+  background: #4990e2;
+  color: white !important;
+  font-family: Lato;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 40px;
+  border-radius: 20px;
+  z-index: 1000;
+  border-radius: 0px;
+  z-index: 1000;
+  font-family: 'Noto Sans'; }
+
+@media only screen and (min-width: 601px) {
+  .site-nav {
+    display: block !important; } }
+@media only screen and (max-width: 600px) {
+  .site-nav {
+    padding-top: 0px;
+    clear: both;
+    display: none;
+    text-align: center; }
+
+  .site-nav-item {
+    display: block !important;
+    margin: 15px 0 !important;
+    text-align: center !important;
+    width: 100% !important; }
+
+  .site-nav-menu-button {
+    display: block !important; }
+
+  .banner {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    z-index: 1000;
+    font-family: 'Noto Sans';
+    font-size: 16px; } }
