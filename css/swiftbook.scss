@@ -123,6 +123,17 @@ header {
 	display: block;
 }
 
+.gumroad-link, a.gumroad-link, .gumroad-link:visited, a.gumroad-link:visited {
+	text-align: center;
+	text-decoration: underline;
+	color: $swiftbook-blue !important;
+	line-height: 40px;
+	font-size: 16px;
+	font-family:'Lato';
+	margin:-50px 0px 20px;
+	display: block;
+}
+
 .button.gumroad-button {
 	display: block !important;
 	margin: 50px auto !important;

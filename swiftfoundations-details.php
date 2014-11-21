@@ -32,6 +32,7 @@
 		</div>
 		<div class="full marketing-text">
 			<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Beta ($18.75)</a>
+			<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
 		</div>
 	</div>
 
@@ -53,8 +54,6 @@
 			<h2>Learn to turn code, Into an App</h2>
 		</div>
 	</div>
-
-
 	
 	<div class="elastic-container blue-row">
 		<div class="single marketing-text">

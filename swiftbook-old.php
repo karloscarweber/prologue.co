@@ -84,7 +84,7 @@
 
 			<h3>Read the Book</h3>
 
-			<p>Each chapter of the book builds upon the last, and is written to keep you from getting lost along the way. The most important concepts are covered along with exactly what you need to get started. <a href="https://gum.co/swiftbookfree" target="_blank">Free Chapter</a></p>
+			<p>Each chapter of the book builds upon the last, and is written to keep you from getting lost along the way. The most important concepts are covered along with exactly what you need to get started. <a href="https://gum.co/swiftbookfree/free" target="_blank">Free Chapter</a></p>
 
 			<!-- <img src="/img/gameboyicon.png"> -->
 
