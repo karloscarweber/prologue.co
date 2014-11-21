@@ -1,7 +1,7 @@
-<div class="elastic-container">
-	<header>
+<div class="header-container clearfix">
+	<header class="clearfix">
 
-		<p>A prologue Production</p>
+		<a href="/" class="logo">A prologue Production</a>
 
         <a herf="#" class="site-nav-menu-button"></a>
 

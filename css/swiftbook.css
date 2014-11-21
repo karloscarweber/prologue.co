@@ -489,18 +489,23 @@ body {
 
 .logo {
   text-indent: -5000px;
-  background: url("../img/logo.svg") no-repeat center center;
-  width: 151px;
-  height: 42px;
+  font-size: 1px;
+  color: transparent;
+  background: url("../img/logo-white.svg") no-repeat center center;
+  background-size: 122px 20px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 122px;
+  height: 20px;
   display: block;
   position: absolute;
-  top: 50px;
-  left: 10px;
   transition: left 0.1s linear;
-  -webkit-transition: left 0.1s linear; }
+  -webkit-transition: left 0.1s linear;
+  margin: 10px 20px; }
 
 .iphone {
-  background: url("../img/iPhoneSlice.png") no-repeat center center;
+  background: url("../img/iPhoneEditable.svg") no-repeat center center;
+  background-size: 374px;
   min-width: 400px;
   min-height: 800px;
   position: relative; }
@@ -621,12 +626,6 @@ h2 {
 
 /* small size */
 @media screen and (max-width: 720px) {
-  .logo {
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    margin-left: -75px; }
-
   .iphone {
     background: none;
     min-height: 0px;
@@ -673,26 +672,42 @@ p, pre {
   margin: 0 0 1em 0; }
 
 /* Header Styles */
+.header-container {
+  width: 100%;
+  margin: 0 auto 30px; }
+
 header {
   display: block;
   width: 100%;
   position: relative;
   height: 30px;
+  margin: 0 auto;
   font-family: 'Montserrat';
   font-weight: 300;
   text-align: right;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background: #4990e2;
+  height: 44px; }
   header p, header p a, header .site-nav-item {
     margin: 0px 10px;
     font-weight: 300;
     float: left;
-    color: #4990e2;
-    -webkit-font-smoothing: subpixel-antialiased;
+    color: white; }
+  header p, header p a {
     font-size: 18px;
-    line-height: 32px; }
+    line-height: 44px; }
+  header .site-nav-item {
+    font-size: 18px;
+    line-height: 44px; }
   header a.logo {
-    margin: -15px auto 10px -75px;
-    left: 50%; }
+    text-indent: -5000px;
+    background-image: url("/img/logo-white.svg");
+    background-size: 122px 20px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 122px;
+    height: 20px;
+    display: block; }
   header p:last-child {
     float: right; }
 
@@ -1018,9 +1033,6 @@ hr {
   display: none; }
 
 @media screen and (max-width: 660px) {
-  .logo {
-    display: none; }
-
   .button, .button-input, .button.gumroad-button, .gumroad-button.button-input {
     font-size: 18px !important; }
 
@@ -1099,28 +1111,30 @@ hr {
 .site-nav {
   display: block;
   list-style: none;
-  margin: 10px 0 10px;
-  height: 32px;
-  line-height: 32px;
-  padding: 0px; }
+  margin: 0px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0px;
+  background: #4990e2; }
 
 .site-nav-menu-button {
-  background-image: url("/bluex.svg"), url("/bluemenu.svg");
-  background-size: 30px 25px, 30px 25px;
-  background-position: -30px 0px, 0px 0px;
+  background-image: url("/img/whitex.svg"), url("/img/whitemenu.svg");
+  background-size: 40px 40px, 40px 40px;
+  background-position: -40px 0px, 0px 0px;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   display: block;
   float: right;
-  margin: 5px 20px;
+  margin: 2px 10px;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: none; }
   .site-nav-menu-button.active {
-    background-position: 0px 0px, 30px 0px; }
+    background-position: 0px 0px, 40px 0px;
+    margin: 2px 2px; }
 
 .site-nav-item {
   display: inline-block;
@@ -1129,10 +1143,11 @@ hr {
   margin: 0 10px;
   text-align: right;
   float: right !important;
-  color: #4990e2 !important;
-  text-decoration: none; }
+  color: white !important;
+  text-decoration: none;
+  background: #4990e2; }
   .site-nav-item a {
-    color: #4990e2 !important;
+    color: white !important;
     text-decoration: none; }
   .site-nav-item a:hover {
     color: #424242;
@@ -1150,6 +1165,81 @@ hr {
   margin: 10px auto;
   display: block; }
 
+.full.swiftfoundations-text p, .full.swiftfoundations-text p a, .full.swiftfoundations-text a, .full.swiftfoundations-text p a:visited, .full.swiftfoundations-text a:visited, .full.swiftfoundations-text h2, .elastic.swiftfoundations-text p, .elastic.swiftfoundations-text p a, .elastic.swiftfoundations-text a, .elastic.swiftfoundations-text p a:visited, .elastic.swiftfoundations-text a:visited, .elastic.swiftfoundations-text h2 {
+  text-align: center;
+  color: #4990e2;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0px 0px 20px 0px; }
+.full.swiftfoundations-text p a, .full.swiftfoundations-text a, .full.swiftfoundations-text p a:visited, .full.swiftfoundations-text a:visited, .elastic.swiftfoundations-text p a, .elastic.swiftfoundations-text a, .elastic.swiftfoundations-text p a:visited, .elastic.swiftfoundations-text a:visited {
+  text-decoration: underline; }
+.full.swiftfoundations-text h2, .elastic.swiftfoundations-text h2 {
+  font-size: 30px;
+  font-weight: 600; }
+.full.swiftfoundations-text > div img, .elastic.swiftfoundations-text > div img {
+  margin: 20px auto 0px; }
+.full.swiftfoundations-text .button.gumroad-button, .full.swiftfoundations-text .gumroad-button.button-input, .elastic.swiftfoundations-text .button.gumroad-button, .elastic.swiftfoundations-text .gumroad-button.button-input {
+  display: block !important;
+  margin: 0px auto 20px !important;
+  max-width: 280px !important;
+  width: 100% !important;
+  height: 44px !important;
+  border: 2px solid #4990e2;
+  text-align: center !important;
+  background: white !important;
+  line-height: 44px !important;
+  font-size: 18px !important;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 400 !important;
+  border-radius: 10px !important;
+  color: #4990e2 !important;
+  text-decoration: none !important;
+  padding: 0px !important;
+  box-shadow: none !important;
+  font-weight: 400 !important; }
+  .full.swiftfoundations-text .button.gumroad-button > span, .full.swiftfoundations-text .gumroad-button.button-input > span, .elastic.swiftfoundations-text .button.gumroad-button > span, .elastic.swiftfoundations-text .gumroad-button.button-input > span {
+    display: none !important !important; }
+.full.swiftfoundations-text .iphone, .elastic.swiftfoundations-text .iphone {
+  display: block;
+  margin: 0px auto 20px;
+  background: url("../img/smalliPhone.svg") no-repeat center center;
+  background-size: 312px;
+  width: 320px;
+  min-width: 312px;
+  height: 661px;
+  min-height: 661px;
+  position: relative;
+  padding: 103px 0px 0px 30px;
+  box-sizing: border-box; }
+  .full.swiftfoundations-text .iphone video, .elastic.swiftfoundations-text .iphone video {
+    display: block;
+    width: 256px;
+    height: 458px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    border: 4px solid #4990e2;
+    border-radius: 2px; }
+
+@media only screen and (max-width: 400px) {
+  .iphone {
+    background: url("../img/smallersvgiPhone.svg") no-repeat center center;
+    background-size: 312px;
+    min-width: 400px;
+    min-height: 800px;
+    position: relative; }
+    .iphone .iphone-text {
+      font-size: 40px;
+      font-family: 'Cabin';
+      color: #4990e2;
+      margin: 152px 110px 0px 93px;
+      padding: 0px;
+      display: block;
+      position: absolute;
+      top: 0px;
+      text-align: center; } }
 .banner {
   position: fixed;
   top: 0px;
@@ -1184,9 +1274,10 @@ hr {
 
   .site-nav-item {
     display: block !important;
-    margin: 15px 0 !important;
+    padding: 15px 0px !important;
     text-align: center !important;
-    width: 100% !important; }
+    width: 100% !important;
+    margin: 0px !important; }
 
   .site-nav-menu-button {
     display: block !important; }

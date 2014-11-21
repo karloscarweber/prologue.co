@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Swift Foundations - Prologue Productions</title>
+	<title>Courses - Prologue Productions</title>
 
 	<!--
 		What up!!!! 
