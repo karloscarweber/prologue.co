@@ -28,9 +28,11 @@
 				<img class="" src="/img/courses/swiftfoundations-icon.png">
 
 				<h2>Swift Foundations</h2>
-				<p>A Beginners Guide to making iPhone Apps using Swift. Learn to make the app on the right, Stand To Make, a calculator for products. Swift Foundations helps you to learn the basics of programming by building a Basic app. No Programming Experience is required. Buy the book for 25% off while it's in Beta.</p>
+				<p>A Beginners Guide to making iPhone Apps using Swift. Learn to build Stand To Make, a calculator for products.</p>
 
-				<p></p>
+				<p>Learn the basics of programming by building a basic app. No Programming Experience is required. Buy the book for 25% off while it's in Beta.</p>
+
+				<p>Act Soon, The Beta Ends Today.</p>
 				<!-- <p>A Beginners Guide to making iPhone Apps using Swift. Learn to make the app on the right, No Programming Experience is required. Just buy the book, or buy the book with a full video course.</p> -->
 
 				<!-- <a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book + Videos for $50</a> -->
