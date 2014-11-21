@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="400px" height="800px" viewBox="0 0 400 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="374px" height="788px" viewBox="0 0 374 788" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
-    <title>iPhoneSlice</title>
+    <title>iPhone Editable</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-2" sketch:type="MSArtboardGroup" transform="translate(-313.000000, -93.000000)">
-            <rect id="Rectangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup" x="32" y="0" width="960" height="1894"></rect>
+        <g id="Desktop-2" sketch:type="MSArtboardGroup" transform="translate(-325.000000, -100.000000)">
             <g id="iPhone-Editable" sketch:type="MSLayerGroup" transform="translate(325.000000, 100.000000)">
                 <g id="Body" transform="translate(2.504673, 4.500000)" stroke="#4990E2" sketch:type="MSShapeGroup">
                     <rect id="Frame" stroke-width="6" x="0.495327103" y="-0.5" width="371" height="784" rx="55"></rect>

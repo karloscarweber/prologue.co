@@ -115,18 +115,18 @@
 					<p><strong>Chapter 2: Programming (Swift) Basics <span class="betaspan">(Beta)</span></strong></p>
 					<p>Learn the basics of programming with Swift. Variables, Constants, Conditionals and Operators. A very good chapter</p>
 
-					<p><strong>Chapter 3: Stand To Make <span class="futuredatespan">(Nov 17th)</span></strong></p>
+					<p><strong>Chapter 3: Stand To Make <span class="betaspan">(Beta)</span></strong></p>
 					<p>Start building your first app, Stand To Make. It's an iOS version of the popular web app <a href="http://standtomake.com" target="_blank">Stand to Make</a>.</p>
 
 				</div>
 				<div>
-					<p><strong>Chapter 4: Controls <span class="futuredatespan">(Nov 19th)</span></strong></p>
+					<p><strong>Chapter 4: Controls</strong></p>
 					<p>Add controls and logic to your app. Learn to make apps that respond to User Interaction. </p>
 
-					<p><strong>Chapter 5: TableViews <span class="futuredatespan">(Nov 21st)</span></strong></p>
+					<p><strong>Chapter 5: TableViews</strong></p>
 					<p>Learn about TableViews and how to layout information in them. We'll be using a tableView as a control.</p>
 
-					<p><strong>Chapter 6: Releasing to the app store <span class="futuredatespan">(Nov 24th)</span></strong></p>
+					<p><strong>Chapter 6: Releasing to the app store</strong></p>
 					<p>Get your app ready to release to the app store. You'll have everything you need, including launch Images, App Icons, and App Descriptions.</p>
 				</div>
 			</div>

@@ -500,7 +500,8 @@ body {
   -webkit-transition: left 0.1s linear; }
 
 .iphone {
-  background: url("../img/iPhoneSlice.png") no-repeat center center;
+  background: url("../img/iPhoneEditable.svg") no-repeat center center;
+  background-size: 374px;
   min-width: 400px;
   min-height: 800px;
   position: relative; }
