@@ -43,7 +43,7 @@
 			<div>
 				<div class="iphone">
 					<video poster="/img/screenshot.png" autoplay="" loop="" preload="" muted="">
-						<source src="http://localhost:8888/img/ScreenRecording1.mp4" type="video/mp4" />
+						<source src="http://www.prologue.co/img/ScreenRecording1.mp4" type="video/mp4" />
 					</video>
 				</div>
 			</div>
