@@ -1234,7 +1234,7 @@ hr {
     border-radius: 2px; }
 
 @media only screen and (max-width: 400px) {
-  .iphone {
+  .elastic.swiftfoundations-text .iphone, .full.swiftfoundations-text .iphone {
     background: url("../img/smallersvgiPhone.svg") no-repeat center center;
     background-size: 280px;
     width: 280px;
@@ -1242,7 +1242,7 @@ hr {
     height: 586px;
     min-height: 586px;
     padding: 80px 0px 0px 20px; }
-    .iphone video {
+    .elastic.swiftfoundations-text .iphone video, .full.swiftfoundations-text .iphone video {
       width: 234px !important;
       height: 414px !important; } }
 .banner {

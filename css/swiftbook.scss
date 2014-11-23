@@ -890,21 +890,23 @@ hr {
 }
 
 @media only screen and (max-width: 400px) {
-	.iphone {
-		background: url('../img/smallersvgiPhone.svg') no-repeat center center;
-		background-size: 280px;
-		width: 280px;
-		min-width: 280px;
-		height: 586px;
-		min-height: 586px;
-		padding: 80px 0px 0px 20px;
+	.elastic.swiftfoundations-text, .full.swiftfoundations-text  {
 
-		video {
-			width: 234px !important;
-			height: 414px !important;
+		.iphone {
+			background: url('../img/smallersvgiPhone.svg') no-repeat center center;
+			background-size: 280px;
+			width: 280px;
+			min-width: 280px;
+			height: 586px;
+			min-height: 586px;
+			padding: 80px 0px 0px 20px;
+
+			video {
+				width: 234px !important;
+				height: 414px !important;
+			}
 		}
 	}
-
 }
 
 
