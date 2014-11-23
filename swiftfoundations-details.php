@@ -31,7 +31,7 @@
 			<h1>Learn to make <em>real</em> iPhone apps.</h1>
 		</div>
 		<div class="full marketing-text">
-			<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Beta ($18.75)</a>
+			<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book $25</a>
 			<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
 		</div>
 	</div>
@@ -41,7 +41,7 @@
 			<h2>A step by step guide for beginners</h2>
 		</div>
 		<div class="single marketing-text">
-			<p>I’ll teach you everything you need to know to make your first app, <strong>NO Programming Experience Required</strong>. The Book is almost ready and needs some well deserved feedback. Buy the Book in Beta, or get the first 2 Chapters for Free.</p>
+			<p>I’ll teach you everything you need to know to make your first app, <strong>NO Programming Experience Required</strong>. The Book is almost ready and needs some well deserved feedback. Get the first 2 Chapters for Free.</p>
 
 			<p>We focus on the foundations of the Swift Programming Language by building a real, ready to release app named <em>Stand To Make</em>. By the end you’ll have the skills you need to build the pieces that interest you. Programming is like playing with <em>Lego</em>, We build piece by piece. Most programming courses move from topic to topic too quickly to truly teach the basics. We focus on the basics of programming and the bare essentials to make an iPhone app, but we delve deep into those basics to build a solid foundation for future success. </p>
 
@@ -58,7 +58,7 @@
 	<div class="elastic-container blue-row">
 		<div class="single marketing-text">
 
-			<h2>Get an email when Swift Foundations leaves Beta.</h2>
+			<h2>Get an email when Swift Foundations is ready.</h2>
 			<!-- Begin MailChimp Signup Form -->
 			<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 			<style type="text/css">
@@ -78,8 +78,8 @@
 			<!--End mc_embed_signup-->
 
 			<div class="single marketing-text">
-				<h2>Or Buy the Beta today and get 25% off.</h2>
-				<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Beta ($18.75)</a>
+				<h2>Or Buy the Book today.</h2>
+				<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Book $25</a>
 			</div>
 
 
@@ -131,7 +131,7 @@
 			</div>
 		</div>
 		<div class="single marketing-text">
-			<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Beta ($18.75)</a>
+			<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Book $25</a>
 		</div>
 
 	</div>
@@ -146,7 +146,7 @@
 				<div>
 
 					<p><strong>What's with this Beta thing?</strong></p>
-					<p>I decided that releasing the book early would allow me to get some feedback on the content of the book and to find early problems. Plus it's available at a discount while in beta which is a pretty slick deal.</p>
+					<p><strike>I decided that releasing the book early would allow me to get some feedback on the content of the book and to find early problems. Plus it's available at a discount while in beta which is a pretty slick deal.</strike> The Beta sale is over, the rest of the book should arrive before thanksgiving.</p>
 
 					<p><strong>When will the rest of the book be ready?</strong></p>
 					<p>A couple Weeks. The whole book will be ready and released by Thanksgiving, Becuase you know on thanksgiving I'm going to be doing nothing but eat turkey.</p>
