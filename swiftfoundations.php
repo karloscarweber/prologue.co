@@ -33,7 +33,7 @@
 
 				<!-- <a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book + Videos for $50</a> -->
 
-				<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book for $25 </a>
+				<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book for 25 </a>
 
 			</div>
 			<div>

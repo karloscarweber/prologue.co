@@ -1,3 +1,7 @@
+<?php
+header('Location: http://www.prologue.co/swiftfoundations');
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,9 +44,13 @@
 		<div class="full marketing-text swiftbookcover">
 			<h1>Learn to make <em>real</em> iPhone apps.</h1>
 		</div>
+
 		<div class="full marketing-text">
-			<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Beta ($18.75)</a>
+			<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book 25</a>
+			<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
 		</div>
+
+
 	</div>
 
 	<div class="elastic-container blue-row">
@@ -89,11 +97,9 @@
 			<!--End mc_embed_signup-->
 
 			<div class="single marketing-text">
-				<h2>Or Buy the Beta today and get 25% off.</h2>
-				<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Beta ($18.75)</a>
+				<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book 25</a>
+				<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
 			</div>
-
-
 
 		</div>
 	</div>
@@ -142,8 +148,10 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="single marketing-text">
-			<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Beta ($18.75)</a>
+			<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book 25</a>
+			<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
 		</div>
 
 	</div>
