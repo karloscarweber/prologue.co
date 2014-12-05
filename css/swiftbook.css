@@ -933,59 +933,6 @@ header {
       margin: 25px 10px;
       text-align: center; }
 
-.pricebox {
-  border-radius: 20px;
-  border: 4px solid white;
-  background: #4990e2;
-  color: white;
-  padding: 15px;
-  margin: 20px;
-  box-sizing: border-box;
-  position: relative; }
-  .pricebox .circleprice {
-    display: block;
-    position: absolute;
-    border-radius: 500px;
-    background: #4990e2;
-    width: 80px;
-    height: 80px;
-    top: -40px;
-    right: -40px;
-    text-align: center;
-    line-height: 80px;
-    font-size: 26px;
-    color: white;
-    font-family: 'Lato';
-    box-shadow: inset 0 0px 0px 5px white;
-    border: 5px solid #4990e2; }
-  .pricebox h2 {
-    font-family: 'Lato';
-    font-size: 26px;
-    line-height: 32px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 0px;
-    color: white; }
-  .pricebox ul {
-    padding: 0 0 0 20px;
-    font-size: 18px;
-    line-height: 24px;
-    font-family: 'Lato';
-    font-weight: 400; }
-  .pricebox .button, .pricebox .button-input {
-    margin: 0px 0px !important;
-    background-color: white !important;
-    width: 100% !important;
-    color: #4990e2 !important;
-    border: 4px solid white !important;
-    box-sizing: border-box !important;
-    height: 50px !important;
-    line-height: 42px !important;
-    text-align: center !important; }
-    .pricebox .button:active, .pricebox .button-input:active {
-      color: white !important;
-      background: #4990e2 !important; }
-
 .profiles img {
   display: block;
   position: relative;
@@ -1043,7 +990,7 @@ hr {
 .mobile-visible {
   display: none; }
 
-@media screen and (max-width: 660px) {
+@media only screen and (max-width: 660px) {
   .button, .button-input, .button.gumroad-button, .gumroad-button.button-input {
     font-size: 18px !important; }
 
@@ -1083,7 +1030,33 @@ hr {
       border: 4px dashed white; }
 
   .iphone-mockup {
-    display: none; } }
+    display: none; }
+
+  .pricesubbox, .full.swiftfoundations-text .pricebox div:last-child, .elastic.swiftfoundations-text .pricebox div:last-child, .full.swiftfoundations-text .pricebox div:first-child, .elastic.swiftfoundations-text .pricebox div:first-child {
+    width: 100% !important;
+    max-width: 280px !important;
+    float: none !important;
+    margin: 20px auto !important;
+    padding: 15px !important; }
+
+  .pricebox {
+    max-width: 100% !important;
+    padding: 0px;
+    margin: 10px 0px;
+    position: relative; }
+    .pricebox div:last-child {
+      margin: 20px auto !important;
+      padding: 15px !important; }
+    .pricebox div:first-child {
+      margin: 20px auto !important;
+      padding: 15px !important; }
+    .pricebox p {
+      text-align: left !important;
+      font-size: 16px !important;
+      line-height: 16px !important;
+      padding-left: 36px !important; }
+    .pricebox a.button, .pricebox a.button-input {
+      margin-top: 30px !important; } }
 #mc_embed_signup {
   margin-top: 0px !important; }
 
@@ -1233,6 +1206,90 @@ hr {
     display: block;
     border: 4px solid #4990e2;
     border-radius: 2px; }
+.full.swiftfoundations-text .pricesubbox, .full.swiftfoundations-text .pricebox div:last-child, .elastic.swiftfoundations-text .pricebox .full.swiftfoundations-text div:last-child, .full.swiftfoundations-text .pricebox div:first-child, .elastic.swiftfoundations-text .pricebox .full.swiftfoundations-text div:first-child, .elastic.swiftfoundations-text .pricesubbox, .full.swiftfoundations-text .pricebox .elastic.swiftfoundations-text div:last-child, .elastic.swiftfoundations-text .pricebox div:last-child, .full.swiftfoundations-text .pricebox .elastic.swiftfoundations-text div:first-child, .elastic.swiftfoundations-text .pricebox div:first-child {
+  display: block;
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #4990e2;
+  float: right;
+  background: white;
+  margin-bottom: 30px;
+  position: relative; }
+.full.swiftfoundations-text .pricebox, .elastic.swiftfoundations-text .pricebox {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 10px 0px;
+  color: #4990e2;
+  position: relative; }
+  .full.swiftfoundations-text .pricebox div:last-child, .elastic.swiftfoundations-text .pricebox div:last-child {
+    margin-top: 30px;
+    padding-right: 30px;
+    margin-left: 15px;
+    z-index: 10; }
+  .full.swiftfoundations-text .pricebox div:first-child, .elastic.swiftfoundations-text .pricebox div:first-child {
+    margin-left: -20px;
+    z-index: 20; }
+  .full.swiftfoundations-text .pricebox h3, .elastic.swiftfoundations-text .pricebox h3 {
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0px;
+    color: #4990e2; }
+  .full.swiftfoundations-text .pricebox p, .elastic.swiftfoundations-text .pricebox p {
+    text-align: left !important;
+    font-size: 16px !important;
+    line-height: 16px !important;
+    padding-left: 36px !important; }
+    .full.swiftfoundations-text .pricebox p.tv::before, .elastic.swiftfoundations-text .pricebox p.tv::before {
+      content: "";
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background-image: url("/img/TV.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-left: -38px;
+      margin-bottom: -16px;
+      margin-right: 6px; }
+    .full.swiftfoundations-text .pricebox p.diary::before, .elastic.swiftfoundations-text .pricebox p.diary::before {
+      content: "";
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background-image: url("/img/DIARY.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-left: -38px;
+      margin-bottom: -16px;
+      margin-right: 6px; }
+  .full.swiftfoundations-text .pricebox a.button, .full.swiftfoundations-text .pricebox a.button-input, .full.swiftfoundations-text .pricebox a.gumroad-button, .elastic.swiftfoundations-text .pricebox a.button, .elastic.swiftfoundations-text .pricebox a.button-input, .elastic.swiftfoundations-text .pricebox a.gumroad-button {
+    margin: 0px 0px !important;
+    background-color: white !important;
+    width: 100% !important;
+    color: #4990e2 !important;
+    border: 2px solid #4990e2 !important;
+    box-sizing: border-box !important;
+    height: 50px !important;
+    line-height: 42px !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+    text-decoration: none !important; }
+    .full.swiftfoundations-text .pricebox a.button:active, .full.swiftfoundations-text .pricebox a.button-input:active, .full.swiftfoundations-text .pricebox a.gumroad-button:active, .elastic.swiftfoundations-text .pricebox a.button:active, .elastic.swiftfoundations-text .pricebox a.button-input:active, .elastic.swiftfoundations-text .pricebox a.gumroad-button:active {
+      color: white !important;
+      background: #4990e2 !important; }
+      .full.swiftfoundations-text .pricebox a.button:active.blue, .full.swiftfoundations-text .pricebox a.button-input:active.blue, .full.swiftfoundations-text .pricebox a.gumroad-button:active.blue, .elastic.swiftfoundations-text .pricebox a.button:active.blue, .elastic.swiftfoundations-text .pricebox a.button-input:active.blue, .elastic.swiftfoundations-text .pricebox a.gumroad-button:active.blue {
+        background: white !important;
+        color: #4990e2 !important; }
+    .full.swiftfoundations-text .pricebox a.button.blue, .full.swiftfoundations-text .pricebox a.blue.button-input, .full.swiftfoundations-text .pricebox a.gumroad-button.blue, .elastic.swiftfoundations-text .pricebox a.button.blue, .elastic.swiftfoundations-text .pricebox a.blue.button-input, .elastic.swiftfoundations-text .pricebox a.gumroad-button.blue {
+      background: #4990e2 !important;
+      color: white !important; }
 
 @media only screen and (max-width: 400px) {
   .elastic.swiftfoundations-text .iphone, .full.swiftfoundations-text .iphone {
@@ -1300,3 +1357,9 @@ hr {
     z-index: 1000;
     font-family: 'Noto Sans';
     font-size: 16px; } }
+.betaflag {
+  position: absolute;
+  margin: -20px 0px 0px -30px;
+  -webkit-transform: rotate(16deg);
+  color: red;
+  text-shadow: 3px 3px 0px rgba(255, 124, 41, 0.5); }

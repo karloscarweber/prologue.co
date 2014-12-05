@@ -411,69 +411,7 @@ header {
 	}
 }
 
-.pricebox {
-	border-radius: 20px;
-	border: 4px solid white;
-	background: $swiftbook-blue;
-	color:white;
-	padding:15px;
-	margin:20px;
-	box-sizing:border-box;
-	position: relative;
 
-	.circleprice {
-		display: block;
-		position: absolute;
-		border-radius:500px;
-		background: $swiftbook-blue;
-		width:80px;
-		height: 80px;
-		top:-40px;
-		right:-40px;
-		text-align: center;
-		line-height: 80px;
-		font-size: 26px;
-		color:white;
-		font-family:'Lato';
-		box-shadow: inset 0 0px 0px 5px white;
-		border:5px solid $swiftbook-blue;
-	}
-
-	h2 {
-		font-family:'Lato';
-		font-size:26px;
-		line-height:32px;
-		font-weight: 400;
-		text-align: center;
-		margin-top:0px;
-		color:white;
-	}
-
-	ul {
-		padding:0 0 0 20px;
-		font-size:18px;
-		line-height: 24px;
-		font-family: 'Lato';
-		font-weight: 400;
-	}
-
-	.button {
-		margin: 0px 0px !important;
-		background-color:white !important;
-		width: 100% !important;
-		color: $swiftbook-blue !important;
-		border: 4px solid white !important;
-		box-sizing: border-box !important;
-		height: 50px !important;
-		line-height: 42px !important;
-		text-align:center !important;
-
-		&:active {
-			color:white !important;
-			background: $swiftbook-blue !important;
-		}
-	}
-}
 
 .profiles {
 	img {
@@ -558,33 +496,13 @@ hr {
 }
 
 
-// .desktop-visible {
-// 	display: block;
-// }
-
 .mobile-visible {
 	display: none;
 	@extend .clearfix;
 }
 
-
 // Media Queries and stuff
-@media screen and (max-width: 660px) {
-
-	// .desktop-visible {
-	// 	display: none;
-	// }
-
-	// .mobile-visible {
-	// 	display: block;
-
-	// }
-
-	// header {
-	// 	p, p a {
-	// 		display: none;
-	// 	}
-	// }
+@media only screen and (max-width: 660px) {
 
 	.button, .button.gumroad-button {
 		font-size: 18px !important;
@@ -616,33 +534,7 @@ hr {
 		background-position: center bottom, -25px bottom, center top;;
 		min-height:300px;
 
-		// background:none;
-
-		// h2 {
-		// 	display: block;
-		// }
-
-		// .mobileCodeBox {
-		// 	background-image: url('../img/codeMobile.png'), url('../img/phoneBackgroundMobile.jpg');
-		// 	background-position: bottom center, center top;
-		// 	background-repeat: no-repeat;
-		// 	background-size: 320px 400px, cover;
-		// 	min-height:400px;
-		// }
-
-		// .mobilePhoneBox {
-		// 	background-image: url('../img/phoneMobile.png'), url('../img/phoneBackgroundMobile.jpg');
-		// 	background-position: bottom center, center top;
-		// 	background-repeat: no-repeat;
-		// 	background-size: 320px 400px, cover;
-		// 	min-height:400px;
-		// }
-
-
-
 	}
-
-
 
 	.app-block {
 		margin:25px 0px;
@@ -680,6 +572,42 @@ hr {
 
 	.iphone-mockup {
 		display: none;
+	}
+
+	.pricesubbox {
+		width:100% !important;
+		max-width: 280px !important;
+		float:none !important;
+		margin:20px auto !important;
+		padding:15px !important;
+	}
+
+	.pricebox {
+		max-width:100% !important;
+		padding:0px;
+		margin:10px 0px;
+		position: relative;
+
+		& div:last-child {
+			margin:20px auto !important;
+			padding:15px !important;
+		}
+
+		& div:first-child {
+			margin:20px auto !important;
+			padding:15px !important;
+		}
+
+		p {
+			text-align: left !important;
+			font-size:16px !important;
+			line-height:16px !important;
+			padding-left:36px !important;
+		}
+
+		a.button {
+			margin-top:30px !important;
+		}
 	}
 }
 
@@ -887,6 +815,117 @@ hr {
 		}
 
 	}
+
+	.pricesubbox {
+		display: block;
+		width:50%;
+		padding:15px;
+		box-sizing:border-box;
+		border-radius:10px;
+		border: 2px solid $swiftbook-blue;
+		float:right;
+		background: white;
+		margin-bottom:30px;
+		position: relative
+	}
+
+	.pricebox {
+		display: block;
+		width:100%;
+		max-width:450px;
+		box-sizing: border-box;
+		padding:0px;
+		margin:10px 0px;
+		color:$swiftbook-blue;
+		position: relative;
+
+
+		& div:last-child {
+			@extend .pricesubbox;
+			margin-top:30px;
+			padding-right:30px;
+			margin-left:15px;
+			z-index: 10;
+		}
+
+		& div:first-child {
+			@extend .pricesubbox;
+			margin-left:-20px;
+			z-index: 20;
+		}
+
+		h3 {
+			font-family:'Lato';
+			font-size:18px;
+			line-height:26px;
+			font-weight: 600;
+			text-align: center;
+			margin-top:0px;
+			color:$swiftbook-blue;
+		}
+
+		p {
+			text-align: left !important;
+			font-size:16px !important;
+			line-height:16px !important;
+			padding-left:36px !important;
+
+			&.tv::before {
+				content:"";
+				display: inline-block;
+				width:32px;
+				height:32px;
+				background-image: url('/img/TV.svg');
+			    background-position: center center;
+			    background-repeat: no-repeat;
+			    margin-left:-38px;
+			    margin-bottom:-16px;
+			    margin-right:6px;
+			}
+
+			&.diary::before {
+				content:"";
+				display: inline-block;
+				width:32px;
+				height:32px;
+				background-image: url('/img/DIARY.svg');
+			    background-position: center center;
+			    background-repeat: no-repeat;
+			    margin-left:-38px;
+			    margin-bottom:-16px;
+			    margin-right:6px;
+			}
+		}
+
+		a.button, a.gumroad-button {
+			margin: 0px 0px !important;
+			background-color:white !important;
+			width: 100% !important;
+			color: $swiftbook-blue !important;
+			border: 2px solid $swiftbook-blue !important;
+			box-sizing: border-box !important;
+			height: 50px !important;
+			line-height: 42px !important;
+			text-align:center !important;
+			border-radius: 10px !important;
+			text-decoration: none !important;
+
+			&:active {
+				color:white !important;
+				background: $swiftbook-blue !important;
+				&.blue {
+					background: white !important;
+					color:$swiftbook-blue !important;	
+				}
+			}
+
+			&.blue {
+				background: $swiftbook-blue !important;
+				color:white !important;
+			}
+
+		}
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -974,3 +1013,14 @@ hr {
 		font-size:16px;
 	}
 }
+
+.betaflag {
+	position: absolute;
+	margin:-20px 0px 0px -30px;
+	-webkit-transform: rotate(16deg);
+	color:red;
+	text-shadow:3px 3px 0px rgba(255, 124, 41, 0.5);
+}
+
+
+

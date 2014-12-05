@@ -27,13 +27,30 @@
 
 				<img class="" src="/img/courses/swiftfoundations-icon.png">
 
-				<h2>Swift Foundations</h2>
+				<h2>Swift Foundations<span class="betaflag">beta</span></h2>
 				<p>A Beginners Guide to making iPhone Apps using Swift. Learn the basics of programming by building a simple app, Stand To Make. No Programming Experience is required.</p>
 				<!-- <p>A Beginners Guide to making iPhone Apps using Swift. Learn to make the app on the right, No Programming Experience is required. Just buy the book, or buy the book with a full video course.</p> -->
 
 				<!-- <a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book + Videos for $50</a> -->
 
-				<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book for 25 </a>
+				<!-- <a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book for 25 </a> -->
+
+				<div class="pricebox">
+
+					<div>
+						<h3>The Book + the Video Course</h3>
+						<p class="diary">6 Step by Step Lessons.</p>
+						<p class="tv">16 Video lectures about Swift.</p>
+						<a href="#" class="button blue">Buy for 50 <strike>75</strike></a>
+					</div>
+					<div>
+						<h3>Just the Book</h3>
+						<p class="diary">6 Step by Step Lessons.</p>
+						<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy for 25</a>
+					</div>
+
+				</div>
+
 
 			</div>
 			<div>
