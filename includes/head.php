@@ -5,3 +5,5 @@
 	<!-- <link rel="stylesheet" href="/css/main.css" type="text/css" /> -->
 	<link rel="stylesheet" href="/css/swiftbook.css" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic|Cabin' rel='stylesheet' type='text/css'>
+
+	<link rel="apple-touch-icon" href="/swiftfoundations-app-icon.png">
