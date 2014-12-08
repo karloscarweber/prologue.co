@@ -399,14 +399,14 @@ div.double-narrow > div {
     float: none;
     padding: 0px 20px !important;
     margin: 0 auto 1em; } }
-.clearfix:before, .rgrid-container:before, .app-block:before, .mobile-visible:before, .clearfix:after, .rgrid-container:after, .app-block:after, .mobile-visible:after {
+.clearfix:before, .rgrid-container:before, .app-block:before, .mobile-visible:before, .pricebox:before, .clearfix:after, .rgrid-container:after, .app-block:after, .mobile-visible:after, .pricebox:after {
   content: "";
   display: table; }
 
-.clearfix:after, .rgrid-container:after, .app-block:after, .mobile-visible:after {
+.clearfix:after, .rgrid-container:after, .app-block:after, .mobile-visible:after, .pricebox:after {
   clear: both; }
 
-.clearfix, .rgrid-container, .app-block, .mobile-visible {
+.clearfix, .rgrid-container, .app-block, .mobile-visible, .pricebox {
   *zoom: 1; }
 
 .rgrid-container {
@@ -588,7 +588,7 @@ h2 {
     text-decoration: underline; }
 
 .copyright {
-  padding: 50px 0px 30px; }
+  padding: 20px 0px 20px; }
   .copyright p {
     text-align: center;
     max-width: 300px;
@@ -655,7 +655,7 @@ h2 {
     font-family: 'Noto Sans';
     font-size: 16px; } }
 * {
-  font-family: 'Noto Sans'; }
+  font-family: 'Lato'; }
 
 /* Adjust Body & Elastic stuff*/
 body {
@@ -683,14 +683,14 @@ header {
   height: 30px;
   margin: 0 auto;
   font-family: 'Montserrat';
-  font-weight: 300;
+  font-weight: 400;
   text-align: right;
   text-transform: uppercase;
-  background: #4990e2;
+  background: #2c88dc;
   height: 44px; }
   header p, header p a, header .site-nav-item {
     margin: 0px 10px;
-    font-weight: 300;
+    font-weight: 400;
     float: left;
     color: white; }
   header p, header p a {
@@ -702,13 +702,13 @@ header {
   header a.logo {
     text-indent: -5000px;
     background-image: url("/img/logo-white-new.svg");
-    background-size: 200px 27px;
+    background-size: 237px 35px;
     background-position: 0px 0px;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 27px;
+    width: 237px;
+    height: 35px;
     display: block;
-    margin: 9px 20px 8px 0px; }
+    margin: 3px 20px 8px 0px; }
   header p:last-child {
     float: right; }
 
@@ -720,7 +720,7 @@ header {
     font-family: 'Lato';
     font-weight: 200;
     text-align: center;
-    color: #4990e2; }
+    color: #2c88dc; }
     .swiftbookcover h1 em {
       text-decoration: underline;
       font-style: italic;
@@ -746,7 +746,7 @@ header {
 .gumroad-link, a.gumroad-link, .gumroad-link:visited, a.gumroad-link:visited {
   text-align: center;
   text-decoration: underline;
-  color: #4990e2 !important;
+  color: #2c88dc !important;
   line-height: 40px;
   font-size: 16px;
   font-family: 'Lato';
@@ -760,7 +760,7 @@ header {
   width: 80% !important;
   height: 51px !important;
   text-align: center !important;
-  background: #4990e2 !important;
+  background: #2c88dc !important;
   line-height: 51px !important;
   font-size: 22px !important;
   font-family: 'Lato' !important;
@@ -779,10 +779,10 @@ header {
   width: 90%;
   height: 40px;
   text-align: center;
-  background: #4990e2;
+  background: #2c88dc;
   line-height: 40px;
   font-size: 22px;
-  font-family: 'Noto Sans';
+  font-family: 'Lato';
   font-weight: 600;
   border-radius: 5px;
   color: white;
@@ -796,41 +796,105 @@ header {
   box-sizing: border-box; }
   .marketing-text h2 {
     font-size: 40px;
-    font-family: 'Noto Sans';
-    font-weight: 600;
+    font-family: 'Lato';
+    font-weight: 300;
     line-height: 50px;
-    color: #4990e2; }
+    color: #2c88dc; }
   .marketing-text h3 {
     font-size: 32px;
-    font-family: 'Noto Sans';
+    font-family: 'Lato';
     line-height: 40px;
-    font-weight: 600;
-    color: #4990e2;
+    font-weight: 300;
+    color: #2c88dc;
     text-align: justify; }
-  .marketing-text p {
-    font-family: 'Noto Sans';
-    font-weight: 400;
+  .marketing-text h4 {
     font-size: 18px;
-    line-height: 26px;
+    font-family: 'Lato';
+    line-height: 20px;
+    font-weight: 600;
+    color: #222222;
+    text-align: center; }
+  .marketing-text p {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     color: #222222;
     text-align: justify; }
 
-.colored-row, .blue-row, .yosemite-row, .yellow-row, .red-row, .green-row, .method-row {
+a:visited, a {
+  color: #2c88dc !important; }
+
+.special-marketing-text.marketing-text {
+  padding: 0px 20px;
+  box-sizing: border-box; }
+  .special-marketing-text.marketing-text h2 {
+    font-size: 32px;
+    font-family: 'Lato';
+    font-weight: 600;
+    line-height: 38px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 100px; }
+  .special-marketing-text.marketing-text h3 {
+    font-size: 20px;
+    font-family: 'Lato';
+    line-height: 24px;
+    font-weight: 400;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px; }
+  .special-marketing-text.marketing-text p {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 100px; }
+    .special-marketing-text.marketing-text p a {
+      color: #2c88dc;
+      text-decoration: underline; }
+
+.podcast-box {
+  width: 100%; }
+  .podcast-box img {
+    float: left;
+    margin: 15px !important;
+    max-width: 100px !important;
+    width: 100%; }
+  .podcast-box h4 {
+    margin-left: 130px; }
+  .podcast-box p {
+    margin-left: 130px; }
+
+@media only screen and (max-width: 660px) {
+  .podcast-box img {
+    float: none;
+    margin: 15px auto !important; }
+  .podcast-box h4 {
+    margin-left: 0px; }
+  .podcast-box p {
+    margin-left: 0px; } }
+.colored-row, .blue-row, .yosemite-row, .lego-row, .codeandapp-row, .liveapp-row, .yellow-row, .red-row, .green-row, .method-row {
   padding-top: 25px;
   padding-bottom: 25px;
   max-width: 100%; }
-  .colored-row .marketing-text, .blue-row .marketing-text, .yosemite-row .marketing-text, .yellow-row .marketing-text, .red-row .marketing-text, .green-row .marketing-text, .method-row .marketing-text {
+  .colored-row .marketing-text, .blue-row .marketing-text, .yosemite-row .marketing-text, .lego-row .marketing-text, .codeandapp-row .marketing-text, .liveapp-row .marketing-text, .yellow-row .marketing-text, .red-row .marketing-text, .green-row .marketing-text, .method-row .marketing-text {
     max-width: 920px; }
-    .colored-row .marketing-text h2, .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .yellow-row .marketing-text h2, .red-row .marketing-text h2, .green-row .marketing-text h2, .method-row .marketing-text h2 {
+    .colored-row .marketing-text h2, .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .lego-row .marketing-text h2, .codeandapp-row .marketing-text h2, .liveapp-row .marketing-text h2, .yellow-row .marketing-text h2, .red-row .marketing-text h2, .green-row .marketing-text h2, .method-row .marketing-text h2 {
       font-weight: 200; }
-    .colored-row .marketing-text h3, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .yellow-row .marketing-text h3, .red-row .marketing-text h3, .green-row .marketing-text h3, .method-row .marketing-text h3 {
+    .colored-row .marketing-text h3, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .lego-row .marketing-text h3, .codeandapp-row .marketing-text h3, .liveapp-row .marketing-text h3, .yellow-row .marketing-text h3, .red-row .marketing-text h3, .green-row .marketing-text h3, .method-row .marketing-text h3 {
       font-weight: 600; }
 
-.blue-row, .yosemite-row {
-  background: #4990e2; }
-  .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3 {
+.blue-row, .yosemite-row, .lego-row, .codeandapp-row, .liveapp-row {
+  background: #2c88dc; }
+  .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .lego-row .marketing-text h2, .codeandapp-row .marketing-text h2, .liveapp-row .marketing-text h2, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .lego-row .marketing-text h3, .codeandapp-row .marketing-text h3, .liveapp-row .marketing-text h3 {
     color: white; }
-  .blue-row .button, .yosemite-row .button, .blue-row .button-input, .yosemite-row .button-input {
+  .blue-row .button, .yosemite-row .button, .lego-row .button, .codeandapp-row .button, .liveapp-row .button, .blue-row .button-input, .yosemite-row .button-input, .lego-row .button-input, .codeandapp-row .button-input, .liveapp-row .button-input {
     border: 5px solid white;
     background: transparent; }
 
@@ -875,7 +939,7 @@ header {
     max-width: 480px !important; }
 
 .yosemite-row {
-  background: #4990e2;
+  background: #2c88dc;
   background-image: url("../img/justDesktopPhone.png"), url("../img/justDesktopCode.png"), url("../img/phoneBackground.jpg");
   background-position: center bottom, left bottom, center top;
   background-repeat: no-repeat;
@@ -886,8 +950,51 @@ header {
   .yosemite-row .mobileCodeBox, .yosemite-row .mobilePhoneBox {
     min-height: 400px; }
 
+.lego-row {
+  background: white;
+  background-image: url("../img/legos.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 520px; }
+  .lego-row .marketing-text h2, .lego-row .marketing-text h3 {
+    color: #2c88dc; }
+
+@media only screen and (max-width: 660px) {
+  .lego-row {
+    padding-bottom: 250px;
+    min-height: 220px;
+    background-image: url("../img/legos-mobile.jpg"); } }
+.codeandapp-row {
+  background: white;
+  background-image: url("../img/appandcode.png");
+  background-position: center bottom;
+  background-size: 2000px 520px;
+  background-repeat: no-repeat;
+  min-height: 520px; }
+  .codeandapp-row .marketing-text h2, .codeandapp-row .marketing-text h3 {
+    color: #2c88dc; }
+
+@media only screen and (max-width: 660px) {
+  .codeandapp-row {
+    padding-bottom: 250px;
+    background-image: url("../img/appandcode-mobile.png");
+    background-size: auto;
+    min-height: 220px; }
+
+  .invisiblock, .invisiblock::before, .invisiblock::after {
+    display: none; } }
+.liveapp-row {
+  background: white;
+  background-image: none; }
+  .liveapp-row .marketing-text h2, .liveapp-row .marketing-text h3 {
+    color: #2c88dc; }
+
+.elastic-reverse > div {
+  float: right !important; }
+
 .method-row .marketing-text h2 {
-  color: #4990e2; }
+  color: #2c88dc; }
 .method-row .marketing-text h3 {
   color: #222222;
   font-size: 26px;
@@ -917,7 +1024,7 @@ header {
   border-radius: 30px;
   padding: 10px;
   box-sizing: border-box;
-  background: #4990e2; }
+  background: #2c88dc; }
   .app-block img {
     float: left; }
   .app-block p {
@@ -938,7 +1045,7 @@ header {
   position: relative;
   max-width: 128px;
   margin: 10px auto;
-  border: 0px solid #4990e2;
+  border: 0px solid #2c88dc;
   border-radius: 100px; }
 .profiles p {
   text-align: Left;
@@ -947,7 +1054,7 @@ header {
   .profiles p strong {
     text-align: center; }
   .profiles p a {
-    color: #4990e2;
+    color: #2c88dc;
     text-decoration: underline; }
 
 hr {
@@ -1001,7 +1108,7 @@ hr {
     font-size: 30px;
     line-height: 30px; }
   .marketing-text p, .marketing-text h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 26px; }
 
@@ -1021,7 +1128,7 @@ hr {
       margin: 0px auto 10px; }
     .app-block p {
       margin: 0px;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 24px;
       text-align: center; }
     .app-block.mystery p {
@@ -1032,7 +1139,7 @@ hr {
   .iphone-mockup {
     display: none; }
 
-  .pricesubbox, .full.swiftfoundations-text .pricebox div:last-child, .elastic.swiftfoundations-text .pricebox div:last-child, .full.swiftfoundations-text .pricebox div:first-child, .elastic.swiftfoundations-text .pricebox div:first-child {
+  .pricesubbox, .pricebox div:last-child, .pricebox div:first-child {
     width: 100% !important;
     max-width: 280px !important;
     float: none !important;
@@ -1054,7 +1161,8 @@ hr {
       text-align: left !important;
       font-size: 16px !important;
       line-height: 16px !important;
-      padding-left: 36px !important; }
+      padding-left: 36px !important;
+      margin-bottom: 36px !important; }
     .pricebox a.button, .pricebox a.button-input {
       margin-top: 30px !important; } }
 #mc_embed_signup {
@@ -1067,6 +1175,71 @@ hr {
   text-align: center; }
 #mc_embed_signup input.button, #mc_embed_signup input.button-input {
   margin: 20px auto !important; }
+
+.swiftbookchimpform #mc_embed_signup {
+  margin-top: 30px; }
+.swiftbookchimpform #mce-EMAIL {
+  font-family: 'Lato';
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  box-sizing: border-box;
+  border-color: #2c88dc;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 0px 10px;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  width: 280px;
+  color: #2c88dc;
+  line-height: 42px;
+  text-decoration: none;
+  font-weight: 300;
+  height: 50px;
+  text-align: left;
+  color: #000000;
+  font-size: 18px; }
+.swiftbookchimpform #mc-embedded-subscribe.button, .swiftbookchimpform #mc-embedded-subscribe.button-input {
+  font-family: 'Lato' !important;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 0px;
+  font-size: 18px !important;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  width: 280px;
+  color: white;
+  background-color: #2c88dc;
+  line-height: 42px;
+  text-decoration: none;
+  font-weight: 400;
+  height: 50px; }
+.swiftbookchimpform ::-webkit-input-placeholder {
+  font-family: 'Lato';
+  color: #000000;
+  opacity: 0.7;
+  text-align: left; }
+.swiftbookchimpform :-moz-placeholder {
+  font-family: 'Lato';
+  color: #000000;
+  opacity: 0.7;
+  text-align: left; }
+.swiftbookchimpform ::-moz-placeholder {
+  font-family: 'Lato';
+  color: #000000;
+  opacity: 0.7;
+  text-align: left; }
+.swiftbookchimpform :-ms-input-placeholder {
+  font-family: 'Lato';
+  color: #000000;
+  opacity: 0.7;
+  text-align: left; }
 
 .site-header {
   padding: 0px 0 0;
@@ -1099,7 +1272,7 @@ hr {
   height: 44px;
   line-height: 44px;
   padding: 0px;
-  background: #4990e2; }
+  background: #2c88dc; }
 
 .site-nav-menu-button {
   background-image: url("/img/whitex.svg"), url("/img/whitemenu.svg");
@@ -1129,7 +1302,7 @@ hr {
   float: right !important;
   color: white !important;
   text-decoration: none;
-  background: #4990e2; }
+  background: #2c88dc; }
   .site-nav-item a {
     color: white !important;
     text-decoration: none; }
@@ -1143,34 +1316,43 @@ hr {
   margin: 10px auto;
   display: block; }
 
+.elastic-three div img {
+  width: 100%;
+  max-width: 160px;
+  margin: 10px auto;
+  display: block; }
+
 .single.marketing-text img {
   width: 100%;
   max-width: 300px;
   margin: 10px auto;
   display: block; }
 
-.full.swiftfoundations-text p, .full.swiftfoundations-text p a, .full.swiftfoundations-text a, .full.swiftfoundations-text p a:visited, .full.swiftfoundations-text a:visited, .full.swiftfoundations-text h2, .elastic.swiftfoundations-text p, .elastic.swiftfoundations-text p a, .elastic.swiftfoundations-text a, .elastic.swiftfoundations-text p a:visited, .elastic.swiftfoundations-text a:visited, .elastic.swiftfoundations-text h2 {
+.single.swiftfoundations-text p, .single.swiftfoundations-text p a, .single.swiftfoundations-text a, .single.swiftfoundations-text p a:visited, .single.swiftfoundations-text a:visited, .single.swiftfoundations-text h2, .full.swiftfoundations-text p, .full.swiftfoundations-text p a, .full.swiftfoundations-text a, .full.swiftfoundations-text p a:visited, .full.swiftfoundations-text a:visited, .full.swiftfoundations-text h2, .elastic.swiftfoundations-text p, .elastic.swiftfoundations-text p a, .elastic.swiftfoundations-text a, .elastic.swiftfoundations-text p a:visited, .elastic.swiftfoundations-text a:visited, .elastic.swiftfoundations-text h2 {
   text-align: center;
-  color: #4990e2;
+  color: #2c88dc;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   margin: 0px 0px 20px 0px; }
-.full.swiftfoundations-text p a, .full.swiftfoundations-text a, .full.swiftfoundations-text p a:visited, .full.swiftfoundations-text a:visited, .elastic.swiftfoundations-text p a, .elastic.swiftfoundations-text a, .elastic.swiftfoundations-text p a:visited, .elastic.swiftfoundations-text a:visited {
+.single.swiftfoundations-text p a, .single.swiftfoundations-text a, .single.swiftfoundations-text p a:visited, .single.swiftfoundations-text a:visited, .full.swiftfoundations-text p a, .full.swiftfoundations-text a, .full.swiftfoundations-text p a:visited, .full.swiftfoundations-text a:visited, .elastic.swiftfoundations-text p a, .elastic.swiftfoundations-text a, .elastic.swiftfoundations-text p a:visited, .elastic.swiftfoundations-text a:visited {
   text-decoration: underline; }
-.full.swiftfoundations-text h2, .elastic.swiftfoundations-text h2 {
+.single.swiftfoundations-text h2, .full.swiftfoundations-text h2, .elastic.swiftfoundations-text h2 {
   font-size: 30px;
   font-weight: 600; }
-.full.swiftfoundations-text > div img, .elastic.swiftfoundations-text > div img {
-  margin: 20px auto 0px; }
-.full.swiftfoundations-text .button.gumroad-button, .full.swiftfoundations-text .gumroad-button.button-input, .elastic.swiftfoundations-text .button.gumroad-button, .elastic.swiftfoundations-text .gumroad-button.button-input {
+.single.swiftfoundations-text img, .full.swiftfoundations-text img, .elastic.swiftfoundations-text img {
+  margin: -20px auto 0px;
+  width: 100%;
+  max-width: 300px;
+  display: block; }
+.single.swiftfoundations-text .button.gumroad-button, .single.swiftfoundations-text .gumroad-button.button-input, .full.swiftfoundations-text .button.gumroad-button, .full.swiftfoundations-text .gumroad-button.button-input, .elastic.swiftfoundations-text .button.gumroad-button, .elastic.swiftfoundations-text .gumroad-button.button-input {
   display: block !important;
   margin: 0px auto 20px !important;
   max-width: 280px !important;
   width: 100% !important;
   height: 44px !important;
-  border: 2px solid #4990e2;
+  border: 2px solid #2c88dc;
   text-align: center !important;
   background: white !important;
   line-height: 44px !important;
@@ -1178,14 +1360,15 @@ hr {
   font-family: 'Lato', sans-serif !important;
   font-weight: 400 !important;
   border-radius: 10px !important;
-  color: #4990e2 !important;
+  color: #2c88dc !important;
   text-decoration: none !important;
   padding: 0px !important;
   box-shadow: none !important;
   font-weight: 400 !important; }
-  .full.swiftfoundations-text .button.gumroad-button > span, .full.swiftfoundations-text .gumroad-button.button-input > span, .elastic.swiftfoundations-text .button.gumroad-button > span, .elastic.swiftfoundations-text .gumroad-button.button-input > span {
+  .single.swiftfoundations-text .button.gumroad-button > span, .single.swiftfoundations-text .gumroad-button.button-input > span, .full.swiftfoundations-text .button.gumroad-button > span, .full.swiftfoundations-text .gumroad-button.button-input > span, .elastic.swiftfoundations-text .button.gumroad-button > span, .elastic.swiftfoundations-text .gumroad-button.button-input > span {
     display: none !important !important; }
-.full.swiftfoundations-text .iphone, .elastic.swiftfoundations-text .iphone {
+
+.iphone {
   display: block;
   margin: 0px auto 20px;
   background: url("../img/smalliPhone.svg") no-repeat center center;
@@ -1197,57 +1380,59 @@ hr {
   position: relative;
   padding: 103px 0px 0px 30px;
   box-sizing: border-box; }
-  .full.swiftfoundations-text .iphone video, .elastic.swiftfoundations-text .iphone video {
+  .iphone video {
     display: block;
     width: 256px;
     height: 458px;
     margin: 0px;
     padding: 0px;
     display: block;
-    border: 4px solid #4990e2;
+    border: 4px solid #2c88dc;
     border-radius: 2px; }
-.full.swiftfoundations-text .pricesubbox, .full.swiftfoundations-text .pricebox div:last-child, .elastic.swiftfoundations-text .pricebox .full.swiftfoundations-text div:last-child, .full.swiftfoundations-text .pricebox div:first-child, .elastic.swiftfoundations-text .pricebox .full.swiftfoundations-text div:first-child, .elastic.swiftfoundations-text .pricesubbox, .full.swiftfoundations-text .pricebox .elastic.swiftfoundations-text div:last-child, .elastic.swiftfoundations-text .pricebox div:last-child, .full.swiftfoundations-text .pricebox .elastic.swiftfoundations-text div:first-child, .elastic.swiftfoundations-text .pricebox div:first-child {
+
+.pricesubbox, .pricebox div:last-child, .pricebox div:first-child {
   display: block;
   width: 50%;
   padding: 15px;
   box-sizing: border-box;
   border-radius: 10px;
-  border: 2px solid #4990e2;
+  border: 2px solid #2c88dc;
   float: right;
   background: white;
   margin-bottom: 30px;
   position: relative; }
-.full.swiftfoundations-text .pricebox, .elastic.swiftfoundations-text .pricebox {
+
+.pricebox {
   display: block;
   width: 100%;
   max-width: 450px;
   box-sizing: border-box;
   padding: 0px;
-  margin: 10px 0px;
-  color: #4990e2;
+  margin: 10px auto;
+  color: #2c88dc;
   position: relative; }
-  .full.swiftfoundations-text .pricebox div:last-child, .elastic.swiftfoundations-text .pricebox div:last-child {
+  .pricebox div:last-child {
     margin-top: 30px;
     padding-right: 30px;
     margin-left: 15px;
     z-index: 10; }
-  .full.swiftfoundations-text .pricebox div:first-child, .elastic.swiftfoundations-text .pricebox div:first-child {
+  .pricebox div:first-child {
     margin-left: -20px;
     z-index: 20; }
-  .full.swiftfoundations-text .pricebox h3, .elastic.swiftfoundations-text .pricebox h3 {
+  .pricebox h3 {
     font-family: 'Lato';
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
     text-align: center;
     margin-top: 0px;
-    color: #4990e2; }
-  .full.swiftfoundations-text .pricebox p, .elastic.swiftfoundations-text .pricebox p {
+    color: #2c88dc; }
+  .pricebox p {
     text-align: left !important;
     font-size: 16px !important;
     line-height: 16px !important;
     padding-left: 36px !important; }
-    .full.swiftfoundations-text .pricebox p.tv::before, .elastic.swiftfoundations-text .pricebox p.tv::before {
+    .pricebox p.tv::before {
       content: "";
       display: inline-block;
       width: 32px;
@@ -1258,7 +1443,7 @@ hr {
       margin-left: -38px;
       margin-bottom: -16px;
       margin-right: 6px; }
-    .full.swiftfoundations-text .pricebox p.diary::before, .elastic.swiftfoundations-text .pricebox p.diary::before {
+    .pricebox p.diary::before {
       content: "";
       display: inline-block;
       width: 32px;
@@ -1269,40 +1454,39 @@ hr {
       margin-left: -38px;
       margin-bottom: -16px;
       margin-right: 6px; }
-  .full.swiftfoundations-text .pricebox a.button, .full.swiftfoundations-text .pricebox a.button-input, .full.swiftfoundations-text .pricebox a.gumroad-button, .elastic.swiftfoundations-text .pricebox a.button, .elastic.swiftfoundations-text .pricebox a.button-input, .elastic.swiftfoundations-text .pricebox a.gumroad-button {
+  .pricebox a.button, .pricebox a.button-input, .pricebox a.gumroad-button {
     margin: 0px 0px !important;
     background-color: white !important;
     width: 100% !important;
-    color: #4990e2 !important;
-    border: 2px solid #4990e2 !important;
+    color: #2c88dc !important;
+    border: 2px solid #2c88dc !important;
     box-sizing: border-box !important;
     height: 50px !important;
     line-height: 42px !important;
     text-align: center !important;
     border-radius: 10px !important;
     text-decoration: none !important; }
-    .full.swiftfoundations-text .pricebox a.button:active, .full.swiftfoundations-text .pricebox a.button-input:active, .full.swiftfoundations-text .pricebox a.gumroad-button:active, .elastic.swiftfoundations-text .pricebox a.button:active, .elastic.swiftfoundations-text .pricebox a.button-input:active, .elastic.swiftfoundations-text .pricebox a.gumroad-button:active {
+    .pricebox a.button:active, .pricebox a.button-input:active, .pricebox a.gumroad-button:active {
       color: white !important;
-      background: #4990e2 !important; }
-      .full.swiftfoundations-text .pricebox a.button:active.blue, .full.swiftfoundations-text .pricebox a.button-input:active.blue, .full.swiftfoundations-text .pricebox a.gumroad-button:active.blue, .elastic.swiftfoundations-text .pricebox a.button:active.blue, .elastic.swiftfoundations-text .pricebox a.button-input:active.blue, .elastic.swiftfoundations-text .pricebox a.gumroad-button:active.blue {
+      background: #2c88dc !important; }
+      .pricebox a.button:active.blue, .pricebox a.button-input:active.blue, .pricebox a.gumroad-button:active.blue {
         background: white !important;
-        color: #4990e2 !important; }
-    .full.swiftfoundations-text .pricebox a.button.blue, .full.swiftfoundations-text .pricebox a.blue.button-input, .full.swiftfoundations-text .pricebox a.gumroad-button.blue, .elastic.swiftfoundations-text .pricebox a.button.blue, .elastic.swiftfoundations-text .pricebox a.blue.button-input, .elastic.swiftfoundations-text .pricebox a.gumroad-button.blue {
-      background: #4990e2 !important;
+        color: #2c88dc !important; }
+    .pricebox a.button.blue, .pricebox a.blue.button-input, .pricebox a.gumroad-button.blue {
+      background: #2c88dc !important;
       color: white !important; }
 
 @media only screen and (max-width: 400px) {
-  .elastic.swiftfoundations-text .iphone, .full.swiftfoundations-text .iphone {
-    background: url("../img/smallersvgiPhone.svg") no-repeat center center;
-    background-size: 280px;
-    width: 280px;
-    min-width: 280px;
-    height: 586px;
-    min-height: 586px;
-    padding: 80px 0px 0px 20px; }
-    .elastic.swiftfoundations-text .iphone video, .full.swiftfoundations-text .iphone video {
-      width: 234px !important;
-      height: 414px !important; } }
+  .iphone {
+    background-size: 229px;
+    width: 240px !important;
+    min-width: 240px !important;
+    height: 433px;
+    min-height: 555px;
+    padding: 100px 0px 0px 26px; }
+    .iphone video {
+      width: 185px !important;
+      height: 330px !important; } }
 .banner {
   position: fixed;
   top: 0px;
@@ -1311,7 +1495,7 @@ hr {
   height: 40px;
   text-align: center;
   display: block;
-  background: #4990e2;
+  background: #2c88dc;
   color: white !important;
   font-family: Lato;
   text-decoration: none;
@@ -1323,7 +1507,7 @@ hr {
   z-index: 1000;
   border-radius: 0px;
   z-index: 1000;
-  font-family: 'Noto Sans'; }
+  font-family: 'Lato'; }
 
 @media only screen and (min-width: 601px) {
   .site-nav {
@@ -1355,7 +1539,7 @@ hr {
     border-radius: 0px;
     padding: 0px;
     z-index: 1000;
-    font-family: 'Noto Sans';
+    font-family: 'Lato';
     font-size: 16px; } }
 .betaflag {
   position: absolute;
@@ -1363,3 +1547,14 @@ hr {
   -webkit-transform: rotate(16deg);
   color: red;
   text-shadow: 3px 3px 0px rgba(255, 124, 41, 0.5); }
+
+a.prologueproduction {
+  text-indent: -5000px;
+  background-image: url("/img/APrologueProduction.svg");
+  background-size: 223px 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 223px;
+  height: 60px;
+  display: block;
+  margin: 30px auto; }

@@ -21,9 +21,54 @@
 	<?php include('./includes/header.php') ?>
 
 	<div class="elastic-container">
+		<div class="single swiftfoundations-text">
+
+				<img class="" src="/img/courses/swiftfoundations-icon.png">
+
+				<h2>Swift Foundations<span class="betaflag">beta</span></h2>
+				<p>A Beginners Guide to making iPhone Apps using Swift. Learn the basics of programming by building a simple app, Stand To Make. No Programming Experience is required.</p>
+				<!-- <p>A Beginners Guide to making iPhone Apps using Swift. Learn to make the app on the right, No Programming Experience is required. Just buy the book, or buy the book with a full video course.</p> -->
+
+				<!-- <a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book + Videos for $50</a> -->
+
+				<!-- <a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book for 25 </a> -->
+
+				<div class="pricebox">
+
+					<div>
+						<h3>The Book + the Video Course</h3>
+						<p class="diary">8 Step by Step Chapters.</p>
+						<p class="tv">20 Video lectures about Swift.</p>
+						<a href="https://gum.co/swiftcourse/beta" class="gumroad-button button blue">Buy for 60 <strike>75</strike></a>
+					</div>
+					<div>
+						<h3>Just the Book</h3>
+						<p class="diary">8 Step by Step Chapters.</p>
+						<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for 20 <strike>25</strike></a>
+					</div>
+
+				</div>
+
+				<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
+
+
+		</div>
+	</div>
+<!-- 
+	<div class="elastic-container">
+		<div class="single swiftfoundations-text">
+			<div class="iphone">
+				<video poster="/img/screenshot.png" autoplay="" loop="" preload="" muted="">
+					<source src="http://www.prologue.co/img/ScreenRecording1.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</div>
+	</div> -->
+
+<!-- 	<div class="elastic-container">
 		<div class="swiftbookcover">
-			<!-- <img class="bookcover" src="/img/SwiftFoundations-Cover-iPad@2x.png"> -->
-			<!-- <img class="bookcover" src="/img/SwiftBook.jpg"> -->
+			<img class="bookcover" src="/img/SwiftFoundations-Cover-iPad@2x.png">
+			<img class="bookcover" src="/img/SwiftBook.jpg">
 			<img class="bookcover" src="/img/whitebook.png">
 		</div>
 
@@ -32,15 +77,16 @@
 		</div>
 		<div class="full marketing-text">
 			<a href="https://gum.co/swiftbook" class="gumroad-button button">Buy the Book 25</a>
-			<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
+			
 		</div>
-	</div>
+	</div> -->
 
-	<div class="elastic-container blue-row">
-		<div class="full marketing-text">
-			<h2>A step by step guide for beginners</h2>
-		</div>
+	<div class="elastic-container">
+<!-- 		<div class="full marketing-text">
+			
+		</div> -->
 		<div class="single marketing-text">
+			<h2>A step by step guide for beginners</h2>
 			<p>I’ll teach you everything you need to know to make your first app, <strong>NO Programming Experience Required</strong>. The Book is almost ready and needs some well deserved feedback. Get the first 2 Chapters for Free.</p>
 
 			<p>We focus on the foundations of the Swift Programming Language by building a real, ready to release app named <em>Stand To Make</em>. By the end you’ll have the skills you need to build the pieces that interest you. Programming is like playing with <em>Lego</em>, We build piece by piece. Most programming courses move from topic to topic too quickly to truly teach the basics. We focus on the basics of programming and the bare essentials to make an iPhone app, but we delve deep into those basics to build a solid foundation for future success. </p>
@@ -54,46 +100,13 @@
 			<h2>Learn to turn code, Into an App</h2>
 		</div>
 	</div>
-	
-	<div class="elastic-container blue-row">
+
+	<div class="elastic-container">
+
 		<div class="single marketing-text">
-
-			<h2>Get an email when Swift Foundations is ready.</h2>
-			<!-- Begin MailChimp Signup Form -->
-			<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-			<style type="text/css">
-				#mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; }
-				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-				   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-			</style>
-			<div id="mc_embed_signup">
-			<form action="//prologue.us7.list-manage.com/subscribe/post?u=566b6a939ab109f0181960a6e&amp;id=bce84181ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-			    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_566b6a939ab109f0181960a6e_bce84181ab" tabindex="-1" value=""></div>
-			    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-			</form>
-			</div>
-			<!--End mc_embed_signup-->
-
-			<div class="single marketing-text">
-				<h2>Or Buy the Book today.</h2>
-				<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Book 25</a>
-			</div>
-
-
-
-		</div>
-	</div>
-
-	<div class="elastic-container yellow-row">
-
-		<div class="full marketing-text">
-			<img class="triforce" src="/img/Triforce.png">
+			<!-- <img class="triforce" src="/img/Triforce.png"> -->
 			<h2>Programming from Scratch</h2>
-		</div>
-		<div class="single marketing-text">
+		
 			<p>I understand that learning to program is difficult. It was hard for me! but it doesn't have to be as hard for you. Learning the basics of programming shouldn't be like searching for every piece of the <strong>Triforce</strong> from <em>the Legend of Zelda</em>. I'll walk you through the basics of Swift Programming so that you don't get lost, and help you to understand the important elements of programming.</p>
 
 		</div>
@@ -104,34 +117,56 @@
 		<div class="full marketing-text">
 			<h2>What's in the book?</h2>
 
-			<p></p>
-
 			<div class="elastic">
 				<div>
-					<p><strong>Chapter 1: Xcode &amp; Playground <span class="betaspan">(Beta)</span></strong></p>
+					<p><strong>Chapter 1: Xcode &amp; Playground</strong></p>
 					<p>Use Xcode 6 and Playgrounds to learn Swift quickly, with instant feedback.</p>
 
-					<p><strong>Chapter 2: Programming (Swift) Basics <span class="betaspan">(Beta)</span></strong></p>
-					<p>Learn the basics of programming with Swift. Variables, Constants, Conditionals and Operators. A very good chapter</p>
+					<p><strong>Chapter 2: Variables &amp; Constants</strong></p>
+					<p>Learn the basics of programming with Swift as you build a small sample app. Learn Variables &amp; Constants  a very good chapter</p>
 
-					<p><strong>Chapter 3: Stand To Make <span class="betaspan">(Beta)</span></strong></p>
-					<p>Start building your first app, Stand To Make. It's an iOS version of the popular web app <a href="http://standtomake.com" target="_blank">Stand to Make</a>.</p>
+					<p><strong>Chapter 3: Operators, Loops, &amp; Logic</strong></p>
+					<p>Learn what Conditionals and Operators are and how to use them. We also cover loops, a powerful feature of programming. A quick overview of logic is found in this chapter and it is awesome.</p>
+
+					<p><strong>Chapter 4: Functions &amp; Objects</strong></p>
+					<p>Code can be reused and stored just like data can. Learn how to leverage Functions and Objects to make your data reusable.</p>
 
 				</div>
 				<div>
-					<p><strong>Chapter 4: Controls</strong></p>
+					<p><strong>Chapter 5: Stand To Make</strong></p>
+					<p>Start building your first app, Stand To Make. It's an iOS version of the popular web app <a href="http://standtomake.com" target="_blank">Stand to Make</a> for calculating your profit from selling your product.</p>
+
+					<p><strong>Chapter 6: Controls <span class="betaspan">(Beta)</span></strong></p>
 					<p>Add controls and logic to your app. Learn to make apps that respond to User Interaction. </p>
 
-					<p><strong>Chapter 5: TableViews</strong></p>
+					<p><strong>Chapter 7: TableViews <span class="betaspan">(Beta)</span></strong></p>
 					<p>Learn about TableViews and how to layout information in them. We'll be using a tableView as a control.</p>
 
-					<p><strong>Chapter 6: Releasing to the app store</strong></p>
-					<p>Get your app ready to release to the app store. You'll have everything you need, including launch Images, App Icons, and App Descriptions.</p>
+					<p><strong>Chapter 8: Releasing to the app store <span class="betaspan">(Beta)</span></strong></p>
+					<p>Get your app ready to release to the app store. You'll have everything you need, including launch Images, App Icons, and App Descriptions ready to go.</p>
 				</div>
 			</div>
 		</div>
-		<div class="single marketing-text">
-			<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy the Book 25</a>
+		<div class="single swiftfoundations-text">
+			<h2>Buy The Book:</h2>
+			<div class="pricebox">
+
+				<div>
+					<h3>The Book + the Video Course</h3>
+					<p class="diary">8 Step by Step Chapters.</p>
+					<p class="tv">20 Video lectures about Swift.</p>
+					<a href="https://gum.co/swiftcourse/videobeta" class="gumroad-button button blue">Buy for 60 <strike>75</strike></a>
+				</div>
+				<div>
+					<h3>Just the Book</h3>
+					<p class="diary">8 Step by Step Chapters.</p>
+					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for 20 <strike>25</strike></a>
+				</div>
+
+			</div>
+
+			<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
+
 		</div>
 
 	</div>

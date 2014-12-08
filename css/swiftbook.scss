@@ -1,16 +1,22 @@
 @import "main";
 
 * {
-	font-family: 'Noto Sans';
+	font-family: 'Lato';
 }
 
 // $swiftbook-blue: #1078D8;
-$swiftbook-blue: #4990E2;
+$swiftbook-blue: #2C88DC;
 $swiftbook-yellow: #FDFF77;
 $swiftbook-black: #222222;
 $swiftbook-red: #FD6A7C;
 $swiftbook-green: #50E24A;
 $link-green: #417109;
+
+
+// Font sizes
+$regular-text-size: 16px;
+$button-text-size: 22px;
+$button-text-size-small: 18px;
 
 /* Adjust Body & Elastic stuff*/
 body {
@@ -42,7 +48,7 @@ header {
 	height: 30px;
 	margin:0 auto;
 	font-family:'Montserrat';
-	font-weight:300;
+	font-weight:400;
 
 	text-align: right;
 	text-transform: uppercase; 
@@ -53,7 +59,7 @@ header {
 	p, p a, .site-nav-item {
 		margin:0px 10px;
 		// font-family:'Montserrat';
-		font-weight:300;
+		font-weight:400;
 		float:left;
 		color:white;
 	}
@@ -70,13 +76,13 @@ header {
 	a.logo {
 		text-indent:-5000px;
 		background-image: url('/img/logo-white-new.svg');
-	    background-size: 200px 27px;
+	    background-size: 237px 35px;
 	    background-position: 0px 0px;
 	    background-repeat: no-repeat;
-	    width:200px;
-	    height:27px;
+	    width:237px;
+	    height:35px;
 	    display: block;
-	    margin: 9px 20px 8px 0px;
+	    margin: 3px 20px 8px 0px;
 	}
 
 	p:last-child {
@@ -143,7 +149,7 @@ header {
 	text-align: center !important;
 	background: $swiftbook-blue !important;
 	line-height: 51px !important;
-	font-size: 22px !important;
+	font-size: $button-text-size !important;
 	font-family:'Lato' !important;
 	font-weight: 400 !important;
 	border-radius:5px !important;
@@ -165,8 +171,8 @@ header {
 	text-align: center;
 	background: $swiftbook-blue;
 	line-height: 40px;
-	font-size: 22px;
-	font-family:'Noto Sans';
+	font-size: $button-text-size;
+	font-family:'Lato';
 	font-weight: 600;
 	border-radius:5px;
 	color:white;
@@ -184,30 +190,121 @@ header {
 
 	h2 {
 		font-size: 40px;
-		font-family: 'Noto Sans';
-		font-weight: 600;
+		font-family: 'Lato';
+		font-weight: 300;
 		line-height: 50px;
 		color:$swiftbook-blue;
 	}
 
 	h3	{
 		font-size: 32px;
-		font-family: 'Noto Sans';
+		font-family: 'Lato';
 		line-height: 40px;
-		font-weight:600;
+		font-weight:300;
 		color:$swiftbook-blue;
 		text-align: justify;
 	}
 
-	p {
-		font-family:'Noto Sans';
-		font-weight: 400;
+	h4	{
 		font-size: 18px;
-		line-height: 26px;
+		font-family: 'Lato';
+		line-height: 20px;
+		font-weight:600;
+		color:$swiftbook-black;
+		text-align: center;
+	}
+
+	p {
+		font-family:'Lato';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
 		color:$swiftbook-black;
 		text-align: justify;
 	}
+
+
 }
+
+a:visited, a {
+	color:$swiftbook-blue !important;
+}
+
+.special-marketing-text.marketing-text {
+	padding:0px 20px;
+	box-sizing: border-box;
+
+	h2 {
+		font-size: 32px;
+		font-family: 'Lato';
+		font-weight: 600;
+		line-height: 38px;
+		color:$swiftbook-black;
+		text-align: center;
+		margin-bottom:0px;
+		margin-top:100px;
+	}
+
+	h3	{
+		font-size: 20px;
+		font-family: 'Lato';
+		line-height: 24px;
+		font-weight:400;
+		color:$swiftbook-black;
+		text-align: center;
+		margin-bottom:0px;
+		margin-top:0px;
+	}
+
+	p {
+		font-family:'Lato';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		color:$swiftbook-black;
+		text-align: center;
+		margin-top:0px;
+		margin-bottom:100px;
+		a {
+			color: $swiftbook-blue;
+			text-decoration: underline;
+		}
+	}
+}
+
+.podcast-box {
+	width:100%;
+	img {
+		// @extend .clearfix;
+		float:left;
+		margin:15px !important;
+		max-width: 100px !important;
+		width:100%;
+	}
+
+	h4 {
+		margin-left:130px;
+	}
+	p {
+		margin-left:130px;
+	}
+}
+@media only screen and (max-width: 660px) {
+.podcast-box {
+	img {
+		float:none;
+		margin:15px auto !important;
+	}
+	h4 {
+		margin-left:0px;
+	}
+	p {
+		margin-left:0px;
+	}
+}	
+
+}
+
 
 .colored-row {
 	padding-top:25px;
@@ -330,12 +427,77 @@ header {
 	}
 }
 
+.lego-row {
+	@extend .blue-row;
+	background: white;
+	background-image: url('../img/legos.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: auto;
+	min-height:520px;
+	.marketing-text {
+		h2, h3 {
+			color:$swiftbook-blue;
+		}
+	}
+}
+@media only screen and (max-width: 660px) {
+	.lego-row {
+		padding-bottom:250px;
+		min-height:220px;
+		background-image: url('../img/legos-mobile.jpg');
+	}
+}
+
+
+.codeandapp-row {
+	@extend .blue-row;
+	background: white;
+	background-image: url('../img/appandcode.png');
+	background-position: center bottom;
+	background-size: 2000px 520px;
+	background-repeat: no-repeat;
+	min-height:520px;
+	.marketing-text {
+		h2, h3 {
+			color:$swiftbook-blue;
+		}
+	}
+}
+@media only screen and (max-width: 660px) {
+	.codeandapp-row {
+		padding-bottom:250px;
+		background-image: url('../img/appandcode-mobile.png');
+		background-size: auto;
+		min-height:220px;
+	}
+	.invisiblock, .invisiblock::before, .invisiblock::after {
+		display: none;
+	}
+}
+
+.liveapp-row {
+	@extend .blue-row;
+	background: white;
+	background-image: none;
+	.marketing-text {
+		h2, h3 {
+			color:$swiftbook-blue;
+		}
+	}
+
+}
+
+.elastic-reverse > div {
+	float:right !important;
+}
+
 .method-row {
 	@extend .colored-row;
 
 	.marketing-text {
 		h2 {
-			color: $prologue-blue;
+			color: $swiftbook-blue;
 		}
 
 		h3 {
@@ -419,7 +581,7 @@ header {
 		position:relative;
 		max-width: 128px;
 		margin:10px auto;
-		border:0px solid $prologue-blue;
+		border:0px solid $swiftbook-blue;
 		border-radius:100px;
 	}
 
@@ -433,7 +595,7 @@ header {
 		}
 
 		a {
-			color:$prologue-blue;
+			color:$swiftbook-blue;
 			text-decoration: underline;
 		}
 	}
@@ -505,7 +667,7 @@ hr {
 @media only screen and (max-width: 660px) {
 
 	.button, .button.gumroad-button {
-		font-size: 18px !important;
+		font-size: $button-text-size-small !important;
 	}
 
 	.swiftbookcover {
@@ -521,7 +683,7 @@ hr {
 		}
 
 		p, h3 {
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: 400;
 			line-height: 26px;
 		}
@@ -554,7 +716,7 @@ hr {
 		p {
 			// hide to make them left aligned
 			margin:0px;
-			font-size: 18px;
+			font-size: 16px;
 			line-height: 24px;
 			// hide to make them left aligned
 			text-align: center;
@@ -603,6 +765,7 @@ hr {
 			font-size:16px !important;
 			line-height:16px !important;
 			padding-left:36px !important;
+			margin-bottom:36px !important;
 		}
 
 		a.button {
@@ -627,6 +790,102 @@ hr {
 		margin: 20px auto !important;
 	}
 }
+
+
+.swiftbookchimpform {
+
+	#mc-embedded-subscribe {
+
+	}
+
+	#mc_embed_signup {
+		margin-top: 30px;
+	}
+
+	#mce-EMAIL {
+		font-family: 'Lato';
+		text-align: center;
+		display: block;
+		margin:0px auto;
+		box-sizing: border-box;
+		border-color:$swiftbook-blue;
+		border-style: solid;
+		border-radius: 10px;
+		border-width: 2px;
+		padding: 0px 10px;
+		font-smoothing:antialiased;
+		-webkit-font-smoothing:antialiased;
+		width:280px;
+		color:$swiftbook-blue;
+		line-height:42px;
+		text-decoration:none;
+		font-weight: 300;
+		height: 50px;
+		text-align: left;
+		color:#000000;
+		font-size: $button-text-size-small;
+	}
+
+	#mc-embedded-subscribe.button {
+		font-family: 'Lato' !important;
+		text-align: center;
+		display: block;
+		margin:0px auto;
+		border-color:white;
+		border-style: solid;
+		border-radius: 10px;
+		border-width: 2px;
+		padding: 0px;
+		font-size: $button-text-size-small !important;
+		font-smoothing:antialiased;
+		-webkit-font-smoothing:antialiased;
+		width:280px;
+		color:white;
+		background-color: $swiftbook-blue;
+		line-height:42px;
+		text-decoration:none;
+		font-weight: 400;
+		height: 50px;
+	}
+
+	#mc-embedded-subscribe {
+		// margin-top: 30px;
+		// text-decoration: underline;
+		// border:none;
+		// color:$swiftbook-blue;
+		// background: none;
+	}
+
+	#mce-EMAIL:focus {
+		// outline:none;
+	}
+
+	::-webkit-input-placeholder {
+		font-family: 'Lato';
+		color: #000000;  
+		opacity:0.7;
+		text-align:left;
+	}
+	:-moz-placeholder {
+		font-family: 'Lato';
+		color: #000000;  
+		opacity:0.7;
+		text-align:left;
+	}
+	::-moz-placeholder {
+		font-family: 'Lato';
+		color: #000000;  
+		opacity:0.7;
+		text-align:left;
+	}
+	:-ms-input-placeholder {
+		font-family: 'Lato';
+		color: #000000;  
+		opacity:0.7;
+		text-align:left;
+	}
+}
+
 
 .site-header {
     padding: 0px 0 0;
@@ -716,9 +975,7 @@ hr {
 }
 
 .elastic {
-
 	div {
-
 		img {
 			width:100%;
 			max-width:300px;
@@ -727,6 +984,18 @@ hr {
 		}
 	}
 }
+
+.elastic-three {
+	div {
+		img {
+			width:100%;
+			max-width:160px;
+			margin: 10px auto;
+			display: block;
+		}
+	}
+}
+
 
 .single.marketing-text {
 	img {
@@ -737,15 +1006,14 @@ hr {
 	}
 }
 
-.full.swiftfoundations-text, .elastic.swiftfoundations-text {
-
+.single.swiftfoundations-text, .full.swiftfoundations-text, .elastic.swiftfoundations-text {
 
 	p, p a, a, p a:visited, a:visited, h2 {
 		text-align: center;
 		color:$swiftbook-blue;
 		font-family: 'Lato', sans-serif;
 		font-weight: 400;
-		font-size:18px;
+		font-size:$regular-text-size;
 		line-height: 26px;
 		margin:0px 0px 20px 0px;
 	}
@@ -759,10 +1027,12 @@ hr {
 		font-weight:600;
 	}
 
-	& > div img {
-		margin:20px auto 0px;
+	img {
+		margin:-20px auto 0px;
+		width: 100%;
+		max-width: 300px;
+		display: block;
 	}
-
 
 	.button.gumroad-button {
 		display: block !important;
@@ -774,7 +1044,7 @@ hr {
 		text-align: center !important;
 		background: white !important;
 		line-height: 44px !important;
-		font-size: 18px !important;
+		font-size: $button-text-size-small !important;
 		font-family:'Lato', sans-serif !important;
 		font-weight: 400 !important;
 		border-radius:10px !important;
@@ -789,163 +1059,183 @@ hr {
 		}
 	}
 
-	.iphone {
+}
+
+
+.iphone {
+	display: block;
+	margin:0px auto 20px;
+	background: url('../img/smalliPhone.svg') no-repeat center center;
+	background-size: 312px;
+	width:320px;
+	min-width:312px;
+	height:661px;
+	min-height:661px;
+
+	position: relative;
+	padding:103px 0px 0px 30px;;
+	box-sizing: border-box;
+
+	video {
 		display: block;
-		margin:0px auto 20px;
-		background: url('../img/smalliPhone.svg') no-repeat center center;
-		background-size: 312px;
-		width:320px;
-		min-width:312px;
-		height:661px;
-		min-height:661px;
-
-		position: relative;
-		padding:103px 0px 0px 30px;;
-		box-sizing: border-box;
-
-		video {
-			display: block;
-			width: 256px;
-			height: 458px;
-			margin: 0px;
-			padding: 0px;
-			display: block;
-			border:4px solid $swiftbook-blue;
-			border-radius:2px;
-		}
-
+		width: 256px;
+		height: 458px;
+		margin: 0px;
+		padding: 0px;
+		display: block;
+		border:4px solid $swiftbook-blue;
+		border-radius:2px;
 	}
 
-	.pricesubbox {
-		display: block;
-		width:50%;
-		padding:15px;
-		box-sizing:border-box;
-		border-radius:10px;
-		border: 2px solid $swiftbook-blue;
-		float:right;
-		background: white;
-		margin-bottom:30px;
-		position: relative
+}
+
+.pricesubbox {
+	display: block;
+	width:50%;
+	padding:15px;
+	box-sizing:border-box;
+	border-radius:10px;
+	border: 2px solid $swiftbook-blue;
+	float:right;
+	background: white;
+	margin-bottom:30px;
+	position: relative
+}
+
+.pricebox {
+	@extend .clearfix;
+	display: block;
+	width:100%;
+	max-width:450px;
+	box-sizing: border-box;
+	padding:0px;
+	margin:10px auto;
+	color:$swiftbook-blue;
+	position: relative;
+
+
+	& div:last-child {
+		@extend .pricesubbox;
+		margin-top:30px;
+		padding-right:30px;
+		margin-left:15px;
+		z-index: 10;
 	}
 
-	.pricebox {
-		display: block;
-		width:100%;
-		max-width:450px;
-		box-sizing: border-box;
-		padding:0px;
-		margin:10px 0px;
+	& div:first-child {
+		@extend .pricesubbox;
+		margin-left:-20px;
+		z-index: 20;
+	}
+
+	h3 {
+		font-family:'Lato';
+		font-size:18px;
+		line-height:26px;
+		font-weight: 600;
+		text-align: center;
+		margin-top:0px;
 		color:$swiftbook-blue;
-		position: relative;
+	}
 
+	p {
+		text-align: left !important;
+		font-size:$regular-text-size !important;
+		line-height:16px !important;
+		padding-left:36px !important;
 
-		& div:last-child {
-			@extend .pricesubbox;
-			margin-top:30px;
-			padding-right:30px;
-			margin-left:15px;
-			z-index: 10;
+		&.tv::before {
+			content:"";
+			display: inline-block;
+			width:32px;
+			height:32px;
+			background-image: url('/img/TV.svg');
+		    background-position: center center;
+		    background-repeat: no-repeat;
+		    margin-left:-38px;
+		    margin-bottom:-16px;
+		    margin-right:6px;
 		}
 
-		& div:first-child {
-			@extend .pricesubbox;
-			margin-left:-20px;
-			z-index: 20;
+		&.diary::before {
+			content:"";
+			display: inline-block;
+			width:32px;
+			height:32px;
+			background-image: url('/img/DIARY.svg');
+		    background-position: center center;
+		    background-repeat: no-repeat;
+		    margin-left:-38px;
+		    margin-bottom:-16px;
+		    margin-right:6px;
 		}
+	}
 
-		h3 {
-			font-family:'Lato';
-			font-size:18px;
-			line-height:26px;
-			font-weight: 600;
-			text-align: center;
-			margin-top:0px;
-			color:$swiftbook-blue;
-		}
+	a.button, a.gumroad-button {
+		margin: 0px 0px !important;
+		background-color:white !important;
+		width: 100% !important;
+		color: $swiftbook-blue !important;
+		border: 2px solid $swiftbook-blue !important;
+		box-sizing: border-box !important;
+		height: 50px !important;
+		line-height: 42px !important;
+		text-align:center !important;
+		border-radius: 10px !important;
+		text-decoration: none !important;
 
-		p {
-			text-align: left !important;
-			font-size:16px !important;
-			line-height:16px !important;
-			padding-left:36px !important;
-
-			&.tv::before {
-				content:"";
-				display: inline-block;
-				width:32px;
-				height:32px;
-				background-image: url('/img/TV.svg');
-			    background-position: center center;
-			    background-repeat: no-repeat;
-			    margin-left:-38px;
-			    margin-bottom:-16px;
-			    margin-right:6px;
-			}
-
-			&.diary::before {
-				content:"";
-				display: inline-block;
-				width:32px;
-				height:32px;
-				background-image: url('/img/DIARY.svg');
-			    background-position: center center;
-			    background-repeat: no-repeat;
-			    margin-left:-38px;
-			    margin-bottom:-16px;
-			    margin-right:6px;
-			}
-		}
-
-		a.button, a.gumroad-button {
-			margin: 0px 0px !important;
-			background-color:white !important;
-			width: 100% !important;
-			color: $swiftbook-blue !important;
-			border: 2px solid $swiftbook-blue !important;
-			box-sizing: border-box !important;
-			height: 50px !important;
-			line-height: 42px !important;
-			text-align:center !important;
-			border-radius: 10px !important;
-			text-decoration: none !important;
-
-			&:active {
-				color:white !important;
-				background: $swiftbook-blue !important;
-				&.blue {
-					background: white !important;
-					color:$swiftbook-blue !important;	
-				}
-			}
-
+		&:active {
+			color:white !important;
+			background: $swiftbook-blue !important;
 			&.blue {
-				background: $swiftbook-blue !important;
-				color:white !important;
+				background: white !important;
+				color:$swiftbook-blue !important;	
 			}
-
 		}
+
+		&.blue {
+			background: $swiftbook-blue !important;
+			color:white !important;
+		}
+
 	}
 }
 
-@media only screen and (max-width: 400px) {
-	.elastic.swiftfoundations-text, .full.swiftfoundations-text  {
 
-		.iphone {
-			background: url('../img/smallersvgiPhone.svg') no-repeat center center;
-			background-size: 280px;
-			width: 280px;
-			min-width: 280px;
-			height: 586px;
-			min-height: 586px;
-			padding: 80px 0px 0px 20px;
+@media only screen and (max-width: 400px) {
+	// .elastic.swiftfoundations-text, .full.swiftfoundations-text  {
+
+		// .iphone {
+		// 	background: url('../img/smallersvgiPhone.svg') no-repeat center center;
+		// 	background-size: 280px;
+		// 	width: 280px;
+		// 	min-width: 280px;
+		// 	height: 586px;
+		// 	min-height: 586px;
+		// 	padding: 80px 0px 0px 20px;
+
+		// 	video {
+		// 		width: 234px !important;
+		// 		height: 414px !important;
+		// 	}
+		// }
+
+		.iphone{
+			background-size: 229px;
+			width: 240px !important;
+			min-width: 240px !important;
+			height: 433px;
+			min-height: 555px;
+			padding: 100px 0px 0px 26px;
 
 			video {
-				width: 234px !important;
-				height: 414px !important;
+				width: 185px !important;
+				height: 330px !important;
 			}
 		}
-	}
+
+
+	// }
 }
 
 
@@ -957,7 +1247,7 @@ hr {
 	height:40px;
 	text-align: center;
 	display: block;
-	background: $prologue-blue;
+	background: $swiftbook-blue;
 	color: white !important;
 	font-family: Lato;
 	text-decoration:none;
@@ -969,7 +1259,7 @@ hr {
 	z-index:1000;
 	border-radius:0px;
 	z-index:1000;
-	font-family:'Noto Sans';
+	font-family:'Lato';
 }
 
 @media only screen and (min-width: 601px) {
@@ -1009,7 +1299,7 @@ hr {
 		border-radius:0px;
 		padding:0px;
 		z-index:1000;
-		font-family:'Noto Sans';
+		font-family:'Lato';
 		font-size:16px;
 	}
 }
@@ -1022,5 +1312,14 @@ hr {
 	text-shadow:3px 3px 0px rgba(255, 124, 41, 0.5);
 }
 
-
-
+a.prologueproduction {
+	text-indent:-5000px;
+	background-image: url('/img/APrologueProduction.svg');
+    background-size: 223px 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:223px;
+    height:60px;
+    display: block;
+    margin: 30px auto;
+}
