@@ -51,7 +51,6 @@
 
 				<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
 
-
 		</div>
 	</div>
 <!-- 
