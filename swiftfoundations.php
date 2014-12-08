@@ -32,7 +32,7 @@
 		<div class="elastic marketing-text elastic-reverse">
 			<div>
 				<img src="/img/BookCoverBig.png">
-				<p style="max-width:280px;margin:0 auto;">This cover took me like 20 hours <a href="#buy">Click here to buy the book because the cover is awesome!</a> ;P<br> <a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a> </p>
+				<p style="max-width:280px;margin:0 auto;">This cover took me like 20 hours <a href="#buy">Click here to buy the book because the cover is awesome!</a> ;P <a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a></p>
 			</div>
 			<div>
 				
