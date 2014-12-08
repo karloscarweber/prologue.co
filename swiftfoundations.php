@@ -115,12 +115,12 @@
 					<h3>The Book + the Video Course</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
 					<p class="tv">20 Video lectures about Swift.</p>
-					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for 60 <strike>75</strike></a>
+					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for $60 <strike>$75</strike></a>
 				</div>
 				<div>
 					<h3>Just the Book</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
-					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for 20 <strike>25</strike></a>
+					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for $20 <strike>$25</strike></a>
 				</div>
 			</div>
 
@@ -290,12 +290,12 @@
 					<h3>The Book + the Video Course</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
 					<p class="tv">20 Video lectures about Swift.</p>
-					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for 60 <strike>75</strike></a>
+					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for $60 <strike>$75</strike></a>
 				</div>
 				<div>
 					<h3>Just the Book</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
-					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for 20 <strike>25</strike></a>
+					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for $20 <strike>$25</strike></a>
 				</div>
 			</div>
 
