@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Swift Foundations - Prologue Productions</title>
+	<title>Swift Foundations - Learn to make Apps Step by Step - Prologue Productions</title>
 
 	<!--
 		What up!!!! 
@@ -12,7 +12,7 @@
 		put "discount bro" in the subject of an email to me@kow.fm
 	-->
 
-	<meta name="description" content=""> 
+	<meta name="description" content="Swift Foundations - Learn to make Apps Step by Step - Prologue Productions"> 
 	<?php include('./includes/head.php') ?>
 
 </head>
@@ -23,8 +23,8 @@
 	<div class="elastic-container">
 		<div class="full marketing-text special-marketing-text">
 
-			<h2>You don’t have to be a genius to make apps</h2>
-			<h3>Learn to make apps with Swift Foundations, A beginners course that teaches everything you need to turn your app idea into a reality.</h3>
+			<h2>Learn to Make Apps, Step by Step.</h2>
+			<h3>Swift Foundations: A beginners course that teaches everything you need to turn your idea into reality.</h3>
 
 			<p>Already a programmer? <a href="#whatsinside">This book is for you too.</a></p>
 		</div>
