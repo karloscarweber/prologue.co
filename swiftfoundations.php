@@ -223,14 +223,13 @@
 				</div>
 			</div>
 			<div>
-<!-- 				<div class="podcast-box">
+				<div class="podcast-box">
 					<img src="img/JoelleSteinegger.png">
 
 					<h4>Episode 2: Joelle Steinegger</h4>
 
-					<p>Joelle Steingger shares the struggles she overcame to become a programmer, and the excitement she finds with software development, <a href="#">Listen Now</a>.</p>
-				</div> -->
-				&nbsp;
+					<p>Joelle Steingger shares the struggles she overcame to become a programmer, and the excitement she finds with software development, <a href="http://kow.fm/episode002-joelle-steiniger/" target="_blank">Listen Now</a>.</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -273,8 +272,6 @@
 			</div>
 		</div>
 	</div>
-
-
 
 	<div class="elastic-container">
 		<div class="single marketing-text">
