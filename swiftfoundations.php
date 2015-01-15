@@ -54,7 +54,7 @@
 	</div>
 
 	<div class="elastic-container lego-row">
-		<div class="full marketing-text elastic">
+		<div class="marketing-text elastic">
 			<div class="invisiblock">&nbsp;</div>
 			<div>
 				<h2>A Brick by Brick guide for beginners</h2>
@@ -69,7 +69,7 @@
 	</div>
 
 	<div class="elastic-container codeandapp-row">
-		<div class="full marketing-text elastic">
+		<div class="marketing-text elastic">
 			<div>
 				<h2>Learn to turn code, into an app</h2>
 
@@ -135,6 +135,9 @@
 	<div class="elastic-container">
 		<div class="full marketing-text">
 			<h2 id="whatsinside">What's in the Book?</h2>
+
+			<img src="/img/Book-Cover-Spread@0.5x.png" class="center">
+
 		</div>
 		<div class="elastic-three marketing-text">
 			<div>
@@ -168,35 +171,34 @@
 	<div class="elastic-container">
 		<div class="full marketing-text">
 			<h2>Chapter List</h2>
+		</div>
+		<div class="elastic marketing-text">
+			<div>
+				<p><strong>Chapter 1: Xcode &amp; Playground</strong></p>
+				<p>Use Xcode 6 and Playgrounds to learn Swift quickly, with instant feedback.</p>
 
-			<div class="elastic">
-				<div>
-					<p><strong>Chapter 1: Xcode &amp; Playground</strong></p>
-					<p>Use Xcode 6 and Playgrounds to learn Swift quickly, with instant feedback.</p>
+				<p><strong>Chapter 2: Variables &amp; Constants</strong></p>
+				<p>Learn the basics of programming with Swift as you build a small sample app. Learn Variables &amp; Constants  a very good chapter</p>
 
-					<p><strong>Chapter 2: Variables &amp; Constants</strong></p>
-					<p>Learn the basics of programming with Swift as you build a small sample app. Learn Variables &amp; Constants  a very good chapter</p>
+				<p><strong>Chapter 3: Operators, Loops, &amp; Logic</strong></p>
+				<p>Learn what Conditionals and Operators are and how to use them. We also cover loops, a powerful feature of programming. A quick overview of logic is found in this chapter and it is awesome.</p>
 
-					<p><strong>Chapter 3: Operators, Loops, &amp; Logic</strong></p>
-					<p>Learn what Conditionals and Operators are and how to use them. We also cover loops, a powerful feature of programming. A quick overview of logic is found in this chapter and it is awesome.</p>
+				<p><strong>Chapter 4: Functions &amp; Objects</strong></p>
+				<p>Code can be reused and stored just like data can. Learn how to leverage Functions and Objects to make your data reusable.</p>
 
-					<p><strong>Chapter 4: Functions &amp; Objects</strong></p>
-					<p>Code can be reused and stored just like data can. Learn how to leverage Functions and Objects to make your data reusable.</p>
+			</div>
+			<div>
+				<p><strong>Chapter 5: Stand To Make</strong></p>
+				<p>Start building your first app, Stand To Make. It's an iOS version of the popular web app <a href="http://standtomake.com" target="_blank">Stand to Make</a> for calculating your profit from selling your product.</p>
 
-				</div>
-				<div>
-					<p><strong>Chapter 5: Stand To Make</strong></p>
-					<p>Start building your first app, Stand To Make. It's an iOS version of the popular web app <a href="http://standtomake.com" target="_blank">Stand to Make</a> for calculating your profit from selling your product.</p>
+				<p><strong>Chapter 6: Controls <span class="betaspan">(Beta)</span></strong></p>
+				<p>Add controls and logic to your app. Learn to make apps that respond to User Interaction. </p>
 
-					<p><strong>Chapter 6: Controls <span class="betaspan">(Beta)</span></strong></p>
-					<p>Add controls and logic to your app. Learn to make apps that respond to User Interaction. </p>
+				<p><strong>Chapter 7: TableViews <span class="betaspan">(Beta)</span></strong></p>
+				<p>Learn about TableViews and how to layout information in them. We'll be using a tableView as a control.</p>
 
-					<p><strong>Chapter 7: TableViews <span class="betaspan">(Beta)</span></strong></p>
-					<p>Learn about TableViews and how to layout information in them. We'll be using a tableView as a control.</p>
-
-					<p><strong>Chapter 8: Releasing to the app store <span class="betaspan">(Beta)</span></strong></p>
-					<p>Get your app ready to release to the app store. You'll have everything you need, including launch Images, App Icons, and App Descriptions ready to go.</p>
-				</div>
+				<p><strong>Chapter 8: Releasing to the app store <span class="betaspan">(Beta)</span></strong></p>
+				<p>Get your app ready to release to the app store. You'll have everything you need, including launch Images, App Icons, and App Descriptions ready to go.</p>
 			</div>
 		</div>
 	</div>
@@ -206,7 +208,7 @@
 
 			<h2>KOW.FM Podcast</h2>
 
-			<img src="/img/RadioCutout.png">
+			<img style="width: 100%;max-width: 160px;margin: 10px auto;display: block;" src="/img/RadioCutout.png">
 
 			<p>I thought it would be a pretty good idea to interview other folks that have made Apps or that have learned to program from scratch. Check out some of the awesome conversations below and get inspiration. Episodes are released every other Tuesday, Subscribe to stay in the loop.</p>
 
@@ -237,8 +239,8 @@
 	<div class="elastic-container">
 		<div class="full marketing-text">
 			<h2>Facts &amp; Stuff.</h2>
-
-			<div class="elastic">
+		</div>
+			<div class="elastic marketing-text">
 				<div>
 
 					<p><strong>What's with this Beta thing?</strong></p>
@@ -270,7 +272,6 @@
 
 				</div>
 			</div>
-		</div>
 	</div>
 
 	<div class="elastic-container">

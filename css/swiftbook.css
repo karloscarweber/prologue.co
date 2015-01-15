@@ -253,6 +253,11 @@ div.grater:after {
   padding: 0px 20px;
   box-sizing: border-box;
   margin: 0 auto 0em; }
+  .elastic-container > div.full img {
+    width: 100%;
+    max-width: 543.5px;
+    margin: 10px auto;
+    display: block; }
 
 .elastic {
   zoom: 1; }
@@ -792,7 +797,6 @@ header {
     display: none; }
 
 .marketing-text {
-  padding: 0px 20px;
   box-sizing: border-box; }
   .marketing-text h2 {
     font-size: 40px;
@@ -826,7 +830,6 @@ a:visited, a {
   color: #2c88dc !important; }
 
 .special-marketing-text.marketing-text {
-  padding: 0px 20px;
   box-sizing: border-box; }
   .special-marketing-text.marketing-text h2 {
     font-size: 32px;
