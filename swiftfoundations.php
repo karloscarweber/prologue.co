@@ -219,7 +219,7 @@
 				<div class="podcast-box">
 					<img src="img/SamSoffes.png">
 
-					<h4>Episode 1:Sam Soffes</h4>
+					<h4>Episode 1: Sam Soffes</h4>
 
 					<p>In this Episode Sam and I talk about his new app Whiskey and what it takes to learn something new, <a href="http://kow.fm/episode001-sam-soffes/" target="_blank">Listen Now</a>.</p>
 				</div>
