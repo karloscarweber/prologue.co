@@ -23,34 +23,25 @@
 	<div class="elastic-container">
 		<div class="single marketing-text">
 			<h2>Courses</h2>
+		</div>
 
+		<div class="elastic">
+			<div>
 
-					<img class="" src="/img/courses/swiftfoundations-icon.png">
+				<img class="" src="/img/courses/swiftfoundations-icon.png">
 
-					<p><strong>Swift Foundations</strong></p>
-					<p>Learn to make iPhone apps using Swift, This course is for complete beginners, no programming experience is required. <a href="/swiftfoundations">learn more</a>.</p>
+				<p><strong>Swift Foundations</strong></p>
+				<p>Learn to make iPhone apps using Swift, This course is for complete beginners, no programming experience is required. <a href="/swiftfoundations">learn more</a>.</p>
 
-					<a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book ($25)</a>
+				<a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book ($25)</a>
 
-<!-- 			<div class="elastic">
-				<div>
-
-					<img class="" src="/img/courses/swiftfoundations-icon.png">
-
-					<p><strong>Swift Foundations</strong></p>
-					<p>Learn to make iPhone apps using Swift, This course is for complete beginners, no programming experience is required. <a href="/swiftfoundations">learn more</a>.</p>
-
-					<a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book ($25)</a>
-
-				</div>
-				<div>
-
-				</div>
-			</div> -->
+			</div>
+			<div>
+&nbsp;
+			</div>
 		</div>
 
 	</div>
-
 
 	<?php include('./includes/footer.php') ?>
 

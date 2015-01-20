@@ -253,6 +253,11 @@ div.grater:after {
   padding: 0px 20px;
   box-sizing: border-box;
   margin: 0 auto 0em; }
+  .elastic-container > div.full img {
+    width: 100%;
+    max-width: 543.5px;
+    margin: 10px auto;
+    display: block; }
 
 .elastic {
   zoom: 1; }
@@ -480,7 +485,6 @@ body {
   padding-top: 50px; }
 
 * {
-  font-family: 'Cabin';
   -webkit-font-smoothing: antialiased; }
 
 .transition {
@@ -489,15 +493,19 @@ body {
 
 .logo {
   text-indent: -5000px;
-  background: url("../img/logo.svg") no-repeat center center;
-  width: 151px;
-  height: 42px;
+  font-size: 1px;
+  color: transparent;
+  background: url("../img/logo-white.svg") no-repeat center center;
+  background-size: 122px 20px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 122px;
+  height: 20px;
   display: block;
   position: absolute;
-  top: 50px;
-  left: 10px;
   transition: left 0.1s linear;
-  -webkit-transition: left 0.1s linear; }
+  -webkit-transition: left 0.1s linear;
+  margin: 10px 20px; }
 
 .iphone {
   background: url("../img/iPhoneEditable.svg") no-repeat center center;
@@ -507,8 +515,7 @@ body {
   position: relative; }
   .iphone .iphone-text {
     font-size: 40px;
-    font-family: 'Cabin';
-    color: #4990e2;
+    color: #2c88dc;
     margin: 152px 110px 0px 93px;
     padding: 0px;
     display: block;
@@ -520,11 +527,10 @@ body {
   margin-top: 530px; }
 
 #mce-EMAIL, #mc-embedded-subscribe {
-  font-family: 'Cabin';
   text-align: center;
   display: block;
   margin: 0px auto;
-  border-color: #4990e2;
+  border-color: #2c88dc;
   border-style: solid;
   border-radius: 5px;
   border-width: 4px;
@@ -533,70 +539,72 @@ body {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   width: 280px;
-  color: #4990e2; }
+  color: #2c88dc; }
 
 #mc-embedded-subscribe {
   margin-top: 30px;
   text-decoration: underline;
   border: none;
-  color: #4990e2;
+  color: #2c88dc;
   background: none; }
 
 #mce-EMAIL:focus {
   outline: none; }
 
 ::-webkit-input-placeholder {
-  color: #4990e2;
+  color: #2c88dc;
   opacity: 0.7; }
 
 :-moz-placeholder {
-  color: #4990e2;
+  color: #2c88dc;
   opacity: 0.7; }
 
 ::-moz-placeholder {
-  color: #4990e2;
+  color: #2c88dc;
   opacity: 0.7; }
 
 :-ms-input-placeholder {
-  color: #4990e2;
+  color: #2c88dc;
   opacity: 0.7; }
 
 h2 {
   text-align: center;
-  color: #4990e2; }
+  color: #2c88dc; }
 
 .profiles img {
   display: block;
   position: relative;
   max-width: 128px;
   margin: 10px auto;
-  border: 4px solid #4990e2;
+  border: 4px solid #2c88dc;
   border-radius: 70px; }
 .profiles p {
   text-align: center;
   max-width: 300px;
   font-size: 20px;
-  color: #4990e2;
+  color: #2c88dc;
   margin: 10px auto;
   -webkit-font-smoothing: antialiased; }
   .profiles p a {
-    color: #4990e2;
+    color: #2c88dc;
     text-decoration: underline; }
 
 .copyright {
-  padding: 50px 0px 30px; }
-  .copyright p {
+  background: #2c88dc;
+  padding: 20px 0px 20px; }
+  .copyright p, .copyright h3, .copyright h4, .copyright h2 {
     text-align: center;
-    max-width: 300px;
+    color: white; }
+    .copyright p a, .copyright p a:visited, .copyright p a:hover, .copyright h3 a, .copyright h3 a:visited, .copyright h3 a:hover, .copyright h4 a, .copyright h4 a:visited, .copyright h4 a:hover, .copyright h2 a, .copyright h2 a:visited, .copyright h2 a:hover {
+      color: white !important;
+      text-decoration: underline; }
+  .copyright p {
     font-size: 16px;
-    color: #4990e2;
     margin: 10px auto;
     -webkit-font-smoothing: antialiased;
     margin-bottom: 0px;
-    margin-top: 0px; }
-    .copyright p a {
-      color: #4990e2;
-      text-decoration: underline; }
+    margin-top: 0px;
+    font-weight: 400; }
 
 .banner {
   position: fixed;
@@ -606,9 +614,9 @@ h2 {
   height: 40px;
   text-align: center;
   display: block;
-  background: #4990e2;
+  background: #2c88dc;
   color: white !important;
-  font-family: Lato;
+  font-family: 'Lato';
   text-decoration: none;
   font-size: 16px;
   padding: 0px;
@@ -617,17 +625,10 @@ h2 {
   border-radius: 20px;
   z-index: 1000;
   border-radius: 0px;
-  z-index: 1000;
-  font-family: 'Noto Sans'; }
+  z-index: 1000; }
 
 /* small size */
 @media screen and (max-width: 720px) {
-  .logo {
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    margin-left: -75px; }
-
   .iphone {
     background: none;
     min-height: 0px;
@@ -654,5 +655,5 @@ h2 {
     border-radius: 0px;
     padding: 0px;
     z-index: 1000;
-    font-family: 'Noto Sans';
+    font-family: 'Lato';
     font-size: 16px; } }

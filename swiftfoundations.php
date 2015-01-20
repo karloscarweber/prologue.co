@@ -26,14 +26,14 @@
 			<h2>Learn to Make Apps, Step by Step.</h2>
 			<h3>Swift Foundations: A beginners course that teaches everything you need to turn your idea into reality.</h3>
 
-			<p>Already a programmer? <a href="#whatsinside">This book is for you too.</a></p>
+			<p><a href="https://gum.co/swiftcourse/videobeta" class="button">Buy for $60 <strike>$75</strike></a></p>
+
 		</div>
 
 		<div class="elastic marketing-text elastic-reverse">
 			<div>
 				<img src="/img/BookCoverBig.png">
 				<p style="max-width:280px;margin:0 auto;">This cover took me like 20 hours <a href="#buy">Click here to buy the book because the cover is awesome!</a> ;P <br><a href="https://gum.co/swiftbookfree/free">or download a free chapter</a></p>
-
 			</div>
 			<div>
 				
@@ -97,7 +97,7 @@
 
 				<p>Check out the Web Version of Stand To Make at <a href="http://standtomake.com" target="_blank">standtomake.com</a>. The Web version of Stand To Make was developed by Hamish Mcpherson, you can keep up with him on twitter, follow <a href="https://twitter.com/hamstu" target="_blank">@hamstu</a>.</p>
 
-				<p>The Stand To Make iOS app is open source, you can fork it on <a href="https://github.com/karloscarweber/StandToMake/commits/master" target="_blank">Github</a>. </p>
+				<p>The Stand To Make iOS app is open source, you can fork it on <a href="https://github.com/karloscarweber/StandToMake/" target="_blank">Github</a>. </p>
 			</div>
 		</div>
 	</div>

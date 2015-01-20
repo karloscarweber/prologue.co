@@ -51,7 +51,7 @@ header {
 	font-weight:400;
 
 	text-align: right;
-	text-transform: uppercase; 
+	text-transform: capitalize; 
 
 	background: $swiftbook-blue;
 	height: 44px;
@@ -269,6 +269,12 @@ a:visited, a {
 			color: $swiftbook-blue;
 			text-decoration: underline;
 		}
+		a.button, a.button:visited {
+			max-width:300px;
+			color:white !important;
+			font-weight: 400;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -322,7 +328,7 @@ a:visited, a {
 	}
 }
 
-.blue-row {
+.blue-row, .copyright {
 
 	@extend .colored-row;
 	background: $swiftbook-blue;
@@ -334,8 +340,12 @@ a:visited, a {
 	}
 
 	.button {
-		border: 5px solid white;
+		border: 2px solid white;
 		background: transparent;
+		color:white !important;
+		margin: 10px auto;
+		max-width: 300px;
+		width:100%;
 	}
 }
 
@@ -1308,15 +1318,26 @@ hr {
 
 .betaflag {
 	position: absolute;
-	margin:-20px 0px 0px -30px;
-	-webkit-transform: rotate(16deg);
-	color:red;
-	text-shadow:3px 3px 0px rgba(255, 124, 41, 0.5);
+	margin: -45px 0px 0px -60px;
+	-webkit-transform: rotate(20deg);
+	color: red;
+	background: #FCCB6C;
+	border-radius: 220px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: 400;
+	width: 84px;
+	height: 114px;
+	line-height: 114px;
+	max-width: 84px;
+	text-transform: uppercase;
+	font-size: 32px !important;
 }
 
 a.prologueproduction {
 	text-indent:-5000px;
-	background-image: url('/img/APrologueProduction.svg');
+	// background-image: url('/img/APrologueProduction.svg');
+	background-image: url('/img/prologuelabel.svg');
     background-size: 223px 60px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1324,4 +1345,13 @@ a.prologueproduction {
     height:60px;
     display: block;
     margin: 30px auto;
+}
+
+.homeiphoneicon {
+	margin-top:200px !important;
+}
+@media only screen and (max-width: 600px) {
+	.homeiphoneicon {
+		margin-top:100px !important;
+	}
 }

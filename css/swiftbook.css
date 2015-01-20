@@ -485,7 +485,6 @@ body {
   padding-top: 50px; }
 
 * {
-  font-family: 'Cabin';
   -webkit-font-smoothing: antialiased; }
 
 .transition {
@@ -516,8 +515,7 @@ body {
   position: relative; }
   .iphone .iphone-text {
     font-size: 40px;
-    font-family: 'Cabin';
-    color: #4990e2;
+    color: #2c88dc;
     margin: 152px 110px 0px 93px;
     padding: 0px;
     display: block;
@@ -529,11 +527,10 @@ body {
   margin-top: 530px; }
 
 #mce-EMAIL, #mc-embedded-subscribe {
-  font-family: 'Cabin';
   text-align: center;
   display: block;
   margin: 0px auto;
-  border-color: #4990e2;
+  border-color: #2c88dc;
   border-style: solid;
   border-radius: 5px;
   border-width: 4px;
@@ -542,70 +539,72 @@ body {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   width: 280px;
-  color: #4990e2; }
+  color: #2c88dc; }
 
 #mc-embedded-subscribe {
   margin-top: 30px;
   text-decoration: underline;
   border: none;
-  color: #4990e2;
+  color: #2c88dc;
   background: none; }
 
 #mce-EMAIL:focus {
   outline: none; }
 
 ::-webkit-input-placeholder {
-  color: #4990e2;
+  color: #2c88dc;
   opacity: 0.7; }
 
 :-moz-placeholder {
-  color: #4990e2;
+  color: #2c88dc;
   opacity: 0.7; }
 
 ::-moz-placeholder {
-  color: #4990e2;
+  color: #2c88dc;
   opacity: 0.7; }
 
 :-ms-input-placeholder {
-  color: #4990e2;
+  color: #2c88dc;
   opacity: 0.7; }
 
 h2 {
   text-align: center;
-  color: #4990e2; }
+  color: #2c88dc; }
 
 .profiles img {
   display: block;
   position: relative;
   max-width: 128px;
   margin: 10px auto;
-  border: 4px solid #4990e2;
+  border: 4px solid #2c88dc;
   border-radius: 70px; }
 .profiles p {
   text-align: center;
   max-width: 300px;
   font-size: 20px;
-  color: #4990e2;
+  color: #2c88dc;
   margin: 10px auto;
   -webkit-font-smoothing: antialiased; }
   .profiles p a {
-    color: #4990e2;
+    color: #2c88dc;
     text-decoration: underline; }
 
 .copyright {
+  background: #2c88dc;
   padding: 20px 0px 20px; }
-  .copyright p {
+  .copyright p, .copyright h3, .copyright h4, .copyright h2 {
     text-align: center;
-    max-width: 300px;
+    color: white; }
+    .copyright p a, .copyright p a:visited, .copyright p a:hover, .copyright h3 a, .copyright h3 a:visited, .copyright h3 a:hover, .copyright h4 a, .copyright h4 a:visited, .copyright h4 a:hover, .copyright h2 a, .copyright h2 a:visited, .copyright h2 a:hover {
+      color: white !important;
+      text-decoration: underline; }
+  .copyright p {
     font-size: 16px;
-    color: #4990e2;
     margin: 10px auto;
     -webkit-font-smoothing: antialiased;
     margin-bottom: 0px;
-    margin-top: 0px; }
-    .copyright p a {
-      color: #4990e2;
-      text-decoration: underline; }
+    margin-top: 0px;
+    font-weight: 400; }
 
 .banner {
   position: fixed;
@@ -615,9 +614,9 @@ h2 {
   height: 40px;
   text-align: center;
   display: block;
-  background: #4990e2;
+  background: #2c88dc;
   color: white !important;
-  font-family: Lato;
+  font-family: 'Lato';
   text-decoration: none;
   font-size: 16px;
   padding: 0px;
@@ -626,8 +625,7 @@ h2 {
   border-radius: 20px;
   z-index: 1000;
   border-radius: 0px;
-  z-index: 1000;
-  font-family: 'Noto Sans'; }
+  z-index: 1000; }
 
 /* small size */
 @media screen and (max-width: 720px) {
@@ -657,7 +655,7 @@ h2 {
     border-radius: 0px;
     padding: 0px;
     z-index: 1000;
-    font-family: 'Noto Sans';
+    font-family: 'Lato';
     font-size: 16px; } }
 * {
   font-family: 'Lato'; }
@@ -690,7 +688,7 @@ header {
   font-family: 'Montserrat';
   font-weight: 400;
   text-align: right;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background: #2c88dc;
   height: 44px; }
   header p, header p a, header .site-nav-item {
@@ -861,6 +859,11 @@ a:visited, a {
     .special-marketing-text.marketing-text p a {
       color: #2c88dc;
       text-decoration: underline; }
+    .special-marketing-text.marketing-text p a.button, .special-marketing-text.marketing-text p a.button-input, .special-marketing-text.marketing-text p a.button:visited, .special-marketing-text.marketing-text p a.button-input:visited {
+      max-width: 300px;
+      color: white !important;
+      font-weight: 400;
+      text-decoration: none; }
 
 .podcast-box {
   width: 100%; }
@@ -882,24 +885,28 @@ a:visited, a {
     margin-left: 0px; }
   .podcast-box p {
     margin-left: 0px; } }
-.colored-row, .blue-row, .yosemite-row, .lego-row, .codeandapp-row, .liveapp-row, .yellow-row, .red-row, .green-row, .method-row {
+.colored-row, .blue-row, .yosemite-row, .lego-row, .codeandapp-row, .liveapp-row, .copyright, .yellow-row, .red-row, .green-row, .method-row {
   padding-top: 25px;
   padding-bottom: 25px;
   max-width: 100%; }
-  .colored-row .marketing-text, .blue-row .marketing-text, .yosemite-row .marketing-text, .lego-row .marketing-text, .codeandapp-row .marketing-text, .liveapp-row .marketing-text, .yellow-row .marketing-text, .red-row .marketing-text, .green-row .marketing-text, .method-row .marketing-text {
+  .colored-row .marketing-text, .blue-row .marketing-text, .yosemite-row .marketing-text, .lego-row .marketing-text, .codeandapp-row .marketing-text, .liveapp-row .marketing-text, .copyright .marketing-text, .yellow-row .marketing-text, .red-row .marketing-text, .green-row .marketing-text, .method-row .marketing-text {
     max-width: 920px; }
-    .colored-row .marketing-text h2, .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .lego-row .marketing-text h2, .codeandapp-row .marketing-text h2, .liveapp-row .marketing-text h2, .yellow-row .marketing-text h2, .red-row .marketing-text h2, .green-row .marketing-text h2, .method-row .marketing-text h2 {
+    .colored-row .marketing-text h2, .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .lego-row .marketing-text h2, .codeandapp-row .marketing-text h2, .liveapp-row .marketing-text h2, .copyright .marketing-text h2, .yellow-row .marketing-text h2, .red-row .marketing-text h2, .green-row .marketing-text h2, .method-row .marketing-text h2 {
       font-weight: 200; }
-    .colored-row .marketing-text h3, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .lego-row .marketing-text h3, .codeandapp-row .marketing-text h3, .liveapp-row .marketing-text h3, .yellow-row .marketing-text h3, .red-row .marketing-text h3, .green-row .marketing-text h3, .method-row .marketing-text h3 {
+    .colored-row .marketing-text h3, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .lego-row .marketing-text h3, .codeandapp-row .marketing-text h3, .liveapp-row .marketing-text h3, .copyright .marketing-text h3, .yellow-row .marketing-text h3, .red-row .marketing-text h3, .green-row .marketing-text h3, .method-row .marketing-text h3 {
       font-weight: 600; }
 
-.blue-row, .yosemite-row, .lego-row, .codeandapp-row, .liveapp-row {
+.blue-row, .yosemite-row, .lego-row, .codeandapp-row, .liveapp-row, .copyright {
   background: #2c88dc; }
-  .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .lego-row .marketing-text h2, .codeandapp-row .marketing-text h2, .liveapp-row .marketing-text h2, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .lego-row .marketing-text h3, .codeandapp-row .marketing-text h3, .liveapp-row .marketing-text h3 {
+  .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .lego-row .marketing-text h2, .codeandapp-row .marketing-text h2, .liveapp-row .marketing-text h2, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .lego-row .marketing-text h3, .codeandapp-row .marketing-text h3, .liveapp-row .marketing-text h3, .copyright .marketing-text h2, .copyright .marketing-text h3 {
     color: white; }
-  .blue-row .button, .yosemite-row .button, .lego-row .button, .codeandapp-row .button, .liveapp-row .button, .blue-row .button-input, .yosemite-row .button-input, .lego-row .button-input, .codeandapp-row .button-input, .liveapp-row .button-input {
-    border: 5px solid white;
-    background: transparent; }
+  .blue-row .button, .yosemite-row .button, .lego-row .button, .codeandapp-row .button, .liveapp-row .button, .blue-row .button-input, .yosemite-row .button-input, .lego-row .button-input, .codeandapp-row .button-input, .liveapp-row .button-input, .copyright .button, .copyright .button-input {
+    border: 2px solid white;
+    background: transparent;
+    color: white !important;
+    margin: 10px auto;
+    max-width: 300px;
+    width: 100%; }
 
 .yellow-row {
   background: #fdff77; }
@@ -1548,14 +1555,24 @@ hr {
     font-size: 16px; } }
 .betaflag {
   position: absolute;
-  margin: -20px 0px 0px -30px;
-  -webkit-transform: rotate(16deg);
+  margin: -45px 0px 0px -60px;
+  -webkit-transform: rotate(20deg);
   color: red;
-  text-shadow: 3px 3px 0px rgba(255, 124, 41, 0.5); }
+  background: #FCCB6C;
+  border-radius: 220px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 400;
+  width: 84px;
+  height: 114px;
+  line-height: 114px;
+  max-width: 84px;
+  text-transform: uppercase;
+  font-size: 32px !important; }
 
 a.prologueproduction {
   text-indent: -5000px;
-  background-image: url("/img/APrologueProduction.svg");
+  background-image: url("/img/prologuelabel.svg");
   background-size: 223px 60px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1563,3 +1580,10 @@ a.prologueproduction {
   height: 60px;
   display: block;
   margin: 30px auto; }
+
+.homeiphoneicon {
+  margin-top: 200px !important; }
+
+@media only screen and (max-width: 600px) {
+  .homeiphoneicon {
+    margin-top: 100px !important; } }
