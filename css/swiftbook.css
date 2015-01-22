@@ -414,6 +414,11 @@ div.double-narrow > div {
 .clearfix, .rgrid-container, .app-block, .mobile-visible, .pricebox {
   *zoom: 1; }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .rgrid-container {
   -moz-transition: all 0.9s;
   -o-transition: all 0.9s;
@@ -672,7 +677,8 @@ body {
   margin: 0 auto; }
 
 p, pre {
-  margin: 0 0 1em 0; }
+  margin: 0 0 1em 0;
+  line-height: 26px; }
 
 /* Header Styles */
 .header-container {
@@ -818,11 +824,12 @@ header {
     text-align: center; }
   .marketing-text p {
     font-family: 'Lato';
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 18px;
     line-height: 24px;
-    color: #222222;
-    text-align: justify; }
+    color: #000000;
+    text-align: justify;
+    -webkit-font-smoothing: auto; }
 
 a:visited, a {
   color: #2c88dc !important; }
@@ -1555,7 +1562,7 @@ hr {
     font-size: 16px; } }
 .betaflag {
   position: absolute;
-  margin: -45px 0px 0px -60px;
+  margin: -45px 0px 0px -90px;
   -webkit-transform: rotate(20deg);
   color: red;
   background: #FCCB6C;
@@ -1568,7 +1575,8 @@ hr {
   line-height: 114px;
   max-width: 84px;
   text-transform: uppercase;
-  font-size: 32px !important; }
+  font-size: 32px !important;
+  opacity: 0.7; }
 
 a.prologueproduction {
   text-indent: -5000px;
@@ -1587,3 +1595,11 @@ a.prologueproduction {
 @media only screen and (max-width: 600px) {
   .homeiphoneicon {
     margin-top: 100px !important; } }
+.greybox {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #edf0f2;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box; }

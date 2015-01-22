@@ -7,7 +7,7 @@
 
         <ul class="site-nav">
             <li class="site-nav-item"><a href="/courses">Courses</a></li>
-            <li class="site-nav-item"><a href="/">About</a></li>
+            <li class="site-nav-item"><a href="/about">About</a></li>
             <li class="site-nav-item"><a href="http://blog.prologue.co">Blog</a></li>
         </ul>
 

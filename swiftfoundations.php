@@ -26,14 +26,14 @@
 			<h2>Learn to Make Apps, Step by Step.</h2>
 			<h3>Swift Foundations: A beginners course that teaches everything you need to turn your idea into reality.</h3>
 
-			<p><a href="https://gum.co/swiftcourse/videobeta" class="button">Buy for $60 <strike>$75</strike></a></p>
+			<p><a href="#buy" class="button">Buy the Book</a></p>
 
 		</div>
 
 		<div class="elastic marketing-text elastic-reverse">
 			<div>
 				<img src="/img/BookCoverBig.png">
-				<p style="max-width:280px;margin:0 auto;">This cover took me like 20 hours <a href="#buy">Click here to buy the book because the cover is awesome!</a> ;P <br><a href="https://gum.co/swiftbookfree/free">or download a free chapter</a></p>
+				<p style="max-width:280px;margin:0 auto;"><a href="#swiftbasics">Download a free chapter</a>.</p>
 			</div>
 			<div>
 				
@@ -44,8 +44,6 @@
 				<p>You see, I know how to program. What’s more, I know how to make apps. So that’s what I’m going to teach you, how to make apps. You’re going to learn how to program with Swift, Apple’s new programming language. It’s easier for beginners to learn Swift than Objective-C, which is what the Grizzled Ancients used to make ancient apps.</p>
 
 				<p>If you don’t know how to program at all, or if you just don’t know how to program Swift. This book is made for complete beginners, but even the Pros need a refresher once in a while.</p>
-
-				<p>Ready to buy the Book? <a href="#buy">Clickety Clack or Tappity Tap this link to buy it</a>.</p>
 
 			</div>
 		</div>
@@ -104,7 +102,7 @@
 	<div class="elastic-container">
 		<div class="single marketing-text">
 
-			<h2 id="buy">Ready to Buy The Book?</h2>
+			<h2 id="buy">Ready to Buy The Book?<span class="betaflag">beta</span></h2>
 
 			<p>Awesome!!!! The book is ready! Buy it today! The video course… not so much. It’s in an open beta until January, you can buy the Video course before it’s  done and get a 20% discount. I add more videos every Monday. So you don’t have to wait long anyways.</p>
 		</div>
@@ -116,27 +114,26 @@
 					<h3>The Book + the Video Course</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
 					<p class="tv">20 Video lectures about Swift.</p>
-					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for $60 <strike>$75</strike></a>
+					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for $80 <strike>$99</strike></a>
 				</div>
 				<div>
 					<h3>Just the Book</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
-					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for $20 <strike>$25</strike></a>
+					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for $32 <strike>$39</strike></a>
 				</div>
 			</div>
 
-			<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
+			<a href="#swiftbasics" class="gumroad-link">or download a free chapter</a>
 
 		</div>
 	</div>
-
-
 
 	<div class="elastic-container">
 		<div class="full marketing-text">
 			<h2 id="whatsinside">What's in the Book?</h2>
 
-			<img src="/img/Book-Cover-Spread@0.5x.png" class="center">
+			<!-- <img src="/img/Book-Cover-Spread.png" class="center"> -->
+			<!-- <img src="/img/Book-Cover-Spread@0.5x.png" class="center"> -->
 
 		</div>
 		<div class="elastic-three marketing-text">
@@ -147,6 +144,7 @@
 				<h4>The Book</h4>
 
 				<p>I mean of course amirite? The book contains 8 Chapters of App goodness. You’ll get the book in PDF, ePub, and .mobi formats.</p>
+
 			</div>
 			<div>
 
@@ -289,16 +287,33 @@
 					<h3>The Book + the Video Course</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
 					<p class="tv">20 Video lectures about Swift.</p>
-					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for $60 <strike>$75</strike></a>
+					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for $80 <strike>$99</strike></a>
 				</div>
 				<div>
 					<h3>Just the Book</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
-					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for $20 <strike>$25</strike></a>
+					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for $32 <strike>$39</strike></a>
 				</div>
 			</div>
 
-			<a href="https://gum.co/swiftbookfree/free" class="gumroad-link">or download a free chapter</a>
+			<a href="#swiftbasics" class="gumroad-link">or download a free chapter</a>
+
+		</div>
+	</div>
+
+	<div class="elastic-container">
+		<div class="single marketing-text">
+			<div class="greybox">
+
+				<h3 id="swiftbasics" style="margin-top:0px; text-align:center;">Download a free Chapter and get Swift Basics.</h3>
+
+				<img src="/img/Book-Cover-Spread.png" class="center" style="max-width:256px;">
+
+				<p>Learn the basics of Swift through a free email course. Download the first chapter to get started, every few days a new chapter will be sent to your email. It's a great way to get started.</p>
+
+				<p><a href="https://gum.co/swiftbookfree/free" class="button" style="color:white !important;">Subscribe to Swift Basics</a></p>
+
+			</div>
 
 		</div>
 	</div>

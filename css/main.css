@@ -414,6 +414,11 @@ div.double-narrow > div {
 .clearfix, .rgrid-container {
   *zoom: 1; }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .rgrid-container {
   -moz-transition: all 0.9s;
   -o-transition: all 0.9s;
