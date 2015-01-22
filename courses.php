@@ -33,7 +33,7 @@
 				<p><strong>Swift Foundations</strong></p>
 				<p>Learn to make iPhone apps using Swift, This course is for complete beginners, no programming experience is required. <a href="/swiftfoundations">learn more</a>.</p>
 
-				<a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book ($25)</a>
+				<a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book ($39)</a>
 
 			</div>
 			<div>
