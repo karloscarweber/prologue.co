@@ -22,23 +22,14 @@
 
 	<div class="elastic-container">
 		<div class="single marketing-text">
-			<h2>Courses</h2>
-		</div>
+			<h2>Books</h2>
 
-		<div class="elastic">
-			<div>
-
-				<img class="" src="/img/courses/swiftfoundations-icon.png">
+				<!-- <img class="" src="/img/courses/swiftfoundations-icon.png"> -->
+				<a href="/swiftfoundations"><img src="/img/BookCoverInBookform@2x.png"></a>
 
 				<p><strong>Swift Foundations</strong></p>
 				<p>Learn to make iPhone apps using Swift, This course is for complete beginners, no programming experience is required. <a href="/swiftfoundations">learn more</a>.</p>
 
-				<a href="https://gum.co/swiftbook/" class="gumroad-button button">Buy the Book ($39)</a>
-
-			</div>
-			<div>
-&nbsp;
-			</div>
 		</div>
 
 	</div>

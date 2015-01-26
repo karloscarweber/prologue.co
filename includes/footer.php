@@ -13,7 +13,7 @@
 
         <br>
 
-        <p>Prologue is a solo venture by Karl Oscar Weber.<br>Subscribe to get infrequent emails about<br>new books, courses, and apps.</p>
+        <p>Prologue is a solo venture by Karl Oscar Weber.<br>Subscribe to get infrequent emails about<br>new books and apps.</p>
 
         <br>
 

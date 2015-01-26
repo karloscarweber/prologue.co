@@ -32,7 +32,7 @@
 
 		<div class="elastic marketing-text elastic-reverse">
 			<div>
-				<img src="/img/BookCoverBig.png">
+				<img src="/img/BookCoverInBookform@2x.png">
 				<p style="max-width:280px;margin:0 auto;"><a href="#swiftbasics">Download a free chapter</a>.</p>
 			</div>
 			<div>
@@ -307,7 +307,7 @@
 
 				<h3 id="swiftbasics" style="margin-top:0px; text-align:center;">Download a free Chapter and get Swift Basics.</h3>
 
-				<img src="/img/Book-Cover-Spread.png" class="center" style="max-width:256px;">
+				<img src="/img/BookSpread.png" class="center" style="max-width:256px;">
 
 				<p>Learn the basics of Swift through a free email course. Download the first chapter to get started, every few days a new chapter will be sent to your email. It's a great way to get started.</p>
 
