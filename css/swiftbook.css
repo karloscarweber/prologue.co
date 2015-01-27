@@ -904,7 +904,8 @@ a:visited, a {
       font-weight: 600; }
 
 .blue-row, .yosemite-row, .lego-row, .codeandapp-row, .liveapp-row, .copyright {
-  background: #2c88dc; }
+  background: #2c88dc;
+  margin-top: 50px; }
   .blue-row .marketing-text h2, .yosemite-row .marketing-text h2, .lego-row .marketing-text h2, .codeandapp-row .marketing-text h2, .liveapp-row .marketing-text h2, .blue-row .marketing-text h3, .yosemite-row .marketing-text h3, .lego-row .marketing-text h3, .codeandapp-row .marketing-text h3, .liveapp-row .marketing-text h3, .copyright .marketing-text h2, .copyright .marketing-text h3 {
     color: white; }
   .blue-row .button, .yosemite-row .button, .lego-row .button, .codeandapp-row .button, .liveapp-row .button, .blue-row .button-input, .yosemite-row .button-input, .lego-row .button-input, .codeandapp-row .button-input, .liveapp-row .button-input, .copyright .button, .copyright .button-input {
@@ -1481,7 +1482,7 @@ hr {
     border: 2px solid #2c88dc !important;
     box-sizing: border-box !important;
     height: 50px !important;
-    line-height: 42px !important;
+    line-height: 45px !important;
     text-align: center !important;
     border-radius: 10px !important;
     text-decoration: none !important; }

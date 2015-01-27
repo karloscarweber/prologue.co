@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Courses - Prologue Productions</title>
+	<title>Books - Prologue Productions</title>
 
 	<!--
 		What up!!!! 
@@ -21,14 +21,10 @@
 	<?php include('./includes/header.php') ?>
 
 	<div class="elastic-container">
-		<div class="single marketing-text">
+		<div class="single marketing-text clearfix">
 			<h2>Books</h2>
 
-				<!-- <img class="" src="/img/courses/swiftfoundations-icon.png"> -->
-				<a href="/swiftfoundations"><img src="/img/BookCoverInBookform@2x.png"></a>
-
-				<p><strong>Swift Foundations</strong></p>
-				<p>Learn to make iPhone apps using Swift, This course is for complete beginners, no programming experience is required. <a href="/swiftfoundations">learn more</a>.</p>
+			<a class="bookCoverLink" href="/swiftfoundations"><img src="/img/BookCoverInBookform@2x.png"></a>
 
 		</div>
 

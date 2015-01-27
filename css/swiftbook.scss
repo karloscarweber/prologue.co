@@ -335,6 +335,7 @@ a:visited, a {
 
 	@extend .colored-row;
 	background: $swiftbook-blue;
+	margin-top:50px;
 
 	.marketing-text {
 		h2, h3 {
@@ -1194,7 +1195,7 @@ hr {
 		border: 2px solid $swiftbook-blue !important;
 		box-sizing: border-box !important;
 		height: 50px !important;
-		line-height: 42px !important;
+		line-height: 45px !important;
 		text-align:center !important;
 		border-radius: 10px !important;
 		text-decoration: none !important;

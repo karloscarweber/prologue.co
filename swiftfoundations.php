@@ -21,23 +21,31 @@
 	<?php include('./includes/header.php') ?>
 
 	<div class="elastic-container">
-		<div class="full marketing-text special-marketing-text">
+<!-- 		<div class="full marketing-text special-marketing-text">
 
 			<h2>Learn to Make Apps, Step by Step.</h2>
 			<h3>Swift Foundations: A beginners course that teaches everything you need to turn your idea into reality.</h3>
 
 			<p><a href="#buy" class="button">Buy the Book</a></p>
 
-		</div>
+		</div> -->
 
-		<div class="elastic marketing-text elastic-reverse">
+		<div class="elastic marketing-text">
 			<div>
 				<img src="/img/BookCoverInBookform@2x.png">
 				<p style="max-width:280px;margin:0 auto;"><a href="#swiftbasics">Download a free chapter</a>.</p>
 			</div>
 			<div>
+				<div class="marketing-text special-marketing-text">
+					<h2 style="margin-top:10px !important;">Learn to Make Apps, <br>Step by Step.</h2>
+					<h3>Swift Foundations: A beginners course that teaches everything you need to turn your idea into reality.</h3>
+					<br>
+					<h3>Buy the beta release copy and get 20% off.</h3>
+
+					<p style="margin-bottom:20px !important;"><a href="#buy" class="button">Buy the Book</a></p>
+				</div>
 				
-				<h2>Swift Foundations<span class="betaflag">beta</span></h2>
+				<!-- <h2>Swift Foundations<span class="betaflag">beta</span></h2> -->
 
 				<p>Let’s be Honest here. You want to make an app. maybe it’s a cooking app, or a To-Do List app. Maybe you want to tap your phone to hear the perfect fart noise. whatever it is you have 1 problem, You don’t know how to program. That’s where I come in.</p>
 
@@ -114,12 +122,12 @@
 					<h3>The Book + the Video Course</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
 					<p class="tv">20 Video lectures about Swift.</p>
-					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for $80 <strike>$99</strike></a>
+					<a href="https://gum.co/swiftcourse/videobeta?wanted=true" class="button blue">Buy for $79 <strike>$99</strike></a>
 				</div>
 				<div>
 					<h3>Just the Book</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
-					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for $32 <strike>$39</strike></a>
+					<a href="https://gum.co/swiftbook/beta?wanted=true" class="button">Buy for $32 <strike>$39</strike></a>
 				</div>
 			</div>
 
@@ -287,12 +295,12 @@
 					<h3>The Book + the Video Course</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
 					<p class="tv">20 Video lectures about Swift.</p>
-					<a href="https://gum.co/swiftcourse/videobeta" class="button blue">Buy for $80 <strike>$99</strike></a>
+					<a href="https://gum.co/swiftcourse/videobeta?wanted=true" class="button blue">Buy for $79 <strike>$99</strike></a>
 				</div>
 				<div>
 					<h3>Just the Book</h3>
 					<p class="diary">8 Step by Step Chapters.</p>
-					<a href="https://gum.co/swiftbook/beta" class="gumroad-button button">Buy for $32 <strike>$39</strike></a>
+					<a href="https://gum.co/swiftbook/beta?wanted=true" class="button">Buy for $32 <strike>$39</strike></a>
 				</div>
 			</div>
 
