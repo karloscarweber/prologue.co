@@ -1278,6 +1278,13 @@ hr {
 	font-family:'Lato';
 }
 
+.menu-button {
+	padding: 5px 10px;
+	border:2px solid white;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 601px) {
     .site-nav {
         display: block !important;
@@ -1293,16 +1300,20 @@ hr {
         text-align: center;
     }
 
+    // .site-nav-item {
+    //     display: block !important;
+    //     padding: 15px 0px !important;
+    //     text-align: center !important;
+    //     width:100% !important;
+    //     margin:0px !important;
+    // }
     .site-nav-item {
-        display: block !important;
-        padding: 15px 0px !important;
-        text-align: center !important;
-        width:100% !important;
-        margin:0px !important;
+    	border-radius: 5px;
     }
 
     .site-nav-menu-button {
         display:block !important;
+        // background: none;
     }
 
 	.banner {

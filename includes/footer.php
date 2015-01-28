@@ -17,13 +17,11 @@
 
         <br>
 
-        <a href="https://gumroad.com/karloscarweber/follow" class="button">Subscribe</a>
+        <a href="http://eepurl.com/8bFhL" class="button">Subscribe</a>
 
         <br>
 
         <p>Or Follow <a href="https://www.twitter.com/whatspast">@whatspast</a> on Twitter for more frequent updates.</p>
-
-        <br>
 
         <a href="/" class="prologueproduction">A Prologue Production</a>
 		<p>Say <a href="mailto:hello@prologue.co">hello@prologue.co</a></p>

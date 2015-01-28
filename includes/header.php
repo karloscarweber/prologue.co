@@ -6,8 +6,10 @@
         <a herf="#" class="site-nav-menu-button"></a>
 
         <ul class="site-nav">
-            <li class="site-nav-item"><a href="/books">books</a></li>
-            <li class="site-nav-item"><a href="/about">About</a></li>
+        	<!-- I'm really excited about this store whenever it launches, it's going to be killer awesome. -->
+	        <!-- <li class="site-nav-item"><a class="menu-button" href="/store">Store</a></li> -->
+            <li class="site-nav-item"><a href="/books">Books</a></li>
+            <!-- <li class="site-nav-item"><a href="/books">Products</a></li> -->
             <li class="site-nav-item"><a href="http://blog.prologue.co">Blog</a></li>
         </ul>
 
