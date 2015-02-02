@@ -8,24 +8,21 @@
 
         </div>
     </div> -->
-
-	<div class="single copyright">
-
-        <br>
-
-        <p>Prologue is a solo venture by Karl Oscar Weber.<br>Subscribe to get infrequent emails about<br>new books and apps.</p>
-
-        <br>
-
-        <a href="http://eepurl.com/8bFhL" class="button">Subscribe</a>
-
-        <br>
-
-        <p>Or Follow <a href="https://www.twitter.com/whatspast">@whatspast</a> on Twitter for more frequent updates.</p>
-
-        <a href="/" class="prologueproduction">A Prologue Production</a>
-		<p>Say <a href="mailto:hello@prologue.co">hello@prologue.co</a></p>
-	</div>
+    <div class="blue-row">
+    <div class="grater-container">
+    	<div class="grater copyright">
+            <div>
+                <p>Prologue is a solo venture by Karl Oscar Weber. Subscribe to get infrequent emails about new books and apps.</p>
+                <br>
+                <a href="http://eepurl.com/8bFhL" class="button">Subscribe</a>
+            </div>
+            <div>
+                <p>Follow <a href="https://www.twitter.com/whatspast">@whatspast</a> on Twitter for more frequent updates, or say <a href="mailto:hello@prologue.co">hello@prologue.co</a></p>
+                <a href="/" class="prologueproduction">A Prologue Production</a>
+            </div>
+    	</div>
+    </div>
+    </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){

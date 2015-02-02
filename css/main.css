@@ -598,7 +598,7 @@ h2 {
   background: #2c88dc;
   padding: 20px 0px 20px; }
   .copyright p, .copyright h3, .copyright h4, .copyright h2 {
-    text-align: center;
+    text-align: left;
     color: white; }
     .copyright p a, .copyright p a:visited, .copyright p a:hover, .copyright h3 a, .copyright h3 a:visited, .copyright h3 a:hover, .copyright h4 a, .copyright h4 a:visited, .copyright h4 a:hover, .copyright h2 a, .copyright h2 a:visited, .copyright h2 a:hover {
       color: white !important;
@@ -609,7 +609,8 @@ h2 {
     -webkit-font-smoothing: antialiased;
     margin-bottom: 0px;
     margin-top: 0px;
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 20px; }
 
 .banner {
   position: fixed;

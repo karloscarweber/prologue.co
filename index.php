@@ -29,7 +29,7 @@
 			<!-- <img src="/img/emptyiPhoneicon.svg" style="max-width:42px;" class="center homeiphoneicon"> -->
 			<img src="/img/iPhoneTyping.gif" style="max-width:100px;" class="center homeiphoneicon">
 
-			<h3>I make apps for small screens,<br>and write tiny books about it.<br><br>Learn about my first book<br><a href="/swiftfoundations">Swift Foundations</a>.</h3>
+			<h3 style="text-align:center;">I make apps for small screens,<br>and write tiny books about it.<br><br>Learn about my first book<br><a href="/swiftfoundations">Swift Foundations</a>.</h3>
 
 		</div>
 	</div>
