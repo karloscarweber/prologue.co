@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
+	<?php include('./includes/head.php') ?>
 	<title>Prologue Productions - Tiny Apps and Tiny Books</title>
 
 	<!--
@@ -11,7 +11,6 @@
 	-->
 
 	<meta name="description" content="We make apps for little screens and Write Books about it. iOS design and devlopment."> 
-	<?php include('./includes/head.php') ?>
 
 </head>
 <body>

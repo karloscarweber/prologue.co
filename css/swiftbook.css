@@ -228,6 +228,18 @@ div.grater:after {
   div.grater > div {
     float: none !important;
     margin: 0 auto 2em; } }
+div.grater.greybox > div:first-child {
+  width: 170px;
+  margin-bottom: 0px; }
+
+div.grater.greybox > div:last-child {
+  width: 410px;
+  margin-bottom: 0px; }
+
+@media all and (max-width: 660px) {
+  div.grater.greybox > div:first-child, div.grater.greybox > div:last-child {
+    width: 260px;
+    float: none; } }
 /* elastic.css */
 /* messy prerelease version */
 /* Elasti-container */

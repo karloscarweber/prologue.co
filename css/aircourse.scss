@@ -1,0 +1,26 @@
+
+@import "grater";
+
+.greybox {
+	h3 {
+		margin-top:0px;
+		text-align: center;
+		font-family: 'Helvetica', 'sans-serif';
+		font-weight: bold;
+		font-size: 18px;
+		margin-bottom:20px;
+		-webkit-font-smoothing:antialiased;
+	}
+	p {
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 20px;
+	}
+	a, a.button, .button {
+		color:white;
+		margin-bottom: 0px;
+		width: 100%;
+		clear:both;
+		-webkit-font-smoothing:antialiased;
+	}
+}

@@ -21,12 +21,25 @@
 	<?php include('./includes/header.php') ?>
 
 	<div class="elastic-container">
-		<div class="single marketing-text clearfix">
+<!-- 		<div class="single marketing-text clearfix">
 			<h2>Books</h2>
 
 			<a class="bookCoverLink" href="/swiftfoundations"><img src="/img/BookCoverInBookform@2x.png"></a>
 
+			<a class="bookCoverLink" href="/swiftbasics"><img src="/img/SwiftBasicsBookCoverInBookform@2x.png"></a>
+
+		</div> -->
+
+		<div class="elastic marketing-text clearfix">
+			<h2>Books</h2>
+			<div>
+				<a class="bookCoverLink" href="/swiftfoundations"><img src="/img/BookCoverInBookform@2x.png"></a>
+			</div>
+			<div>
+				<a class="bookCoverLink" href="/swiftbasics"><img src="/img/SwiftBasicsBookCoverInBookform@2x.png"></a>
+			</div>
 		</div>
+
 
 	</div>
 
