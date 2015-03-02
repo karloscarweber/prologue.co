@@ -50,6 +50,9 @@ div.grater.greybox > div:last-child {
   div.grater.greybox > div:first-child, div.grater.greybox > div:last-child {
     width: 240px;
     float: none; } }
+@media all and (max-width: 360px) {
+  div.grater-container {
+    width: 100%; } }
 .greybox {
   width: 100%;
   margin: 20px auto;

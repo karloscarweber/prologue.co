@@ -14,3 +14,8 @@ div.grater.greybox > div:last-child {
 		float:none;
 	}
 }
+@media all and (max-width: 360px){
+	div.grater-container {
+		width:100%;
+	}
+}
